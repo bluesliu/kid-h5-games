@@ -1,0 +1,30 @@
+{
+	
+	
+	"items": [
+		{
+			"title": "crayons",
+			"img": "HC2-Sentences Game-T4U2-1_crayons_png",
+			"audio": "HC2-Sentences Game-T4U2_1_mp3"
+			
+		},
+		{
+			"title": "markers",
+			"img": "HC2-Sentences Game-T4U2-2_markers_png",
+			"audio": "HC2-Sentences Game-T4U2_2_mp3"
+			
+		},
+		{
+			"title": "paint",
+			"img": "HC2-Sentences Game-T4U2-3_paint_png",
+			"audio": "HC2-Sentences Game-T4U2_3_mp3"
+			
+		},
+		{
+			"title": "paper",
+			"img": "HC2-Sentences Game-T4U2-4_paper_png",
+			"audio": "HC2-Sentences Game-T4U2_4_mp3"
+			
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/res/res.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/game/game.js",
+		"promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Step.js",
+		"bin-debug/component/Boat.js",
+		"bin-debug/Main.js",
+		"bin-debug/SoundPlayer.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/component/Bird.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/component/Cloud.js",
+		"bin-debug/component/CountLoves.js",
+		"bin-debug/component/CountStars.js",
+		"bin-debug/component/Fashing.js",
+		"bin-debug/component/HookSp.js",
+		"bin-debug/component/Paopao.js",
+		"bin-debug/component/Source.js"
+	]
+}

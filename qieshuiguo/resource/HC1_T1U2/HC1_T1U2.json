@@ -1,0 +1,22 @@
+[
+    {
+        "id": "0",
+        "shengyin": "HC1-Sentences Game-T1U1_4_mp3",
+        "image": "HC1-Sentences Game-T1U1-4_cup_png"
+    },
+    {
+        "id": "1",
+        "shengyin":"HC1-Sentences Game-T1U1_3_mp3",
+        "image":"HC1-Sentences Game-T1U1-3_hat_png"
+    },
+     {
+        "id":"2",
+        "shengyin":"HC1-Sentences Game-T1U1_2_mp3",
+        "image":"HC1-Sentences Game-T1U1-2_bag_png"
+    },
+     {
+        "id":"3",
+        "shengyin":"HC1-Sentences Game-T1U1_1_mp3",
+        "image":"HC1-Sentences Game-T1U1-1_book_png"
+    }
+ ]

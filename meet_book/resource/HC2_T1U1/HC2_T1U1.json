@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0",
+        "shengyin": "HC2-Sentences Game-T1U1_1_mp3",
+        "image": "HC2-Sentences Game-T1U1-1_one_png"
+    },
+    {
+        "id": "1",
+        "shengyin":"HC2-Sentences Game-T1U1_2_mp3",
+        "image":"HC2-Sentences Game-T1U1-2_two_png"
+    },
+     {
+        "id":"2",
+        "shengyin":"HC2-Sentences Game-T1U1_3_mp3",
+        "image":"HC2-Sentences Game-T1U1-3_three_png"
+    },
+     {
+        "id":"3",
+        "shengyin":"HC2-Sentences Game-T1U1_4_mp3",
+        "image":"HC2-Sentences Game-T1U1-4_four_png"
+    },
+     {
+        "id":"4",
+        "shengyin":"HC2-Sentences Game-T1U1_5_mp3",
+        "image":"HC2-Sentences Game-T1U1-5_five_png"
+    }
+ ]

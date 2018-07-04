@@ -1,0 +1,42 @@
+{
+	
+	
+	"items": [
+		{
+			"title": "butterfly",
+			"img": "HC4-Sentences Game-T3U1-1_butterfly_png",
+			"audio": "HC4-Sentences Game-T3U1_1_mp3"
+			
+		},
+		{
+			"title": "ladybug",
+			"img": "HC4-Sentences Game-T3U1-2_ladybug_png",
+			"audio": "HC4-Sentences Game-T3U1_2_mp3"
+			
+		},
+		{
+			"title": "bee",
+			"img": "HC4-Sentences Game-T3U1-3_bee_png",
+			"audio": "HC4-Sentences Game-T3U1_3_mp3"
+			
+		},
+		{
+			"title": "flower",
+			"img": "HC4-Sentences Game-T3U1-4_dragonfly_png",
+			"audio": "HC4-Sentences Game-T3U1_4_mp3"
+			
+		},
+		{
+			"title": "dragonfly",
+				"img": "HC4-Sentences Game-T3U1-5_flower_png",
+			"audio": "HC4-Sentences Game-T3U1_5_mp3"
+			
+		},
+		{
+			"title": "tree",
+			"img": "HC4-Sentences Game-T3U1-6_tree_png",
+			"audio": "HC4-Sentences Game-T3U1_6_mp3"
+			
+		}
+	]
+}

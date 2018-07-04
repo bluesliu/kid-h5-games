@@ -1,0 +1,26 @@
+{
+	
+		"items": [
+	{
+		"name":"yellow",
+		"img": "HC2-Sentences Game-T4U1-2_yellow_png",
+		"audio": "HC2-Sentences Game-T4U1_1_mp3"
+		
+	},
+	{
+		"name":"blue",
+		"img": "HC2-Sentences Game-T4U1-4_blue_png",
+		"audio": "HC2-Sentences Game-T4U1_2_mp3"
+	},
+	{
+		"name":"red",
+		"img": "HC2-Sentences Game-T4U1-1_red_png",
+		"audio": "HC2-Sentences Game-T4U1_3_mp3"
+	},
+	{
+		"name":"green",
+		"img": "HC2-Sentences Game-T4U1-3_green_png",
+		"audio": "HC2-Sentences Game-T4U1_4_mp3"
+	}
+	]
+}

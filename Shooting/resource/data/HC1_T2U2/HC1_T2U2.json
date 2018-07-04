@@ -1,0 +1,25 @@
+{
+	"items": [
+	{
+		"name":"door",
+		"img": "HC1-Sentences Game-T2U2-1_door_png",
+		"audio": "HC1-Sentences Game-T2U2_1_mp3"
+		
+	},
+	{
+		"name":"window",
+		"img": "HC1-Sentences Game-T2U2-2_window_png",
+		"audio": "HC1-Sentences Game-T2U2_2_mp3"
+	},
+	{
+		"name":"board",
+		"img": "HC1-Sentences Game-T2U2-3_board_png",
+		"audio": "HC1-Sentences Game-T2U2_3_mp3"
+	},
+	{
+		"name":"table",
+		"img": "HC1-Sentences Game-T2U2-4_table_png",
+		"audio": "HC1-Sentences Game-T2U2_4_mp3"
+	}
+	]
+}

@@ -1,0 +1,264 @@
+{
+	"groups": [
+		{
+			"keys": "8367_mp3,bgmusic_mp3,bg_png,blue_box_png,board_png,door_png,fail_0_png,fail_1_png,fail_2_png,gstar_png,gstars_png,love_png,loves _png,love_panel_png,love_panel0_png,next_png,quit_png,qwd2_png,qwd3_png,red_box_png,star_png,stars_png,start_png,success_0_png,success_1_png,success_2_png,table_png,violet_box_png,windows_png,yellow_box_png,云_png,大炮_png,天空_png,奇瓦迪_png,炮弹_png,炮弹底座上_png,炮弹底座下_png,炮弹火花_png,草地_png,飞机_png,repeat_png",
+			"name": "preload"
+		},
+		{
+			"keys": "HC1-Sentences Game-T2U2-1_door_png,HC1-Sentences Game-T2U2-2_window_png,HC1-Sentences Game-T2U2-3_board_png,HC1-Sentences Game-T2U2-4_table_png,HC1-Sentences Game-T2U2_1_mp3,HC1-Sentences Game-T2U2_2_mp3,HC1-Sentences Game-T2U2_3_mp3,HC1-Sentences Game-T2U2_4_mp3,HC1_T2U2_json",
+			"name": "HC1_T2U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/8367.mp3",
+			"type": "sound",
+			"name": "8367_mp3"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "scene1/blue_box.png",
+			"type": "image",
+			"name": "blue_box_png"
+		},
+		{
+			"url": "scene1/board.png",
+			"type": "image",
+			"name": "board_png"
+		},
+		{
+			"url": "scene1/door.png",
+			"type": "image",
+			"name": "door_png"
+		},
+		{
+			"url": "scene1/fail_0.png",
+			"type": "image",
+			"name": "fail_0_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "scene1/gstar.png",
+			"type": "image",
+			"name": "gstar_png"
+		},
+		{
+			"url": "scene1/gstars.png",
+			"type": "image",
+			"name": "gstars_png"
+		},
+		{
+			"url": "scene1/love.png",
+			"type": "image",
+			"name": "love_png"
+		},
+		{
+			"url": "scene1/loves .png",
+			"type": "image",
+			"name": "loves _png"
+		},
+		{
+			"url": "scene1/love_panel.png",
+			"type": "image",
+			"name": "love_panel_png"
+		},
+		{
+			"url": "scene1/love_panel0.png",
+			"type": "image",
+			"name": "love_panel0_png"
+		},
+		{
+			"url": "scene1/next.png",
+			"type": "image",
+			"name": "next_png"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/qwd2.png",
+			"type": "image",
+			"name": "qwd2_png"
+		},
+		{
+			"url": "scene1/qwd3.png",
+			"type": "image",
+			"name": "qwd3_png"
+		},
+		{
+			"url": "scene1/red_box.png",
+			"type": "image",
+			"name": "red_box_png"
+		},
+		{
+			"url": "scene1/star.png",
+			"type": "image",
+			"name": "star_png"
+		},
+		{
+			"url": "scene1/stars.png",
+			"type": "image",
+			"name": "stars_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/table.png",
+			"type": "image",
+			"name": "table_png"
+		},
+		{
+			"url": "scene1/violet_box.png",
+			"type": "image",
+			"name": "violet_box_png"
+		},
+		{
+			"url": "scene1/windows.png",
+			"type": "image",
+			"name": "windows_png"
+		},
+		{
+			"url": "scene1/yellow_box.png",
+			"type": "image",
+			"name": "yellow_box_png"
+		},
+		{
+			"url": "scene1/云.png",
+			"type": "image",
+			"name": "云_png"
+		},
+		{
+			"url": "scene1/大炮.png",
+			"type": "image",
+			"name": "大炮_png"
+		},
+		{
+			"url": "scene1/天空.png",
+			"type": "image",
+			"name": "天空_png"
+		},
+		{
+			"url": "scene1/奇瓦迪.png",
+			"type": "image",
+			"name": "奇瓦迪_png"
+		},
+		{
+			"url": "scene1/炮弹.png",
+			"type": "image",
+			"name": "炮弹_png"
+		},
+		{
+			"url": "scene1/炮弹底座上.png",
+			"type": "image",
+			"name": "炮弹底座上_png"
+		},
+		{
+			"url": "scene1/炮弹底座下.png",
+			"type": "image",
+			"name": "炮弹底座下_png"
+		},
+		{
+			"url": "scene1/炮弹火花.png",
+			"type": "image",
+			"name": "炮弹火花_png"
+		},
+		{
+			"url": "scene1/草地.png",
+			"type": "image",
+			"name": "草地_png"
+		},
+		{
+			"url": "scene1/飞机.png",
+			"type": "image",
+			"name": "飞机_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2-1_door.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T2U2-1_door_png"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2-2_window.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T2U2-2_window_png"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2-3_board.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T2U2-3_board_png"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2-4_table.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T2U2-4_table_png"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T2U2_1_mp3"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2_2.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T2U2_2_mp3"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2_3.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T2U2_3_mp3"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1-Sentences Game-T2U2_4.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T2U2_4_mp3"
+		},
+		{
+			"url": "data/HC1_T2U2/HC1_T2U2.json",
+			"type": "json",
+			"name": "HC1_T2U2_json"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/game/game.js",
+		"libs/modules/res/res.js",
+		"libs/modules/tween/tween.js",
+		"promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Step.js",
+		"bin-debug/components/CountLoves.js",
+		"bin-debug/Main.js",
+		"bin-debug/SoundPlayer.js",
+		"bin-debug/DropCard.js",
+		"bin-debug/components/Bg.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/components/CountStars.js",
+		"bin-debug/components/DropCards.js",
+		"bin-debug/components/Gun.js",
+		"bin-debug/components/Qieadi.js",
+		"bin-debug/components/Source.js"
+	]
+}

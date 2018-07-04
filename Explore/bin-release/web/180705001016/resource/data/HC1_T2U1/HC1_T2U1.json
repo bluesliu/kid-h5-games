@@ -1,0 +1,29 @@
+{
+	
+	"items": [
+		{
+			"title": "jump",
+			"img": "HC1-Sentences Game-T2U1-1_jump_png",
+			"audio": "HC1-Sentences Game-T2U1-1_4_mp3"
+			
+		},
+		{
+			"title": "run",
+			"img": "HC1-Sentences Game-T2U1-2_run_png",
+			"audio": "HC1-Sentences Game-T2U1-1_3_mp3"
+			
+		},
+		{
+			"title": "walk",
+			"img": "HC1-Sentences Game-T2U1-3_walk_png",
+			"audio": "HC1-Sentences Game-T2U1-1_1_mp3"
+			
+		},
+		{
+			"title": "dance",
+			"img": "HC1-Sentences Game-T2U1-4_dance_png",
+			"audio": "HC1-Sentences Game-T2U1-1_2_mp3"
+			
+		}
+	]
+}

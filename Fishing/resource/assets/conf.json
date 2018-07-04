@@ -1,0 +1,22 @@
+{
+	
+	"items": [
+		{
+			"img": "unit1/door.png",
+			"audio": "unit1/door.mp3"
+			
+		},
+		{
+			"img": "unit1/window.png",
+			"audio": "unit1/window.mp3"
+		},
+		{
+			"img": "unit1/board.png",
+			"audio": "unit1/board.mp3"
+		},
+		{
+			"img": "unit1/table.png",
+			"audio": "unit1/table.mp3"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/res/res.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/game/game.js",
+		"libs/modules/tween/tween.js",
+		"promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Main.js",
+		"bin-debug/views/JiFenView.js",
+		"bin-debug/MainContent.js",
+		"bin-debug/data/KaPianData.js",
+		"bin-debug/data/UserDate.js",
+		"bin-debug/views/BiChuView.js",
+		"bin-debug/views/DaoJiShi.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/views/JiXiangWu.js",
+		"bin-debug/views/MouseView.js",
+		"bin-debug/views/Ren.js",
+		"bin-debug/views/ShenMingView.js",
+		"bin-debug/views/UserShengMin.js",
+		"bin-debug/views/YouXiView.js",
+		"bin-debug/views/ZuoYouButton.js"
+	]
+}
