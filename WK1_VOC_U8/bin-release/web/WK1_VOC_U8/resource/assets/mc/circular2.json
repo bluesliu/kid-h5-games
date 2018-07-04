@@ -1,0 +1,22 @@
+{"mc":{
+	"circular2":{
+		"frameRate":24,
+		"labels":[
+			{"name":"color1","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"E286438",
+			"x":-26,
+			"y":70
+			}
+			]
+}},
+	"res":{
+		"E286438":{"x":1,"y":1,"w":180,"h":53}
+	}}
