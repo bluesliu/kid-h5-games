@@ -19,17 +19,6 @@ var Main = (function (_super) {
         return _this;
     }
     Main.prototype.onAddToStage = function (event) {
-        egret.lifecycle.addLifecycleListener(function (context) {
-            // custom lifecycle plugin
-            context.onUpdate = function () {
-            };
-        });
-        egret.lifecycle.onPause = function () {
-            egret.ticker.pause();
-        };
-        egret.lifecycle.onResume = function () {
-            egret.ticker.resume();
-        };
         //设置加载进度界面
         //Config to load process interface
         this.loadingView = new LoadingUI();

@@ -18,6 +18,10 @@ var Game = (function (_super) {
         _this.m_state = Game.GAME_INIT;
         //正确的数量
         _this.m_rightCount = 0;
+        //错误的数量
+        _this.m_failCount = 0;
+        _this.laveHand = Array();
+        _this.laveHand2 = Array();
         return _this;
     }
     Game.prototype.run = function () {
@@ -32,6 +36,8 @@ var Game = (function (_super) {
         //场景层
         this.m_sceneLayer = new egret.Sprite();
         this.addChild(this.m_sceneLayer);
+        this.m_roleLayer = new egret.Sprite();
+        this.addChild(this.m_roleLayer);
         //UI层
         this.m_uiLayer = new egret.Sprite();
         this.m_uiLayer.touchEnabled = this.m_uiLayer.touchChildren = true;
@@ -44,17 +50,13 @@ var Game = (function (_super) {
         this.m_gameScene = new GameScene();
         this.m_sceneLayer.addChild(this.m_gameScene);
         //角色
-        this.m_role1 = new RoleView("role1");
-        this.m_role1.x = 576;
-        this.m_role1.y = 735;
-        this.m_sceneLayer.addChild(this.m_role1);
+        this.m_role1 = new RoleView();
+        this.m_role1.x = 213;
+        this.m_role1.y = 567;
+        this.m_roleLayer.addChild(this.m_role1);
         //计分板
         this.m_scoreBoard = new ScoreBoard();
         this.m_scoreBoard.show(false, BoxAlign.right_top, new egret.Point(-50, 50));
-        //倒计时班
-        this.m_clockBoard = new ClockBoard();
-        this.m_clockBoard.show(false, BoxAlign.left_top, new egret.Point(50, 50));
-        this.m_clockBoard.text = "" + Game.GAME_TIME;
         //音乐按钮
         this.m_musicBtn = new MusicBtn();
         this.m_musicBtn.show(false, BoxAlign.right_bottom, new egret.Point(-50, -50));
@@ -101,7 +103,6 @@ var Game = (function (_super) {
     };
     Game.prototype.onRender = function () {
         if (this.m_state == Game.GAME_PLAY) {
-            this.m_cardManager.onRender();
         }
     };
     //开始游戏
@@ -111,23 +112,21 @@ var Game = (function (_super) {
         this.m_gameStartBox.hide();
         //人物设置为空闲状态
         this.m_role1.state = RoleState.idle;
-        //this.m_gameScene.reset();
-        this.m_gameScene.showLamp();
+        this.m_gameScene.reset();
         //播放背景音乐
         this.updateBgMusic();
         //重置分数
         this.m_rightCount = 0;
+        this.m_failCount = 0;
         this.m_scoreBoard.setScore(0);
-        //开始倒计时
-        this.startTimer();
         //重置题目
         this.m_laveList = this.m_qList.concat();
         ArrayUtil.randomSort(this.m_laveList);
-        //提问
-        this.question();
         //发射卡牌
         this.m_cardManager.reset();
         this.m_cardManager.start();
+        //提问
+        this.question();
     };
     //提问一个新问题
     Game.prototype.question = function () {
@@ -142,6 +141,9 @@ var Game = (function (_super) {
         this.m_curQuestion = this.m_laveList.shift();
         //播放题目语音
         this.m_qSound.playRes(this.m_curQuestion.audio);
+        //卡牌重新排序
+        this.m_cardManager.sortCard();
+        this.handRandom();
     };
     //点击了卡牌
     Game.prototype.onTouchCard = function (e) {
@@ -152,6 +154,7 @@ var Game = (function (_super) {
         this.m_repeatBtn.visible = false;
         this.m_qSound.clear();
         this.m_curCardView = e.data;
+        this.stopTimer();
         //回答正确
         if (this.m_curCardView.cardName == this.m_curQuestion.name) {
             this.answerRight();
@@ -172,21 +175,20 @@ var Game = (function (_super) {
         this.m_curCardView.right();
         //答对音效（叮咚）
         this.m_effSound.clear();
-        this.m_effSound.playRes("U1VOC03_mp3");
+        this.m_effSound.playRes("dingdong_mp3");
         this.m_effSound.exec(function () {
             //全部答对
             if (_this.m_rightCount >= Game.WIN_NUM) {
-                _this.stopTimer();
                 //游戏结束
                 _this.m_state = Game.GAME_OVER;
                 _this.m_cardManager.hideCard();
-                _this.m_gameScene.showLamp();
-                _this.m_role1.state = RoleState.celebrate_hand; //拍手
-                _this.m_effSound.playRes("U1VOC05_mp3"); //庆祝音效
+                _this.m_gameScene.showLamp(); //显示灯光
+                _this.m_role1.state = RoleState.celebrate; //庆祝
+                _this.m_effSound.playRes("hualala_mp3"); //哗啦啦的音效
                 _this.m_effSound.exec(function () {
                     _this.m_role1.state = RoleState.celebrate_mouth; //庆祝表情 + 说话
                 }, _this);
-                _this.m_effSound.playRes("U1VOC-OS01_mp3").playRes("U1VOC-OS02_mp3");
+                _this.m_effSound.playRes("U1SNS-OS05_mp3").playRes("U1SNS-OS06_mp3");
                 _this.m_effSound.exec(function () {
                     _this.m_role1.state = RoleState.celebrate;
                     _this.m_playAgainBtn.visible = true;
@@ -194,26 +196,54 @@ var Game = (function (_super) {
                 }, _this);
             }
             else {
-                //继续答题
-                _this.question();
-                _this.m_role1.state = RoleState.idle;
+                _this.m_role1.state = RoleState.happy_mouth; //开心的说话
+                _this.m_effSound.playResRandom(["U1SNS-OS01_mp3", "U1SNS-OS02_mp3"]);
+                _this.m_effSound.exec(function () {
+                    //继续答题
+                    _this.question();
+                    _this.m_role1.state = RoleState.idle;
+                }, _this);
             }
         }, this);
     };
     //回答错误
     Game.prototype.answerWrong = function () {
         var _this = this;
+        this.m_failCount += 1;
         this.m_role1.state = RoleState.sad; //难过
         this.m_curCardView.wrong();
         this.m_effSound.clear();
-        this.m_effSound.playRes("U1VOC04_mp3"); //答错音效
+        this.m_effSound.playRes("chacha_mp3"); //答错音效
         this.m_effSound.exec(function () {
-            //继续答题，重新朗读题目
-            _this.m_role1.state = RoleState.idle;
-            _this.m_qSound.playRes(_this.m_curQuestion.audio).exec(function () {
-                _this.m_repeatBtn.visible = true;
-            }, self);
-            _this.m_answering = false;
+            if (_this.m_failCount >= Game.FAIL_NUM) {
+                //游戏结束
+                _this.m_state = Game.GAME_OVER;
+                _this.m_qSound.clear();
+                _this.m_cardManager.hideCard();
+                //啪 关灯
+                _this.m_gameScene.black();
+                _this.m_role1.state = RoleState.fail;
+                _this.m_effSound.playRes("pa_mp3");
+                _this.m_effSound.playRes("U1SNS-OS07_mp3").playRes("U1SNS-OS08_mp3");
+                _this.m_effSound.exec(function () {
+                    //弹出失败窗口
+                    _this.submit(false);
+                    _this.m_tryAgainBtn.visible = true;
+                }, _this);
+            }
+            else {
+                _this.m_role1.state = RoleState.sad_mouth; //难过+说话
+                _this.m_effSound.playResRandom(["U1SNS-OS03_mp3", "U1SNS-OS04_mp3"]);
+                _this.m_effSound.exec(function () {
+                    //继续答题，重新朗读题目
+                    _this.m_role1.state = RoleState.idle;
+                    _this.m_qSound.playRes(_this.m_curQuestion.audio).exec(function () {
+                        _this.m_repeatBtn.visible = true;
+                        _this.handRandom();
+                    }, self);
+                    _this.m_answering = false;
+                }, _this);
+            }
         }, this);
     };
     //点击音乐按钮
@@ -230,45 +260,34 @@ var Game = (function (_super) {
     };
     Game.prototype.stopTimer = function () {
         if (this.m_timer) {
+            this.m_timer.removeEventListener(egret.TimerEvent.COMPLETE, this.onTimerComplete, this);
             this.m_timer.stop();
-            this.m_timer.removeEventListener(egret.TimerEvent.TIMER, this.onTimer, this);
-            this.m_timer.removeEventListener(egret.TimerEvent.TIMER_COMPLETE, this.onTimerComplete, this);
+            this.m_timer = null;
         }
-        this.m_timer = null;
     };
     Game.prototype.startTimer = function () {
         this.stopTimer();
-        this.m_timer = new egret.Timer(1000, Game.GAME_TIME);
-        this.m_timer.addEventListener(egret.TimerEvent.TIMER, this.onTimer, this);
+        this.m_timer = new egret.Timer(3000, 1);
         this.m_timer.addEventListener(egret.TimerEvent.TIMER_COMPLETE, this.onTimerComplete, this);
         this.m_timer.start();
-        this.onTimer(null); //首次更新一下文本框
-    };
-    Game.prototype.onTimer = function (e) {
-        this.m_clockBoard.text = "" + (this.m_timer.repeatCount - this.m_timer.currentCount);
     };
     Game.prototype.onTimerComplete = function (e) {
-        var _this = this;
+        this.handRandom();
+    };
+    Game.prototype.handRandom = function () {
         this.stopTimer();
-        //游戏结束
-        this.m_state = Game.GAME_OVER;
-        this.m_effSound.clear();
-        this.m_qSound.clear();
-        this.m_cardManager.wrong();
-        this.m_role1.state = RoleState.sad;
-        //刮风音效
-        this.m_effSound.clear();
-        this.m_effSound.playRes("U1VOC06_mp3").playRes("U1VOC07_mp3");
-        this.m_effSound.exec(function () {
-            _this.m_role1.state = RoleState.sad_mouth;
-        }, this);
-        this.m_effSound.playRes("U1VOC-OS03_mp3");
-        this.m_effSound.exec(function () {
-            _this.m_role1.state = RoleState.sad;
-        }, this);
-        //弹出失败窗口
-        this.submit(false);
-        this.m_tryAgainBtn.visible = true;
+        if (this.laveHand.length == 0) {
+            this.laveHand = [1, 2, 3, 4];
+            ArrayUtil.randomSort(this.laveHand);
+            while (this.laveHand2[3] == this.laveHand[0]) {
+                ArrayUtil.randomSort(this.laveHand);
+            }
+        }
+        this.laveHand2 = this.laveHand.concat();
+        var frame = this.laveHand.shift();
+        this.m_role1.setHand(frame);
+        this.m_cardManager.setLight(frame);
+        this.startTimer();
     };
     //提交游戏结果
     Game.prototype.submit = function (isComplete) {
@@ -307,7 +326,7 @@ var Game = (function (_super) {
         configurable: true
     });
     Game.WIN_NUM = 6;
-    Game.GAME_TIME = 60;
+    Game.FAIL_NUM = 3;
     Game.GAME_INIT = "game_init";
     Game.GAME_PLAY = "game_play";
     Game.GAME_OVER = "game_over";

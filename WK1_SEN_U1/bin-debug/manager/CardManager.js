@@ -11,38 +11,60 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+var MyPosition = (function (_super) {
+    __extends(MyPosition, _super);
+    function MyPosition(x, y, id) {
+        if (x === void 0) { x = 0; }
+        if (y === void 0) { y = 0; }
+        if (id === void 0) { id = 0; }
+        var _this = _super.call(this, x, y) || this;
+        _this.id = id;
+        return _this;
+    }
+    return MyPosition;
+}(egret.Point));
+__reflect(MyPosition.prototype, "MyPosition");
 var CardManager = (function (_super) {
     __extends(CardManager, _super);
     function CardManager() {
         var _this = _super.call(this) || this;
-        _this._positionArr = [[474, 346], [824, 537], [1209, 462], [1566, 332]];
-        _this.m_intervalTime = 3500; //间隔时间
-        _this.m_lastTime = 0; //上一次添加的时间
+        _this.POS_CONF = [new MyPosition(474, 346, 1), new MyPosition(824, 537, 2),
+            new MyPosition(1209, 462, 3), new MyPosition(1566, 332, 4)];
+        _this._positionArr = [];
         return _this;
     }
     CardManager.prototype.init = function (json) {
         this.m_json = json;
-        this.m_lastTime = 0;
         this.m_touchSound = new SoundPlayer();
         this.m_cardArr = Array();
-        for (var i = 0; i < this._positionArr.length; i++) {
+        for (var i = 0; i < this.POS_CONF.length; i++) {
             var card = new CardView(json.list[i]);
+            card.touchEnabled = true;
+            card.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTouchCard, this);
             this.m_cardArr.push(card);
         }
     };
-    CardManager.prototype.onRender = function () {
-        if (egret.getTimer() - this.m_lastTime > this.m_intervalTime) {
-            this.sortCard();
+    CardManager.prototype.sortCard = function () {
+        ArrayUtil.randomSort(this.POS_CONF);
+        for (var i = 0; i < this.m_cardArr.length; i++) {
+            var pos = this.POS_CONF[i];
+            var card = this.m_cardArr[i];
+            card.id = pos.id;
+            card.x = pos.x + 125;
+            card.y = pos.y + 125;
+            Game.instance.sceneLayer.addChild(card);
+            card.reset();
         }
     };
-    CardManager.prototype.sortCard = function () {
-        this.m_lastTime = egret.getTimer();
-        ArrayUtil.randomSort(this._positionArr);
-        for (var i = 0; i < this.m_cardArr.length; i++) {
+    CardManager.prototype.setLight = function (value) {
+        for (var i = this.m_cardArr.length - 1; i >= 0; i--) {
             var card = this.m_cardArr[i];
-            card.x = this._positionArr[i][0] + 125;
-            card.y = this._positionArr[i][1] + 125;
-            Game.instance.sceneLayer.addChild(card);
+            if (card.id == value) {
+                card.light();
+            }
+            else {
+                card.dark();
+            }
         }
     };
     CardManager.prototype.start = function () {

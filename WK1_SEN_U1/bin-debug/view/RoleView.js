@@ -16,25 +16,39 @@ var RoleState;
 (function (RoleState) {
     RoleState[RoleState["idle"] = 0] = "idle";
     RoleState[RoleState["happy"] = 1] = "happy";
-    RoleState[RoleState["sad"] = 2] = "sad";
-    RoleState[RoleState["sad_mouth"] = 3] = "sad_mouth";
-    RoleState[RoleState["celebrate_hand"] = 4] = "celebrate_hand";
-    RoleState[RoleState["celebrate_mouth"] = 5] = "celebrate_mouth";
-    RoleState[RoleState["celebrate"] = 6] = "celebrate";
+    RoleState[RoleState["happy_mouth"] = 2] = "happy_mouth";
+    RoleState[RoleState["sad"] = 3] = "sad";
+    RoleState[RoleState["sad_mouth"] = 4] = "sad_mouth";
+    RoleState[RoleState["celebrate"] = 5] = "celebrate";
+    RoleState[RoleState["celebrate_mouth"] = 6] = "celebrate_mouth";
+    RoleState[RoleState["fail"] = 7] = "fail";
 })(RoleState || (RoleState = {}));
 var RoleView = (function (_super) {
     __extends(RoleView, _super);
-    function RoleView(roleName) {
+    function RoleView() {
         var _this = _super.call(this) || this;
-        _this.m_roleName = roleName;
-        var data = RES.getRes(roleName + "_json");
-        var txtr = RES.getRes(roleName + "_png");
-        var mcFactory = new egret.MovieClipDataFactory(data, txtr);
-        _this.m_role = new egret.MovieClip(mcFactory.generateMovieClipData(roleName));
-        _this.m_role.stop();
-        _this.addChild(_this.m_role);
+        _this.touchEnabled = false;
+        _this.touchChildren = false;
+        _this.m_hand = DisplayUtil.createMovieClipByName("hand");
+        _this.m_hand.gotoAndStop(5);
+        _this.addChild(_this.m_hand);
+        _this.m_roleIdle = DisplayUtil.createMovieClipByName("role_idle");
+        _this.m_roleIdle.stop();
+        _this.addChild(_this.m_roleIdle);
+        _this.m_roleHappy = DisplayUtil.createMovieClipByName("role_happy");
+        _this.m_roleHappy.stop();
+        _this.m_roleSad = DisplayUtil.createMovieClipByName("role_sad");
+        _this.m_roleSad.stop();
+        _this.m_roleCelebrate = DisplayUtil.createMovieClipByName("role_celebrate");
+        _this.m_roleCelebrate.stop();
         return _this;
     }
+    RoleView.prototype.setHand = function (value) {
+        this.m_hand.gotoAndStop(value);
+    };
+    RoleView.prototype.getHand = function () {
+        return this.m_hand.currentFrame;
+    };
     Object.defineProperty(RoleView.prototype, "state", {
         get: function () {
             return this.m_state;
@@ -45,41 +59,59 @@ var RoleView = (function (_super) {
             //如果状态改变了，就动态调用状态方法
             if (this.m_isChangeState) {
                 this.m_isChangeState = false;
+                this.reset();
                 this[RoleState[this.m_state]]();
             }
         },
         enumerable: true,
         configurable: true
     });
-    RoleView.prototype.onPlay = function () {
-        this.m_role.play();
-    };
-    RoleView.prototype.onPause = function () {
-        this.m_role.stop();
-    };
-    RoleView.prototype.onRender = function () {
+    RoleView.prototype.reset = function () {
+        this.m_roleIdle.stop();
+        DisplayUtil.remove(this.m_roleIdle);
+        this.m_roleHappy.stop();
+        DisplayUtil.remove(this.m_roleHappy);
+        this.m_roleSad.stop();
+        DisplayUtil.remove(this.m_roleSad);
+        this.m_roleCelebrate.stop();
+        DisplayUtil.remove(this.m_roleCelebrate);
+        this.m_hand.visible = true;
     };
     // -------------------  以下是人物状态方法，方法名与枚举名保持一致 ----------------
     RoleView.prototype.idle = function () {
-        this.m_role.gotoAndPlay(RoleState[RoleState.idle], -1);
+        this.addChild(this.m_roleIdle);
+        this.m_roleIdle.gotoAndPlay(RoleState[RoleState.idle], -1);
     };
     RoleView.prototype.happy = function () {
-        this.m_role.gotoAndStop(RoleState[RoleState.happy]);
+        this.addChild(this.m_roleHappy);
+        this.m_roleHappy.gotoAndStop(RoleState[RoleState.happy]);
+    };
+    RoleView.prototype.happy_mouth = function () {
+        this.addChild(this.m_roleHappy);
+        this.m_roleHappy.gotoAndPlay(RoleState[RoleState.happy_mouth], -1);
     };
     RoleView.prototype.sad = function () {
-        this.m_role.gotoAndPlay(RoleState[RoleState.sad], -1);
+        this.addChild(this.m_roleSad);
+        this.m_roleSad.gotoAndStop(RoleState[RoleState.sad]);
     };
     RoleView.prototype.sad_mouth = function () {
-        this.m_role.gotoAndPlay(RoleState[RoleState.sad_mouth], -1);
-    };
-    RoleView.prototype.celebrate_hand = function () {
-        this.m_role.gotoAndPlay(RoleState[RoleState.celebrate_hand], -1);
-    };
-    RoleView.prototype.celebrate_mouth = function () {
-        this.m_role.gotoAndPlay(RoleState[RoleState.celebrate_mouth], -1);
+        this.addChild(this.m_roleSad);
+        this.m_roleSad.gotoAndPlay(RoleState[RoleState.sad_mouth], -1);
     };
     RoleView.prototype.celebrate = function () {
-        this.m_role.gotoAndStop(RoleState[RoleState.celebrate]);
+        this.addChild(this.m_roleCelebrate);
+        this.m_roleCelebrate.gotoAndStop(RoleState[RoleState.celebrate]);
+        this.m_hand.visible = false;
+    };
+    RoleView.prototype.celebrate_mouth = function () {
+        this.addChild(this.m_roleCelebrate);
+        this.m_roleCelebrate.gotoAndPlay(RoleState[RoleState.celebrate_mouth], -1);
+        this.m_hand.visible = false;
+    };
+    RoleView.prototype.fail = function () {
+        this.addChild(this.m_roleSad);
+        this.m_roleSad.gotoAndPlay(RoleState[RoleState.fail], -1);
+        this.m_hand.visible = false;
     };
     return RoleView;
 }(egret.Sprite));

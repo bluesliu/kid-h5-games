@@ -23,10 +23,14 @@ class SoundPlayer extends Step{
 		return this;
 	}
 
+    public playResRandom(keys:Array<string>, loop=1, volume=1) : SoundPlayer {
+        let index = MathUtil.random(0, keys.length-1, 1);
+        return this.playRes(keys[index], loop, volume);
+    }
+
     public playRes(key:string, loop=1, volume=1) : SoundPlayer 
     {
-        Println("playRes key:"+key+" loop:"+loop+" volume:"+volume);
-
+        
         let task = {type:"playRes", data:{key:key, loop:loop, volume:volume}};
 
         if(this.m_waitting)
@@ -66,8 +70,6 @@ class SoundPlayer extends Step{
         this._channel = this._sound.play(0, this._loop);
         this._channel.volume = this._volume;
         this._channel.addEventListener(egret.Event.SOUND_COMPLETE, this.onPlayComplete, this);
-
-        Println("doPlayRes key:"+key+" sound:"+this._sound);
     }
 
 	

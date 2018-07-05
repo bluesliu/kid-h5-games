@@ -26,6 +26,10 @@ var GameScene = (function (_super) {
         _this.m_lamp.x = 24;
         _this.m_lamp.y = 112;
         _this.m_paopaoArr = new Array();
+        _this.m_black = new egret.Sprite();
+        _this.m_black.graphics.beginFill(0x333333);
+        _this.m_black.graphics.drawRect(0, 0, 1920, 1080);
+        _this.m_black.graphics.endFill();
         return _this;
     }
     GameScene.prototype.showLamp = function () {
@@ -49,6 +53,10 @@ var GameScene = (function (_super) {
             _loop_1(i);
         }
     };
+    GameScene.prototype.black = function () {
+        this.reset();
+        this.addChild(this.m_black);
+    };
     GameScene.prototype.reset = function () {
         DisplayUtil.remove(this.m_lamp);
         this.m_lamp.stop();
@@ -59,6 +67,7 @@ var GameScene = (function (_super) {
             egret.Tween.removeTweens(paopao);
         }
         this.m_paopaoArr.length = 0;
+        DisplayUtil.remove(this.m_black);
     };
     return GameScene;
 }(egret.Sprite));

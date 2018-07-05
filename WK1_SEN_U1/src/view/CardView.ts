@@ -3,6 +3,7 @@ class CardView extends egret.Sprite{
 	private m_content:egret.Bitmap;
 	private m_star:egret.Bitmap;
 
+	public id:number;
 	public image:string;
 	public audio:string;
 	public cardName:string;
@@ -13,7 +14,7 @@ class CardView extends egret.Sprite{
 		this.m_data = data;
 		this.image = data.image;
 		this.audio = data.audio;
-		this.cardName = data.cardName;
+		this.cardName = data.name;
 
 		//BG
 		var shape = new egret.Shape();
@@ -36,6 +37,8 @@ class CardView extends egret.Sprite{
 	//重置
 	public reset(){
 		DisplayUtil.remove(this.m_star);
+		this.m_content.filters = [];
+		this.touchEnabled = true;
 	}
 
 	//答错 抖动
@@ -48,5 +51,19 @@ class CardView extends egret.Sprite{
 	//答对
 	public right(){
 		this.addChild(this.m_star);
+	}
+
+	public light(){
+		this.m_content.filters = [];
+		this.touchEnabled = true;
+	}
+
+	public dark(){
+		let matrix = [1,0,0,0,-89.25,
+					  0,1,0,0,-89.25,
+					  0,0,1,0,-89.25,
+					  0,0,0,1,0];
+		this.m_content.filters = [new egret.ColorMatrixFilter(matrix)];
+		this.touchEnabled = false;
 	}
 }

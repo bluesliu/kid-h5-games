@@ -18,7 +18,7 @@ var CardView = (function (_super) {
         _this.m_data = data;
         _this.image = data.image;
         _this.audio = data.audio;
-        _this.cardName = data.cardName;
+        _this.cardName = data.name;
         //BG
         var shape = new egret.Shape();
         shape.graphics.beginFill(0xffffff, 0.5);
@@ -38,6 +38,8 @@ var CardView = (function (_super) {
     //重置
     CardView.prototype.reset = function () {
         DisplayUtil.remove(this.m_star);
+        this.m_content.filters = [];
+        this.touchEnabled = true;
     };
     //答错 抖动
     CardView.prototype.wrong = function () {
@@ -49,6 +51,18 @@ var CardView = (function (_super) {
     //答对
     CardView.prototype.right = function () {
         this.addChild(this.m_star);
+    };
+    CardView.prototype.light = function () {
+        this.m_content.filters = [];
+        this.touchEnabled = true;
+    };
+    CardView.prototype.dark = function () {
+        var matrix = [1, 0, 0, 0, -89.25,
+            0, 1, 0, 0, -89.25,
+            0, 0, 1, 0, -89.25,
+            0, 0, 0, 1, 0];
+        this.m_content.filters = [new egret.ColorMatrixFilter(matrix)];
+        this.touchEnabled = false;
     };
     return CardView;
 }(egret.Sprite));

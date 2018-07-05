@@ -64,8 +64,11 @@ var EffectUtils;
             egret.Tween.get(obj).to({ x: obj.x + 20 }, shakeNum);
         }, this, shakeNum * 4);
         egret.setTimeout(function () {
-            egret.Tween.get(obj).to({ x: oldX }, shakeNum);
-            callback();
+            egret.Tween.get(obj).to({ x: oldX }, shakeNum).call(function () {
+                if (callback != null) {
+                    callback();
+                }
+            }, this);
         }, this, shakeNum * 5);
     }
     EffectUtils.shakeObj = shakeObj;

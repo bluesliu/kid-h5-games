@@ -3,7 +3,7 @@ class Game extends egret.Sprite{
 	static instance:Game;
 
 	static WIN_NUM:number = 6;
-	static GAME_TIME:number = 60;
+	static FAIL_NUM:number = 3;
 
 	static GAME_INIT:string = "game_init";
 	static GAME_PLAY:string = "game_play";
@@ -11,6 +11,7 @@ class Game extends egret.Sprite{
 	private m_state:string = Game.GAME_INIT;
 
 	private m_uiLayer:egret.Sprite;
+	private m_roleLayer:egret.Sprite;
 	private m_sceneLayer:egret.Sprite;
 
 	
@@ -25,8 +26,6 @@ class Game extends egret.Sprite{
 	private m_gameStartBox:GameStartBox;
 	//计分板
 	private m_scoreBoard:ScoreBoard;
-	//倒计时面板
-	private m_clockBoard:ClockBoard;
 	//repeat按钮
 	private m_repeatBtn:egret.Bitmap;
 	private m_playAgainBtn:egret.Bitmap;
@@ -48,9 +47,13 @@ class Game extends egret.Sprite{
 	private m_answering:Boolean;
 	//正确的数量
 	private m_rightCount:number = 0;
-	//游戏的倒计时Timer
-	private m_timer:egret.Timer;
+	//错误的数量
+	private m_failCount:number = 0;
 	
+	private m_timer:egret.Timer;
+
+	private laveHand = Array<number>();
+	private laveHand2 = Array<number>();
 
 	public constructor() {
 		super();
@@ -71,6 +74,9 @@ class Game extends egret.Sprite{
 		this.m_sceneLayer = new egret.Sprite();
 		this.addChild(this.m_sceneLayer);
 
+		this.m_roleLayer = new egret.Sprite();
+		this.addChild(this.m_roleLayer);
+
 		//UI层
 		this.m_uiLayer = new egret.Sprite();
 		this.m_uiLayer.touchEnabled = this.m_uiLayer.touchChildren = true;
@@ -86,19 +92,14 @@ class Game extends egret.Sprite{
 		this.m_sceneLayer.addChild(this.m_gameScene);
 
 		//角色
-		this.m_role1 = new RoleView("role1");
-		this.m_role1.x = 576;
-		this.m_role1.y = 735;
-		this.m_sceneLayer.addChild(this.m_role1);
+		this.m_role1 = new RoleView();
+		this.m_role1.x = 213;
+		this.m_role1.y = 567;
+		this.m_roleLayer.addChild(this.m_role1);
 
 		//计分板
 		this.m_scoreBoard = new ScoreBoard();
 		this.m_scoreBoard.show(false, BoxAlign.right_top, new egret.Point(-50,50));
-
-		//倒计时班
-		this.m_clockBoard = new ClockBoard();
-		this.m_clockBoard.show(false, BoxAlign.left_top, new egret.Point(50,50));
-		this.m_clockBoard.text = ""+Game.GAME_TIME;
 
 		//音乐按钮
 		this.m_musicBtn = new MusicBtn();
@@ -176,20 +177,21 @@ class Game extends egret.Sprite{
 
 		//重置分数
 		this.m_rightCount = 0;
+		this.m_failCount = 0;
 		this.m_scoreBoard.setScore(0);
-		
-		//开始倒计时
-		this.startTimer();
 
 		//重置题目
 		this.m_laveList = this.m_qList.concat();
 		ArrayUtil.randomSort(this.m_laveList);
-		//提问
-		this.question();
+		
 
 		//发射卡牌
 		this.m_cardManager.reset();
 		this.m_cardManager.start();
+
+		//提问
+		this.question();
+
     }
 
 	//提问一个新问题
@@ -210,6 +212,8 @@ class Game extends egret.Sprite{
 
 		 //卡牌重新排序
 		 this.m_cardManager.sortCard();
+
+		 this.handRandom();
 	}
 
 
@@ -223,6 +227,7 @@ class Game extends egret.Sprite{
 		this.m_qSound.clear();
 		this.m_curCardView = e.data;
 		
+		this.stopTimer();
 
 		//回答正确
 		if(this.m_curCardView.cardName == this.m_curQuestion.name)
@@ -246,50 +251,87 @@ class Game extends egret.Sprite{
 		this.m_curCardView.right();
 		//答对音效（叮咚）
 		this.m_effSound.clear();
-		this.m_effSound.playRes("U1VOC03_mp3");
+		this.m_effSound.playRes("dingdong_mp3");
 		this.m_effSound.exec(()=>{
 			//全部答对
 			if(this.m_rightCount >= Game.WIN_NUM)
 			{
-				this.stopTimer();
 				//游戏结束
 				this.m_state = Game.GAME_OVER;
 				this.m_cardManager.hideCard();
-				this.m_gameScene.showLamp();
-				this.m_role1.state = RoleState.celebrate_hand;		//拍手
-				this.m_effSound.playRes("U1VOC05_mp3");				//庆祝音效
+				this.m_gameScene.showLamp();				//显示灯光
+				this.m_role1.state = RoleState.celebrate;	//庆祝
+				
+				this.m_effSound.playRes("hualala_mp3");			//哗啦啦的音效
 				this.m_effSound.exec(()=>{ 
 					this.m_role1.state = RoleState.celebrate_mouth; //庆祝表情 + 说话
 				}, this);
-				this.m_effSound.playRes("U1VOC-OS01_mp3").playRes("U1VOC-OS02_mp3");
+				this.m_effSound.playRes("U1SNS-OS05_mp3").playRes("U1SNS-OS06_mp3");
 				this.m_effSound.exec(()=>{
 					this.m_role1.state = RoleState.celebrate;
 					this.m_playAgainBtn.visible = true;
 					this.submit(true);
-				}, this);
+				}, this);	
 			}
 			else{
-				//继续答题
-				this.question();
-				this.m_role1.state = RoleState.idle;	
+				this.m_role1.state = RoleState.happy_mouth;	//开心的说话
+				this.m_effSound.playResRandom(["U1SNS-OS01_mp3","U1SNS-OS02_mp3"]);
+				this.m_effSound.exec(()=>{
+					//继续答题
+					this.question();
+					this.m_role1.state = RoleState.idle;
+				},this);	
 			}
 		}, this);
+		
 	}
 
 	//回答错误
 	private answerWrong(){
+		this.m_failCount += 1;
 		this.m_role1.state = RoleState.sad;	//难过
 		this.m_curCardView.wrong();
 		this.m_effSound.clear();
-		this.m_effSound.playRes("U1VOC04_mp3");	//答错音效
+		this.m_effSound.playRes("chacha_mp3");	//答错音效
 		this.m_effSound.exec(()=>{
-			//继续答题，重新朗读题目
-			this.m_role1.state = RoleState.idle;
-			this.m_qSound.playRes(this.m_curQuestion.audio).exec(()=>{
-				this.m_repeatBtn.visible = true;
-			},self);
-			this.m_answering = false;
+
+			if(this.m_failCount >= Game.FAIL_NUM)
+			{
+				//游戏结束
+				this.m_state = Game.GAME_OVER;
+				this.m_qSound.clear();
+				this.m_cardManager.hideCard();
+
+				//啪 关灯
+				this.m_gameScene.black();
+				this.m_role1.state = RoleState.fail;
+				this.m_effSound.playRes("pa_mp3");
+				this.m_effSound.playRes("U1SNS-OS07_mp3").playRes("U1SNS-OS08_mp3");
+				this.m_effSound.exec(()=>{
+					
+					//弹出失败窗口
+					this.submit(false);
+					this.m_tryAgainBtn.visible = true;
+
+				},this);
+				
+			}
+			else
+			{
+				this.m_role1.state = RoleState.sad_mouth;	//难过+说话
+				this.m_effSound.playResRandom(["U1SNS-OS03_mp3","U1SNS-OS04_mp3"]);
+				this.m_effSound.exec(()=>{
+					//继续答题，重新朗读题目
+					this.m_role1.state = RoleState.idle;
+					this.m_qSound.playRes(this.m_curQuestion.audio).exec(()=>{
+						this.m_repeatBtn.visible = true;
+						this.handRandom();
+					},self);
+					this.m_answering = false;
+				},this);
+			}
 		},this);
+
 	}
 
 
@@ -305,53 +347,43 @@ class Game extends egret.Sprite{
 		}
 	}
 
+	
+
 	private stopTimer(){
 		if(this.m_timer){
+			this.m_timer.removeEventListener(egret.TimerEvent.COMPLETE, this.onTimerComplete, this);
 			this.m_timer.stop();
-			this.m_timer.removeEventListener(egret.TimerEvent.TIMER, this.onTimer, this);
-			this.m_timer.removeEventListener(egret.TimerEvent.TIMER_COMPLETE, this.onTimerComplete, this);
+			this.m_timer = null;
 		}
-		this.m_timer = null;
 	}
-
+	
 	private startTimer(){
 		this.stopTimer();
-		this.m_timer = new egret.Timer(1000, Game.GAME_TIME);
-		this.m_timer.addEventListener(egret.TimerEvent.TIMER, this.onTimer, this);
+		this.m_timer = new egret.Timer(3000, 1);
 		this.m_timer.addEventListener(egret.TimerEvent.TIMER_COMPLETE, this.onTimerComplete, this);
 		this.m_timer.start();
-		this.onTimer(null);	//首次更新一下文本框
-	}
-
-	private onTimer(e:egret.TimerEvent){
-		this.m_clockBoard.text = ""+(this.m_timer.repeatCount - this.m_timer.currentCount);
 	}
 
 	private onTimerComplete(e:egret.TimerEvent){
+		this.handRandom();
+	}
+
+	private handRandom(){
 		this.stopTimer();
-		//游戏结束
-		this.m_state = Game.GAME_OVER;
-		this.m_effSound.clear();
-		this.m_qSound.clear();
-		this.m_cardManager.wrong();
 
-		this.m_role1.state = RoleState.sad;
-		
-		//刮风音效
-		this.m_effSound.clear();
-		this.m_effSound.playRes("U1VOC06_mp3").playRes("U1VOC07_mp3");
-		this.m_effSound.exec(()=>{
-			this.m_role1.state = RoleState.sad_mouth;
-		},this);
-		this.m_effSound.playRes("U1VOC-OS03_mp3");
-		this.m_effSound.exec(()=>{
-			this.m_role1.state = RoleState.sad;
-		},this);
-		
+		if(this.laveHand.length == 0){
+			this.laveHand = [1,2,3,4];
+			ArrayUtil.randomSort(this.laveHand);
+			while(this.laveHand2[3] == this.laveHand[0]){
+				ArrayUtil.randomSort(this.laveHand);
+			}
+		}
+		this.laveHand2 = this.laveHand.concat();
+		let frame = this.laveHand.shift();
+		this.m_role1.setHand(frame);
+		this.m_cardManager.setLight(frame);
 
-		//弹出失败窗口
-		this.submit(false);
-		this.m_tryAgainBtn.visible = true;
+		this.startTimer();
 	}
 
 	//提交游戏结果

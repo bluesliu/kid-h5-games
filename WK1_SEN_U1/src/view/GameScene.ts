@@ -6,6 +6,8 @@ class GameScene extends egret.Sprite{
 	private m_paopaoArr:Array<egret.MovieClip>;
 	private m_paopaoPos = [new egret.Point(399,454), new egret.Point(779,198), new egret.Point(1239,410), 
 						   new egret.Point(1673,218), new egret.Point(703,815), new egret.Point(1501,859)];
+	private m_black:egret.Sprite;
+
 	public constructor() {
 		super();
 
@@ -19,6 +21,11 @@ class GameScene extends egret.Sprite{
 		this.m_lamp.y = 112;
 
 		this.m_paopaoArr = new Array<egret.MovieClip>();
+
+		this.m_black = new egret.Sprite();
+		this.m_black.graphics.beginFill(0x333333);
+		this.m_black.graphics.drawRect(0,0,1920,1080);
+		this.m_black.graphics.endFill();
 	}
 
 	public showLamp(){
@@ -41,6 +48,11 @@ class GameScene extends egret.Sprite{
 			},this);
 		}
 	}
+
+	public black(){
+		this.reset();
+		this.addChild(this.m_black);
+	}
 	
 	public reset(){
 		DisplayUtil.remove(this.m_lamp);
@@ -52,5 +64,6 @@ class GameScene extends egret.Sprite{
 			egret.Tween.removeTweens(paopao);
 		}
 		this.m_paopaoArr.length = 0;
+		DisplayUtil.remove(this.m_black);
 	}
 }

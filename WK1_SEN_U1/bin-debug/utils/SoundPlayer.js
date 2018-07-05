@@ -28,11 +28,16 @@ var SoundPlayer = (function (_super) {
         }, this, 0);
         return this;
     };
+    SoundPlayer.prototype.playResRandom = function (keys, loop, volume) {
+        if (loop === void 0) { loop = 1; }
+        if (volume === void 0) { volume = 1; }
+        var index = MathUtil.random(0, keys.length - 1, 1);
+        return this.playRes(keys[index], loop, volume);
+    };
     SoundPlayer.prototype.playRes = function (key, loop, volume) {
         var _this = this;
         if (loop === void 0) { loop = 1; }
         if (volume === void 0) { volume = 1; }
-        Println("playRes key:" + key + " loop:" + loop + " volume:" + volume);
         var task = { type: "playRes", data: { key: key, loop: loop, volume: volume } };
         if (this.m_waitting) {
             this.m_taskList.push(task);
@@ -63,7 +68,6 @@ var SoundPlayer = (function (_super) {
         this._channel = this._sound.play(0, this._loop);
         this._channel.volume = this._volume;
         this._channel.addEventListener(egret.Event.SOUND_COMPLETE, this.onPlayComplete, this);
-        Println("doPlayRes key:" + key + " sound:" + this._sound);
     };
     SoundPlayer.prototype.stopSound = function () {
         if (this._channel) {
