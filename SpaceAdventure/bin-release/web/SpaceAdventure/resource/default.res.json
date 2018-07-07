@@ -1,0 +1,154 @@
+{
+	"groups": [
+		{
+			"keys": "btn_down_png,btn_up_png,fail_0_png,fail_1_png,fail_2_png,gstars_png,love_png,love_panel_png,spaceadventure_1_png,spaceadventure_2_png,spaceadventure_3_png,spaceadventure_4_png,spaceadventure_5_png,stars_png,start_png,success_0_png,success_1_png,success_2_png,bgmusic_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "HC1-Sentences Game-T3U1-1_big_png,HC1-Sentences Game-T3U1-2_small_png,HC1-Sentences Game-T3U1-3_long_png,HC1-Sentences Game-T3U1-4_short_png,HC1-Sentences Game-T3U1_1_mp3,HC1-Sentences Game-T3U1_2_mp3,HC1-Sentences Game-T3U1_3_mp3,HC1-Sentences Game-T3U1_4_mp3,HC1_T3U1_json",
+			"name": "HC1_T3U1"
+		}
+	],
+	"resources": [
+		{
+			"url": "skin/btn_down.png",
+			"type": "image",
+			"name": "btn_down_png"
+		},
+		{
+			"url": "skin/btn_up.png",
+			"type": "image",
+			"name": "btn_up_png"
+		},
+		{
+			"url": "skin/fail_0.png",
+			"type": "image",
+			"name": "fail_0_png"
+		},
+		{
+			"url": "skin/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "skin/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "skin/gstars.png",
+			"type": "image",
+			"name": "gstars_png"
+		},
+		{
+			"url": "skin/love.png",
+			"type": "image",
+			"name": "love_png"
+		},
+		{
+			"url": "skin/love_panel.png",
+			"type": "image",
+			"name": "love_panel_png"
+		},
+		{
+			"url": "skin/spaceadventure_1.png",
+			"type": "image",
+			"name": "spaceadventure_1_png"
+		},
+		{
+			"url": "skin/spaceadventure_2.png",
+			"type": "image",
+			"name": "spaceadventure_2_png"
+		},
+		{
+			"url": "skin/spaceadventure_3.png",
+			"type": "image",
+			"name": "spaceadventure_3_png"
+		},
+		{
+			"url": "skin/spaceadventure_4.png",
+			"type": "image",
+			"name": "spaceadventure_4_png"
+		},
+		{
+			"url": "skin/spaceadventure_5.png",
+			"type": "image",
+			"name": "spaceadventure_5_png"
+		},
+		{
+			"url": "skin/stars.png",
+			"type": "image",
+			"name": "stars_png"
+		},
+		{
+			"url": "skin/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "skin/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "skin/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "skin/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1-1_big.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U1-1_big_png"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1-2_small.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U1-2_small_png"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1-3_long.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U1-3_long_png"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1-4_short.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U1-4_short_png"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U1_1_mp3"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1_2.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U1_2_mp3"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1_3.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U1_3_mp3"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1-Sentences Game-T3U1_4.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U1_4_mp3"
+		},
+		{
+			"url": "data/HC1_T3U1/HC1_T3U1.json",
+			"type": "json",
+			"name": "HC1_T3U1_json"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	
+	"items": [
+		{
+			"title": "small",
+			"img": "HC1-Sentences Game-T3U1-2_small_png",
+			"audio": "HC1-Sentences Game-T3U1_1_mp3"
+			
+		},
+		{
+			"title": "big",
+			"img": "HC1-Sentences Game-T3U1-1_big_png",
+			"audio": "HC1-Sentences Game-T3U1_2_mp3"
+			
+		},
+		{
+			"title": "long",
+			"img": "HC1-Sentences Game-T3U1-3_long_png",
+			"audio": "HC1-Sentences Game-T3U1_3_mp3"
+			
+		},
+		{
+			"title": "short",
+			"img": "HC1-Sentences Game-T3U1-4_short_png",
+			"audio": "HC1-Sentences Game-T3U1_4_mp3"
+			
+		}
+	]
+}
