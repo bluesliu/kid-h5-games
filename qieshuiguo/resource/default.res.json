@@ -1,11 +1,11 @@
 {
 	"groups": [
 		{
-			"keys": "huoqiu_png,shuZi1_png,shuZi2_png,shuZi3_png,zhuangshi_png,Long_shiBai_png,game_over_png,huo_hong_png,huo_hui_png,kaTong_png,Level_Completed_png,Long_chenggong_png,hongXin_png,huixin_png,xingxing_kuang_png,bichu_png,long_png,bgmusic_mp3,kaishi_png,bg_png,Long_swf_png,Long_swf_json,fire_json,firework_png,leaftexiao_png,rock_png,star_png,sun_json,quit_png,yunduo_png,chuangtai_png,xingkong_png,kaixin_png,shibai_png,tryagain_png,HC1_T1U2_json,HC1_T4U12_json",
+			"keys": "huoqiu_png,shuZi1_png,shuZi2_png,shuZi3_png,zhuangshi_png,Long_shiBai_png,game_over_png,huo_hong_png,huo_hui_png,kaTong_png,Level_Completed_png,Long_chenggong_png,hongXin_png,huixin_png,xingxing_kuang_png,bichu_png,long_png,bgmusic_mp3,kaishi_png,bg_png,Long_swf_png,Long_swf_json,fire_json,firework_png,leaftexiao_png,rock_png,star_png,sun_json,quit_png,yunduo_png,chuangtai_png,xingkong_png,kaixin_png,shibai_png,tryagain_png",
 			"name": "preload"
 		},
 		{
-			"keys": "HC1-Sentences Game-T1U1-4_cup_png,HC1-Sentences Game-T1U1-3_hat_png,HC1-Sentences Game-T1U1-2_bag_png,HC1-Sentences Game-T1U1-1_book_png,HC1-Sentences Game-T1U1_4_mp3,HC1-Sentences Game-T1U1_3_mp3,HC1-Sentences Game-T1U1_2_mp3,HC1-Sentences Game-T1U1_1_mp3",
+			"keys": "HC1-Sentences Game-T1U1-4_cup_png,HC1-Sentences Game-T1U1-3_hat_png,HC1-Sentences Game-T1U1-2_bag_png,HC1-Sentences Game-T1U1-1_book_png,HC1-Sentences Game-T1U1_4_mp3,HC1-Sentences Game-T1U1_3_mp3,HC1-Sentences Game-T1U1_2_mp3,HC1-Sentences Game-T1U1_1_mp3,HC1_T1U2_json",
 			"name": "HC1_T1U2"
 		},
 		{
@@ -13,7 +13,7 @@
 			"name": "HC1_T4U1"
 		},
 		{
-			"keys": "HC6-Sentences Game-T4U1-6_heart_png,HC6-Sentences Game-T4U1-5_square_png,HC6-Sentences Game-T4U1-4_rectangle_png,HC6-Sentences Game-T4U1-3_triangle_png,HC6-Sentences Game-T4U1-2_circle_png,HC6-Sentences Game-T4U1-1_star_png,HC6-Sentences Game-T4U1_6_mp3,HC6-Sentences Game-T4U1_5_mp3,HC6-Sentences Game-T4U1_4_mp3,HC6-Sentences Game-T4U1_3_mp3,HC6-Sentences Game-T4U1_2_mp3,HC6-Sentences Game-T4U1_1_mp3,HC1_T4U12_json",
+			"keys": "HC6-Sentences Game-T4U1-6_heart_png,HC6-Sentences Game-T4U1-5_square_png,HC6-Sentences Game-T4U1-4_rectangle_png,HC6-Sentences Game-T4U1-3_triangle_png,HC6-Sentences Game-T4U1-2_circle_png,HC6-Sentences Game-T4U1-1_star_png,HC6-Sentences Game-T4U1_6_mp3,HC6-Sentences Game-T4U1_5_mp3,HC6-Sentences Game-T4U1_4_mp3,HC6-Sentences Game-T4U1_3_mp3,HC6-Sentences Game-T4U1_2_mp3,HC6-Sentences Game-T4U1_1_mp3,HC6_T4U1_json",
 			"name": "HC6_T4U1"
 		}
 	],
@@ -304,11 +304,6 @@
 			"name": "HC1_T1U2_json"
 		},
 		{
-			"url": "HC6_T4U1/HC1_T4U1.json",
-			"type": "json",
-			"name": "HC1_T4U12_json"
-		},
-		{
 			"url": "HC6_T4U1/HC6-Sentences Game-T4U1-1_star.png",
 			"type": "image",
 			"name": "HC6-Sentences Game-T4U1-1_star_png"
@@ -367,6 +362,11 @@
 			"url": "HC6_T4U1/HC6-Sentences Game-T4U1_6.mp3",
 			"type": "sound",
 			"name": "HC6-Sentences Game-T4U1_6_mp3"
+		},
+		{
+			"url": "HC6_T4U1/HC6_T4U1.json",
+			"type": "json",
+			"name": "HC6_T4U1_json"
 		}
 	]
 }
