@@ -1,0 +1,265 @@
+{
+	"groups": [
+		{
+			"keys": "config_json,U1SNS-OS01_mp3,U1SNS-OS02_mp3,U1SNS-OS03_mp3,U1SNS-OS04_mp3,U1SNS-OS05_mp3,U1SNS-OS06_mp3,U1SNS-OS07_mp3,U1SNS-OS08_mp3,U1SNS01_mp3,bgmusic_mp3,lamp_json,lamp_png,paopao_json,paopao_png,role_celebrate_json,role_celebrate_png,role_happy_json,role_happy_png,role_idle_json,role_idle_png,role_sad_json,role_sad_png,scene_jpg,clock_png,musicBtn_png,muteBtn_png,playAgainBtn_png,repatBtn_png,star_png,starDark_png,starLight_png,start_png,tryAgainBtn_png,dingdong_mp3,Clap_mp3,clap_mp3,hualala_mp3,chacha_mp3,pa_mp3,hand_json,hand_png,U7S001_png,U7S002_png,U7S003_png,U7S004_png,U7S001_mp3,U7S003_mp3,U7S002_mp3,U7S004_mp3,card_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/config.json",
+			"type": "json",
+			"name": "config_json"
+		},
+		{
+			"url": "audio/U1SNS-OS01.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS01_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS02.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS02_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS03.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS03_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS04.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS04_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS05.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS05_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS06.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS06_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS07.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS07_mp3"
+		},
+		{
+			"url": "audio/U1SNS-OS08.mp3",
+			"type": "sound",
+			"name": "U1SNS-OS08_mp3"
+		},
+		{
+			"url": "audio/U1SNS01.mp3",
+			"type": "sound",
+			"name": "U1SNS01_mp3"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "mc/lamp.json",
+			"type": "json",
+			"name": "lamp_json"
+		},
+		{
+			"url": "mc/lamp.png",
+			"type": "image",
+			"name": "lamp_png"
+		},
+		{
+			"url": "mc/paopao.json",
+			"type": "json",
+			"name": "paopao_json"
+		},
+		{
+			"url": "mc/paopao.png",
+			"type": "image",
+			"name": "paopao_png"
+		},
+		{
+			"url": "mc/role_celebrate.json",
+			"type": "json",
+			"name": "role_celebrate_json"
+		},
+		{
+			"url": "mc/role_celebrate.png",
+			"type": "image",
+			"name": "role_celebrate_png"
+		},
+		{
+			"url": "mc/role_happy.json",
+			"type": "json",
+			"name": "role_happy_json"
+		},
+		{
+			"url": "mc/role_happy.png",
+			"type": "image",
+			"name": "role_happy_png"
+		},
+		{
+			"url": "mc/role_idle.json",
+			"type": "json",
+			"name": "role_idle_json"
+		},
+		{
+			"url": "mc/role_idle.png",
+			"type": "image",
+			"name": "role_idle_png"
+		},
+		{
+			"url": "mc/role_sad.json",
+			"type": "json",
+			"name": "role_sad_json"
+		},
+		{
+			"url": "mc/role_sad.png",
+			"type": "image",
+			"name": "role_sad_png"
+		},
+		{
+			"url": "scene/scene.jpg",
+			"type": "image",
+			"name": "scene_jpg"
+		},
+		{
+			"url": "ui/clock.png",
+			"type": "image",
+			"name": "clock_png"
+		},
+		{
+			"url": "ui/musicBtn.png",
+			"type": "image",
+			"name": "musicBtn_png"
+		},
+		{
+			"url": "ui/muteBtn.png",
+			"type": "image",
+			"name": "muteBtn_png"
+		},
+		{
+			"url": "ui/playAgainBtn.png",
+			"type": "image",
+			"name": "playAgainBtn_png"
+		},
+		{
+			"url": "ui/repatBtn.png",
+			"type": "image",
+			"name": "repatBtn_png"
+		},
+		{
+			"url": "ui/star.png",
+			"type": "image",
+			"name": "star_png"
+		},
+		{
+			"url": "ui/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "ui/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "ui/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "ui/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "audio/Clap.mp3",
+			"type": "sound",
+			"name": "Clap_mp3"
+		},
+		{
+			"url": "audio/clap.mp3",
+			"type": "sound",
+			"name": "clap_mp3"
+		},
+		{
+			"url": "audio/hualala.mp3",
+			"type": "sound",
+			"name": "hualala_mp3"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "audio/pa.mp3",
+			"type": "sound",
+			"name": "pa_mp3"
+		},
+		{
+			"url": "mc/hand.json",
+			"type": "json",
+			"name": "hand_json"
+		},
+		{
+			"url": "mc/hand.png",
+			"type": "image",
+			"name": "hand_png"
+		},
+		{
+			"url": "card/U7S001.png",
+			"type": "image",
+			"name": "U7S001_png"
+		},
+		{
+			"url": "card/U7S002.png",
+			"type": "image",
+			"name": "U7S002_png"
+		},
+		{
+			"url": "card/U7S003.png",
+			"type": "image",
+			"name": "U7S003_png"
+		},
+		{
+			"url": "card/U7S004.png",
+			"type": "image",
+			"name": "U7S004_png"
+		},
+		{
+			"url": "card/U7S001.mp3",
+			"type": "sound",
+			"name": "U7S001_mp3"
+		},
+		{
+			"url": "card/U7S003.mp3",
+			"type": "sound",
+			"name": "U7S003_mp3"
+		},
+		{
+			"url": "card/U7S002.mp3",
+			"type": "sound",
+			"name": "U7S002_mp3"
+		},
+		{
+			"url": "card/U7S004.mp3",
+			"type": "sound",
+			"name": "U7S004_mp3"
+		},
+		{
+			"url": "scene/card.png",
+			"type": "image",
+			"name": "card_png"
+		}
+	]
+}
