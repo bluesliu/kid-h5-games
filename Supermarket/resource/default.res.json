@@ -1,0 +1,174 @@
+{
+	"groups": [
+		{
+			"keys": "8367_mp3,bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,arrow_png,arrow2_png,role_json,role_png,car_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png",
+			"name": "preload"
+		},
+		{
+			"keys": "HC2_T2U1_4_mp3,HC2_T2U1_2_mp3,HC2_T2U1_3_mp3,HC2_T2U1_1_mp3,HC2_T2U1_4_png,HC2_T2U1_1_png,HC2_T2U1_2_png,HC2_T2U1_3_png,HC2_T2U1_json",
+			"name": "HC2_T2U1"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/8367.mp3",
+			"type": "sound",
+			"name": "8367_mp3"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_4.mp3",
+			"type": "sound",
+			"name": "HC2_T2U1_4_mp3"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_2.mp3",
+			"type": "sound",
+			"name": "HC2_T2U1_2_mp3"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_3.mp3",
+			"type": "sound",
+			"name": "HC2_T2U1_3_mp3"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_1.mp3",
+			"type": "sound",
+			"name": "HC2_T2U1_1_mp3"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_4.png",
+			"type": "image",
+			"name": "HC2_T2U1_4_png"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_1.png",
+			"type": "image",
+			"name": "HC2_T2U1_1_png"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_2.png",
+			"type": "image",
+			"name": "HC2_T2U1_2_png"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1_3.png",
+			"type": "image",
+			"name": "HC2_T2U1_3_png"
+		},
+		{
+			"url": "data/HC2_T2U1/HC2_T2U1.json",
+			"type": "json",
+			"name": "HC2_T2U1_json"
+		},
+		{
+			"name": "bg_png",
+			"type": "image",
+			"url": "scene1/bg.png"
+		},
+		{
+			"name": "arrow_png",
+			"type": "image",
+			"url": "scene1/arrow.png"
+		},
+		{
+			"name": "arrow2_png",
+			"type": "image",
+			"url": "scene1/arrow2.png"
+		},
+		{
+			"name": "role_json",
+			"type": "json",
+			"url": "scene1/role.json"
+		},
+		{
+			"name": "role_png",
+			"type": "image",
+			"url": "scene1/role.png"
+		},
+		{
+			"name": "car_png",
+			"type": "image",
+			"url": "scene1/car.png"
+		},
+		{
+			"name": "starDark_png",
+			"type": "image",
+			"url": "scene1/starDark.png"
+		},
+		{
+			"name": "starLight_png",
+			"type": "image",
+			"url": "scene1/starLight.png"
+		},
+		{
+			"name": "lifeBoard_png",
+			"type": "image",
+			"url": "scene1/lifeBoard.png"
+		},
+		{
+			"name": "heartLight_png",
+			"type": "image",
+			"url": "scene1/heartLight.png"
+		},
+		{
+			"name": "heartDark_png",
+			"type": "image",
+			"url": "scene1/heartDark.png"
+		},
+		{
+			"name": "tryAgainBtn_png",
+			"type": "image",
+			"url": "scene1/tryAgainBtn.png"
+		},
+		{
+			"name": "nextBtn_png",
+			"type": "image",
+			"url": "scene1/nextBtn.png"
+		},
+		{
+			"name": "fail_1_png",
+			"type": "image",
+			"url": "scene1/fail_1.png"
+		},
+		{
+			"name": "fail_2_png",
+			"type": "image",
+			"url": "scene1/fail_2.png"
+		}
+	]
+}

@@ -1,0 +1,22 @@
+{"mc":{
+	"role":{
+		"frameRate":24,
+		"labels":[
+			{"name":"idle","frame":1,"end":1}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"2BABB349",
+			"x":-161,
+			"y":-474
+			}
+			]
+}},
+	"res":{
+		"2BABB349":{"x":1,"y":1,"w":351,"h":506}
+	}}
