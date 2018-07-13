@@ -1,0 +1,46 @@
+{"mc":{
+	"pingZi123":{
+		"frameRate":24,
+		"labels":[
+			{"name":"idle","frame":1,"end":4}
+			,{"name":"state1","frame":5,"end":9}
+			,{"name":"state2","frame":10,"end":14}
+			,{"name":"state3","frame":15,"end":15}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"DCC088D8",
+			"x":8,
+			"y":-150,
+			"duration":4
+			},
+			{
+			"res":"AB17E8CC",
+			"x":8,
+			"y":-150,
+			"duration":5
+			},
+			{
+			"res":"588E6DAC",
+			"x":8,
+			"y":-150,
+			"duration":5
+			},
+			{
+			"res":"3ED9812D",
+			"x":8,
+			"y":-150
+			}
+			]
+}},
+	"res":{
+		"3ED9812D":{"x":1,"y":1,"w":229,"h":151},
+		"588E6DAC":{"x":232,"y":1,"w":229,"h":151},
+		"DCC088D8":{"x":1,"y":154,"w":229,"h":151},
+		"AB17E8CC":{"x":232,"y":154,"w":229,"h":151}
+	}}

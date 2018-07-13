@@ -1,0 +1,30 @@
+{"mc":{
+	"pingZi6":{
+		"frameRate":24,
+		"labels":[
+			{"name":"idle","frame":1,"end":4}
+			,{"name":"state6","frame":5,"end":5}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"8E4F6D6E",
+			"x":0,
+			"y":-138,
+			"duration":4
+			},
+			{
+			"res":"2144DF1C",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"2144DF1C":{"x":93,"y":1,"w":1,"h":1},
+		"8E4F6D6E":{"x":1,"y":1,"w":90,"h":139}
+	}}

@@ -1,0 +1,39 @@
+{"mc":{
+	"role":{
+		"frameRate":24,
+		"labels":[
+			{"name":"idle","frame":1,"end":4}
+			,{"name":"right","frame":5,"end":9}
+			,{"name":"wrong","frame":10,"end":14}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"5866F6FA",
+			"x":-156,
+			"y":-482,
+			"duration":4
+			},
+			{
+			"res":"AB219F19",
+			"x":-170,
+			"y":-482,
+			"duration":5
+			},
+			{
+			"res":"90E31AD1",
+			"x":-156,
+			"y":-482,
+			"duration":5
+			}
+			]
+}},
+	"res":{
+		"90E31AD1":{"x":637,"y":1,"w":293,"h":516},
+		"5866F6FA":{"x":342,"y":1,"w":293,"h":516},
+		"AB219F19":{"x":1,"y":1,"w":339,"h":516}
+	}}

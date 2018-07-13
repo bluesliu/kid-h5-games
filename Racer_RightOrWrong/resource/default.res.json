@@ -1,0 +1,259 @@
+{
+	"groups": [
+		{
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,chacha_mp3,card_png,leftArrow_png,rightArrow_png,role_json,role_png,right_png,wrong_png",
+			"name": "preload"
+		},
+		{
+			"keys": "worker_png,police officer_png,nurse_png,Is she a worker_mp3,Is she a police officer_mp3,Is she a nurse_mp3,Is she a farmer_mp3,Is she a doctor_mp3,Is she a cook_mp3,Is he a worker_mp3,Is he a police officer_mp3,Is he a nurse_mp3,Is he a farmer_mp3,Is he a doctor_mp3,Is he a cook_mp3,farmer_png,doctor_png,cook_png,HC4_T1U2_json,Yes he_mp3,No he_mp3,No she_mp3,Yes she_mp3",
+			"name": "HC4_T1U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "scene1/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "scene1/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "scene1/lifeBoard.png",
+			"type": "image",
+			"name": "lifeBoard_png"
+		},
+		{
+			"url": "scene1/heartLight.png",
+			"type": "image",
+			"name": "heartLight_png"
+		},
+		{
+			"url": "scene1/heartDark.png",
+			"type": "image",
+			"name": "heartDark_png"
+		},
+		{
+			"url": "scene1/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "scene1/nextBtn.png",
+			"type": "image",
+			"name": "nextBtn_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "scene1/card.png",
+			"type": "image",
+			"name": "card_png"
+		},
+		{
+			"url": "scene1/leftArrow.png",
+			"type": "image",
+			"name": "leftArrow_png"
+		},
+		{
+			"url": "scene1/rightArrow.png",
+			"type": "image",
+			"name": "rightArrow_png"
+		},
+		{
+			"url": "mc/role.json",
+			"type": "json",
+			"name": "role_json"
+		},
+		{
+			"url": "mc/role.png",
+			"type": "image",
+			"name": "role_png"
+		},
+		{
+			"url": "data/HC4_T1U2/cook.png",
+			"type": "image",
+			"name": "cook_png"
+		},
+		{
+			"url": "data/HC4_T1U2/farmer.png",
+			"type": "image",
+			"name": "farmer_png"
+		},
+		{
+			"url": "data/HC4_T1U2/doctor.png",
+			"type": "image",
+			"name": "doctor_png"
+		},
+		{
+			"url": "data/HC4_T1U2/nurse.png",
+			"type": "image",
+			"name": "nurse_png"
+		},
+		{
+			"url": "data/HC4_T1U2/police officer.png",
+			"type": "image",
+			"name": "police officer_png"
+		},
+		{
+			"url": "data/HC4_T1U2/worker.png",
+			"type": "image",
+			"name": "worker_png"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a cook.mp3",
+			"type": "sound",
+			"name": "Is he a cook_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a doctor.mp3",
+			"type": "sound",
+			"name": "Is he a doctor_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a farmer.mp3",
+			"type": "sound",
+			"name": "Is he a farmer_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a nurse.mp3",
+			"type": "sound",
+			"name": "Is he a nurse_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a police officer.mp3",
+			"type": "sound",
+			"name": "Is he a police officer_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is he a worker.mp3",
+			"type": "sound",
+			"name": "Is he a worker_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a cook.mp3",
+			"type": "sound",
+			"name": "Is she a cook_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a doctor.mp3",
+			"type": "sound",
+			"name": "Is she a doctor_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a farmer.mp3",
+			"type": "sound",
+			"name": "Is she a farmer_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a nurse.mp3",
+			"type": "sound",
+			"name": "Is she a nurse_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a police officer.mp3",
+			"type": "sound",
+			"name": "Is she a police officer_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Is she a worker.mp3",
+			"type": "sound",
+			"name": "Is she a worker_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/No, he's not.mp3",
+			"type": "sound",
+			"name": "No he_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/No, she's not.mp3",
+			"type": "sound",
+			"name": "No she_mp3"
+		},
+		{
+			"url": "default.res.json",
+			"type": "json",
+			"name": "default.res_json"
+		},
+		{
+			"url": "data/HC4_T1U2/HC4_T1U2.json",
+			"type": "json",
+			"name": "HC4_T1U2_json"
+		},
+		{
+			"url": "scene1/right.png",
+			"type": "image",
+			"name": "right_png"
+		},
+		{
+			"url": "scene1/wrong.png",
+			"type": "image",
+			"name": "wrong_png"
+		},
+		{
+			"url": "data/HC4_T1U2/Yes, he is.mp3",
+			"type": "sound",
+			"name": "Yes he_mp3"
+		},
+		{
+			"url": "data/HC4_T1U2/Yes, she is.mp3",
+			"type": "sound",
+			"name": "Yes she_mp3"
+		}
+	]
+}

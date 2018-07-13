@@ -1,0 +1,30 @@
+{"mc":{
+	"pingZi4":{
+		"frameRate":24,
+		"labels":[
+			{"name":"idle","frame":1,"end":4}
+			,{"name":"state4","frame":5,"end":5}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"EDA460D",
+			"x":0,
+			"y":-175,
+			"duration":4
+			},
+			{
+			"res":"2144DF1C",
+			"x":0,
+			"y":0
+			}
+			]
+}},
+	"res":{
+		"EDA460D":{"x":1,"y":1,"w":123,"h":175},
+		"2144DF1C":{"x":126,"y":1,"w":1,"h":1}
+	}}

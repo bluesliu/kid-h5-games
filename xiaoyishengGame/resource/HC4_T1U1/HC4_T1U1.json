@@ -1,0 +1,80 @@
+[
+    {
+        "type":"changTXT"
+    },
+    {
+        "id": "0",
+        "tiMu":"he is",
+        "tupian":"HC4-Sentences Game-T1U1-1_father_png",
+        "shengyin": "HC4-Sentences Game-T1U1_2_mp3",
+        "xuanXiang": [
+           "father_png",
+           "brother_png",
+           "grandpa_png"
+        ],
+        "daAn":"0"
+    },
+    {
+        "id": "1",
+        "tiMu":"he is",
+        "tupian":"HC4-Sentences Game-T1U1-3_brother_png",
+        "shengyin": "HC4-Sentences Game-T1U1_3_mp3",
+        "xuanXiang": [
+           "grandpa_png",
+           "father_png",
+            "brother_png"
+        ],
+        "daAn":"2"
+    },
+    {
+        "id": "2",
+        "tiMu":"he is",
+        "tupian":"HC4-Sentences Game-T1U1-5_grandpa_png",
+        "shengyin": "HC4-Sentences Game-T1U1_1_mp3",
+        "xuanXiang": [
+          
+           "grandpa_png",
+           "father_png",
+            "brother_png"
+        ],
+        "daAn":"0"
+    },
+    {
+        "id": "3",
+        "tiMu":"she is",
+        "tupian":"HC4-Sentences Game-T1U1-2_mother_png",
+        "shengyin": "HC4-Sentences Game-T1U1_5_mp3",
+        "xuanXiang": [
+            "mother_png",
+           "sisiter_png",
+            "grandma_png"
+        ],
+        "daAn":"0"
+    },
+    {
+        "id": "4",
+        "tiMu":"she is",
+        "tupian":"HC4-Sentences Game-T1U1-4_sister_png",
+        "shengyin": "HC4-Sentences Game-T1U1_6_mp3",
+        "xuanXiang": [
+          
+           "mother_png",
+           "sisiter_png",
+            "grandma_png"
+        ],
+        "daAn":"1"
+    },
+    {
+        "id": "5",
+        "tiMu":"she is",
+        "tupian":"HC4-Sentences Game-T1U1-6_grandma_png",
+        "shengyin": "HC4-Sentences Game-T1U1_4_mp3",
+        "xuanXiang": [
+          
+           "mother_png",
+           "sisiter_png",
+            "grandma_png"
+        ],
+        "daAn":"2"
+    }
+ ]

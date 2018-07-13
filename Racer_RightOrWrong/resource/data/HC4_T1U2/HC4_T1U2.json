@@ -1,0 +1,55 @@
+{
+
+"list":[
+	{
+	"name":"cook",
+	"image":"cook_png",
+	"q1":"Is he a cook_mp3",
+	"a1":"Yes he_mp3",
+	"q2":"Is she a cook_mp3",
+	"a2":"No he_mp3"
+	},
+	{
+	"name":"doctor",
+	"image":"doctor_png",
+	"q1":"Is he a doctor_mp3",
+	"a1":"Yes he_mp3",
+	"q2":"Is she a doctor_mp3",
+	"a2":"No he_mp3"
+	},
+	{
+	"name":"farmer",
+	"image":"farmer_png",
+	"q1":"Is he a farmer_mp3",
+	"a1":"Yes he_mp3",
+	"q2":"Is she a farmer_mp3",
+	"a2":"No he_mp3"
+	},
+	{
+	"name":"nurse",
+	"image":"nurse_png",
+	"q1":"Is she a nurse_mp3",
+	"a1":"Yes she_mp3",
+	"q2":"Is he a nurse_mp3",
+	"a2":"No she_mp3"
+	},
+	{
+	"name":"police officer",
+	"image":"police officer_png",
+	"q1":"Is he a police officer_mp3",
+	"a1":"Yes he_mp3",
+	"q2":"Is she a police officer_mp3",
+	"a2":"No he_mp3"
+	},
+	{
+	"name":"worker",
+	"image":"worker_png",
+	"q1":"Is he a worker_mp3",
+	"a1":"Yes he_mp3",
+	"q2":"Is she a worker_mp3",
+	"a2":"No he_mp3"
+	}
+	]
+
+
+}

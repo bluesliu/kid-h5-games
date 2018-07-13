@@ -1,0 +1,348 @@
+{
+	"groups": [
+		{
+			"keys": "beijing_png,jinbing_png,jinbing_hong_png,yaopin_png,xingxing_kuang_png,hongXin_png,huixin_png,daTi_1_png,beijing2_png,daTi_12_png,hongXin2_png,huixin2_png,jinbing2_png,jinbing_hong2_png,xingxing_kuang2_png,yaopin2_png,kaishi_png,renSX_png,dogkx_png,dogSX_png,renKX_png,renPC_png,tryagain_png,game_over_png,Level_Completed_png,daTi_2_png,brother_png,father_png,grandma_png,grandpa_png,mother_png,sisiter_png,bgmusic_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "HC1_T4U2_json,HC1-Sentences Game-T4U2_1_mp3,HC1-Sentences Game-T4U2_2_mp3,HC1-Sentences Game-T4U2_3_mp3,HC1-Sentences Game-T4U2_4_mp3,HC1-Sentences Game-T4U2-1_thirsty_png,HC1-Sentences Game-T4U2-2_hungry_png,HC1-Sentences Game-T4U2-3_sick_png,HC1-Sentences Game-T4U2-4_tired_png",
+			"name": "HC1_T4U2"
+		},
+		{
+			"keys": "HC4-Sentences Game-T1U1-6_grandma_png,HC4-Sentences Game-T1U1-5_grandpa_png,HC4-Sentences Game-T1U1-4_sister_png,HC4-Sentences Game-T1U1-3_brother_png,HC4-Sentences Game-T1U1-2_mother_png,HC4-Sentences Game-T1U1-1_father_png,HC4-Sentences Game-T1U1_6_mp3,HC4-Sentences Game-T1U1_5_mp3,HC4-Sentences Game-T1U1_4_mp3,HC4-Sentences Game-T1U1_3_mp3,HC4-Sentences Game-T1U1_2_mp3,HC4-Sentences Game-T1U1_1_mp3,HC4_T1U1_json",
+			"name": "HC4_T1U1"
+		}
+	],
+	"resources": [
+		{
+			"url": "res/beijing.png",
+			"type": "image",
+			"name": "beijing_png"
+		},
+		{
+			"url": "res/jinbing.png",
+			"type": "image",
+			"name": "jinbing_png"
+		},
+		{
+			"url": "res/jinbing_hong.png",
+			"type": "image",
+			"name": "jinbing_hong_png"
+		},
+		{
+			"url": "res/yaopin.png",
+			"type": "image",
+			"name": "yaopin_png"
+		},
+		{
+			"url": "res/xingxing_kuang.png",
+			"type": "image",
+			"name": "xingxing_kuang_png"
+		},
+		{
+			"url": "res/hongXin.png",
+			"type": "image",
+			"name": "hongXin_png"
+		},
+		{
+			"url": "res/huixin.png",
+			"type": "image",
+			"name": "huixin_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-2_hungry.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-2_hungry_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-3_sick.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-3_sick_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-4_tired.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-4_tired_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-1_thirsty.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-1_thirsty_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_1_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_2.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_2_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_3.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_3_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_4.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_4_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1_T4U2.json",
+			"type": "json",
+			"name": "HC1_T4U2_json"
+		},
+		{
+			"url": "res/daTi_1.png",
+			"type": "image",
+			"name": "daTi_1_png"
+		},
+		{
+			"url": "res/HC1-Sentences Game-T1U1_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T1U1_1_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-1_thirsty.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-1_thirsty2_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-2_hungry.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-2_hungry2_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-3_sick.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-3_sick2_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2-4_tired.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T4U2-4_tired2_png"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_12_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_2.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_22_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_3.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_32_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1-Sentences Game-T4U2_4.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T4U2_42_mp3"
+		},
+		{
+			"url": "HC1_T4U2/HC1_T4U2.json",
+			"type": "json",
+			"name": "HC1_T4U22_json"
+		},
+		{
+			"url": "res/beijing.png",
+			"type": "image",
+			"name": "beijing2_png"
+		},
+		{
+			"url": "res/daTi_1.png",
+			"type": "image",
+			"name": "daTi_12_png"
+		},
+		{
+			"url": "res/HC1-Sentences Game-T1U1_1.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T1U1_12_mp3"
+		},
+		{
+			"url": "res/hongXin.png",
+			"type": "image",
+			"name": "hongXin2_png"
+		},
+		{
+			"url": "res/huixin.png",
+			"type": "image",
+			"name": "huixin2_png"
+		},
+		{
+			"url": "res/jinbing.png",
+			"type": "image",
+			"name": "jinbing2_png"
+		},
+		{
+			"url": "res/jinbing_hong.png",
+			"type": "image",
+			"name": "jinbing_hong2_png"
+		},
+		{
+			"url": "res/xingxing_kuang.png",
+			"type": "image",
+			"name": "xingxing_kuang2_png"
+		},
+		{
+			"url": "res/yaopin.png",
+			"type": "image",
+			"name": "yaopin2_png"
+		},
+		{
+			"url": "res/kaishi.png",
+			"type": "image",
+			"name": "kaishi_png"
+		},
+		{
+			"url": "res/renSX.png",
+			"type": "image",
+			"name": "renSX_png"
+		},
+		{
+			"url": "res/dogkx.png",
+			"type": "image",
+			"name": "dogkx_png"
+		},
+		{
+			"url": "res/dogSX.png",
+			"type": "image",
+			"name": "dogSX_png"
+		},
+		{
+			"url": "res/renKX.png",
+			"type": "image",
+			"name": "renKX_png"
+		},
+		{
+			"url": "res/renPC.png",
+			"type": "image",
+			"name": "renPC_png"
+		},
+		{
+			"url": "res/tryagain.png",
+			"type": "image",
+			"name": "tryagain_png"
+		},
+		{
+			"url": "res/game_over.png",
+			"type": "image",
+			"name": "game_over_png"
+		},
+		{
+			"url": "res/Level_Completed.png",
+			"type": "image",
+			"name": "Level_Completed_png"
+		},
+		{
+			"url": "res/daTi_2.png",
+			"type": "image",
+			"name": "daTi_2_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-1_father.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-1_father_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-2_mother.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-2_mother_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-3_brother.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-3_brother_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-4_sister.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-4_sister_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-5_grandpa.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-5_grandpa_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1-6_grandma.png",
+			"type": "image",
+			"name": "HC4-Sentences Game-T1U1-6_grandma_png"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_1.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_1_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_2.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_2_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_3.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_3_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_4.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_4_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_5.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_5_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4-Sentences Game-T1U1_6.mp3",
+			"type": "sound",
+			"name": "HC4-Sentences Game-T1U1_6_mp3"
+		},
+		{
+			"url": "HC4_T1U1/HC4_T1U1.json",
+			"type": "json",
+			"name": "HC4_T1U1_json"
+		},
+		{
+			"name": "brother_png",
+			"type": "image",
+			"url": "HC4_T1U1/brother.png"
+		},
+		{
+			"name": "father_png",
+			"type": "image",
+			"url": "HC4_T1U1/father.png"
+		},
+		{
+			"name": "grandma_png",
+			"type": "image",
+			"url": "HC4_T1U1/grandma.png"
+		},
+		{
+			"name": "grandpa_png",
+			"type": "image",
+			"url": "HC4_T1U1/grandpa.png"
+		},
+		{
+			"name": "mother_png",
+			"type": "image",
+			"url": "HC4_T1U1/mother.png"
+		},
+		{
+			"name": "sisiter_png",
+			"type": "image",
+			"url": "HC4_T1U1/sisiter.png"
+		},
+		{
+			"name": "bgmusic_mp3",
+			"type": "sound",
+			"url": "res/bgmusic.mp3"
+		}
+	]
+}

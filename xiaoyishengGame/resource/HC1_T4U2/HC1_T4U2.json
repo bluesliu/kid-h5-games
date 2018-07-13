@@ -1,0 +1,55 @@
+[
+    {
+        "type":"changImage"
+    },
+    {
+        "id": "0",
+        "tiMu":"what's wrong",
+        "shengyin": "HC1-Sentences Game-T4U2_4_mp3",
+        "xuanXiang": [
+            "HC1-Sentences Game-T4U2-1_thirsty_png",
+            "HC1-Sentences Game-T4U2-2_hungry_png",
+            "HC1-Sentences Game-T4U2-3_sick_png",
+            "HC1-Sentences Game-T4U2-4_tired_png"
+        ],
+        "daAn":"0"
+    },
+    {
+        "id": "1",
+        "tiMu":"what's wrong",
+        "shengyin": "HC1-Sentences Game-T4U2_2_mp3",
+        "xuanXiang": [
+            "HC1-Sentences Game-T4U2-2_hungry_png",
+            "HC1-Sentences Game-T4U2-1_thirsty_png",
+            
+            "HC1-Sentences Game-T4U2-3_sick_png",
+            "HC1-Sentences Game-T4U2-4_tired_png"
+        ],
+        "daAn":"0"
+    },
+    {
+        "id": "2",
+        "tiMu":"what's wrong",
+        "shengyin": "HC1-Sentences Game-T4U2_2_mp3",
+        "xuanXiang": [
+            "HC1-Sentences Game-T4U2-1_thirsty_png",
+            "HC1-Sentences Game-T4U2-2_hungry_png",
+            "HC1-Sentences Game-T4U2-3_sick_png",
+            "HC1-Sentences Game-T4U2-4_tired_png"
+        ],
+        "daAn":"2"
+    },
+    {
+        "id": "3",
+        "tiMu":"what's wrong",
+        "shengyin": "HC1-Sentences Game-T4U2_3_mp3",
+        "xuanXiang": [
+            "HC1-Sentences Game-T4U2-1_thirsty_png",
+            "HC1-Sentences Game-T4U2-2_hungry_png",
+            "HC1-Sentences Game-T4U2-3_sick_png",
+            "HC1-Sentences Game-T4U2-4_tired_png"
+        ],
+        "daAn":"3"
+    }
+    
+ ]

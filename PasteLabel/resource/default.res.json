@@ -1,0 +1,194 @@
+{
+	"groups": [
+		{
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,item_png,yes_png,no_png,no_mp3,yes_mp3,chacha_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "HC3_T3U1_json,HC3_T3U1_6_kite_png,HC3_T3U1_6_kite_mp3,HC3_T3U1_5_bus_png,HC3_T3U1_5_bus_mp3,HC3_T3U1_4_robot_png,HC3_T3U1_4_robot_mp3,HC3_T3U1_3_teddy bear_png,HC3_T3U1_3_teddy bear_mp3,HC3_T3U1_2_doll_png,HC3_T3U1_2_doll_mp3,HC3_T3U1_1_ball_png,HC3_T3U1_1_ball_mp3",
+			"name": "HC3_T3U1"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "scene1/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "scene1/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "scene1/lifeBoard.png",
+			"type": "image",
+			"name": "lifeBoard_png"
+		},
+		{
+			"url": "scene1/heartLight.png",
+			"type": "image",
+			"name": "heartLight_png"
+		},
+		{
+			"url": "scene1/heartDark.png",
+			"type": "image",
+			"name": "heartDark_png"
+		},
+		{
+			"url": "scene1/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "scene1/nextBtn.png",
+			"type": "image",
+			"name": "nextBtn_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "scene1/item.png",
+			"type": "image",
+			"name": "item_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1.json",
+			"type": "json",
+			"name": "HC3_T3U1_json"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_2_doll.png",
+			"type": "image",
+			"name": "HC3_T3U1_2_doll_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_1_ball.png",
+			"type": "image",
+			"name": "HC3_T3U1_1_ball_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_3_teddy bear.png",
+			"type": "image",
+			"name": "HC3_T3U1_3_teddy bear_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_4_robot.png",
+			"type": "image",
+			"name": "HC3_T3U1_4_robot_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_6_kite.png",
+			"type": "image",
+			"name": "HC3_T3U1_6_kite_png"
+		},
+		{
+			"url": "scene1/yes.png",
+			"type": "image",
+			"name": "yes_png"
+		},
+		{
+			"url": "scene1/no.png",
+			"type": "image",
+			"name": "no_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_2_doll.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_2_doll_mp3"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_1_ball.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_1_ball_mp3"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_6_kite.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_6_kite_mp3"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_5_bus.png",
+			"type": "image",
+			"name": "HC3_T3U1_5_bus_png"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_5_bus.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_5_bus_mp3"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_4_robot.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_4_robot_mp3"
+		},
+		{
+			"url": "data/HC3_T3U1/HC3_T3U1_3_teddy bear.mp3",
+			"type": "sound",
+			"name": "HC3_T3U1_3_teddy bear_mp3"
+		},
+		{
+			"url": "audio/no.mp3",
+			"type": "sound",
+			"name": "no_mp3"
+		},
+		{
+			"url": "audio/yes.mp3",
+			"type": "sound",
+			"name": "yes_mp3"
+		},
+		{
+			"name": "chacha_mp3",
+			"type": "sound",
+			"url": "audio/chacha.mp3"
+		}
+	]
+}

@@ -5,10 +5,13 @@
 var host = "http://118.25.0.212";   //服务器地址
 var theRequest = {};                //url的参数
 var curNodeInfo;                    //当前关卡的数据
-
+var openTime = 0;                   //记录当前页面打开的时间戳
 //-------------------- 初始化 -------------------
 //
 (function init(){
+
+    openTime = Date.now();
+
     //获取url中"?"符后的字串
     var url = location.search;
     if (url.indexOf("?") != -1) {
@@ -93,7 +96,8 @@ function GameOver(isComplete, callback){
             "requestData":{
                 "nodeId":theRequest.nodeId,
                 "isComplete":isComplete || curNodeInfo.completed,               //如果之前任务已完成，不要修改
-                "gold": isComplete ? curNodeInfo.gold : curNodeInfo.gold2
+                "gold": isComplete ? curNodeInfo.gold : curNodeInfo.gold2,
+                "usedTime": Math.round((Date.now()-openTime)/1000)
             },
             "userProps":
             {
