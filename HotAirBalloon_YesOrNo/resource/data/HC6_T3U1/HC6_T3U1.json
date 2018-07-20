@@ -1,0 +1,46 @@
+{
+"yesAudio":"Yes they are_mp3",
+"noAudio":"No they are not_mp3",
+"yesLabel":"Yes they are_png",
+"noLabel":"No they are not_png",
+"list":[
+	{
+	"name":"giraffes",
+	"image":"giraffes_png",
+	"audio":"giraffes_mp3",
+	"text":"Are they giraffes?"
+	},
+		{
+	"name":"koalas",
+	"image":"koalas_png",
+	"audio":"koalas_mp3",
+	"text":"Are they koalas?"
+	},
+		{
+	"name":"monkeys",
+	"image":"monkeys_png",
+	"audio":"monkeys_mp3",
+	"text":"Are they monkeys?"
+	},
+		{
+	"name":"pandas",
+	"image":"pandas_png",
+	"audio":"pandas_mp3",
+	"text":"Are they pandas?"
+	},
+		{
+	"name":"tigers",
+	"image":"tigers_png",
+	"audio":"tigers_mp3",
+	"text":"Are they tigers?"
+	},
+		{
+	"name":"zebras",
+	"image":"zebras_png",
+	"audio":"zebras_mp3",
+	"text":"Are they zebras?"
+	}
+	]
+
+
+}

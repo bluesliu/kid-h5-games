@@ -1,0 +1,209 @@
+{
+	"groups": [
+		{
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,item_png,chacha_mp3,balloon_png,huanhu_mp3,dingdong_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "giraffes_mp3,koalas_mp3,monkeys_mp3,No they are not_mp3,pandas_mp3,tigers_mp3,Yes they are_mp3,zebras_mp3,giraffes_png,koalas_png,monkeys_png,No they are not_png,pandas_png,tigers_png,Yes they are_png,zebras_png,HC6_T3U1_json",
+			"name": "HC6_T3U1"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "scene1/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "scene1/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "scene1/lifeBoard.png",
+			"type": "image",
+			"name": "lifeBoard_png"
+		},
+		{
+			"url": "scene1/heartLight.png",
+			"type": "image",
+			"name": "heartLight_png"
+		},
+		{
+			"url": "scene1/heartDark.png",
+			"type": "image",
+			"name": "heartDark_png"
+		},
+		{
+			"url": "scene1/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "scene1/nextBtn.png",
+			"type": "image",
+			"name": "nextBtn_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "scene1/item.png",
+			"type": "image",
+			"name": "item_png"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/giraffes.mp3",
+			"type": "sound",
+			"name": "giraffes_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/koalas.mp3",
+			"type": "sound",
+			"name": "koalas_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/monkeys.mp3",
+			"type": "sound",
+			"name": "monkeys_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/No they are not.mp3",
+			"type": "sound",
+			"name": "No they are not_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/pandas.mp3",
+			"type": "sound",
+			"name": "pandas_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/tigers.mp3",
+			"type": "sound",
+			"name": "tigers_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/Yes they are.mp3",
+			"type": "sound",
+			"name": "Yes they are_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/zebras.mp3",
+			"type": "sound",
+			"name": "zebras_mp3"
+		},
+		{
+			"url": "data/HC6_T3U1/giraffes.png",
+			"type": "image",
+			"name": "giraffes_png"
+		},
+		{
+			"url": "data/HC6_T3U1/koalas.png",
+			"type": "image",
+			"name": "koalas_png"
+		},
+		{
+			"url": "data/HC6_T3U1/monkeys.png",
+			"type": "image",
+			"name": "monkeys_png"
+		},
+		{
+			"url": "data/HC6_T3U1/No they are not.png",
+			"type": "image",
+			"name": "No they are not_png"
+		},
+		{
+			"url": "data/HC6_T3U1/pandas.png",
+			"type": "image",
+			"name": "pandas_png"
+		},
+		{
+			"url": "data/HC6_T3U1/tigers.png",
+			"type": "image",
+			"name": "tigers_png"
+		},
+		{
+			"url": "data/HC6_T3U1/Yes they are.png",
+			"type": "image",
+			"name": "Yes they are_png"
+		},
+		{
+			"url": "data/HC6_T3U1/zebras.png",
+			"type": "image",
+			"name": "zebras_png"
+		},
+		{
+			"url": "data/HC6_T3U1/HC6_T3U1.json",
+			"type": "json",
+			"name": "HC6_T3U1_json"
+		},
+		{
+			"name": "balloon_png",
+			"type": "image",
+			"url": "scene1/balloon.png"
+		},
+		{
+			"name": "huanhu_mp3",
+			"type": "sound",
+			"url": "audio/huanhu.mp3"
+		},
+		{
+			"name": "dingdong_mp3",
+			"type": "sound",
+			"url": "audio/dingdong.mp3"
+		}
+	]
+}

@@ -18,7 +18,7 @@
 		"bin-debug/ui/MusicBtn.js",
 		"bin-debug/ui/ScoreBoard.js",
 		"bin-debug/utils/ArrayUtil.js",
-		"bin-debug/view/WindView.js",
+		"bin-debug/Main.js",
 		"bin-debug/utils/MathUtil.js",
 		"bin-debug/utils/SoundPlayer.js",
 		"bin-debug/manager/BirdManager.js",
@@ -27,6 +27,6 @@
 		"bin-debug/view/GameScene.js",
 		"bin-debug/view/PaoPaoView.js",
 		"bin-debug/view/RoleView.js",
-		"bin-debug/Main.js"
+		"bin-debug/view/WindView.js"
 	]
 }

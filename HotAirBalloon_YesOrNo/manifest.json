@@ -1,0 +1,29 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/game/game.js",
+		"libs/modules/res/res.js",
+		"libs/modules/tween/tween.js",
+		"promise/promise.js"
+	],
+	"game": [
+		"bin-debug/Game.js",
+		"bin-debug/ui/BaseBox.js",
+		"bin-debug/MyGame.js",
+		"bin-debug/view/Scene.js",
+		"bin-debug/ui/EButton.js",
+		"bin-debug/ui/FailPanel.js",
+		"bin-debug/ui/GameStartBox.js",
+		"bin-debug/ui/LifeBoard.js",
+		"bin-debug/Main.js",
+		"bin-debug/ui/ScoreBoard.js",
+		"bin-debug/ui/SuccessPanel.js",
+		"bin-debug/utils/lylib.js",
+		"bin-debug/utils/QuestionUtil.js",
+		"bin-debug/view/BalloonManager.js",
+		"bin-debug/view/BalloonView.js",
+		"bin-debug/view/DragItem.js",
+		"bin-debug/ui/LoadingUI.js"
+	]
+}
