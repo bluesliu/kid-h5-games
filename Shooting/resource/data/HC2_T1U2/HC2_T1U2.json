@@ -1,0 +1,25 @@
+{
+	"items": [
+	{
+		"name":"nose",
+		"image": "HC2-Sentences Game-T1U2-1_nose_png",
+		"audio": "HC2-Sentences Game-T1U2_1_mp3"
+		
+	},
+	{
+		"name":"mouth",
+		"image": "HC2-Sentences Game-T1U2-2_mouth_png",
+		"audio": "HC2-Sentences Game-T1U2_2_mp3"
+	},
+	{
+		"name":"ears",
+		"image": "HC2-Sentences Game-T1U2-3_ears_png",
+		"audio": "HC2-Sentences Game-T1U2_3_mp3"
+	},
+	{
+		"name":"eyes",
+		"image": "HC2-Sentences Game-T1U2-4_eyes_png",
+		"audio": "HC2-Sentences Game-T1U2_4_mp3"
+	}
+	]
+}

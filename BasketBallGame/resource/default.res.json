@@ -1,0 +1,259 @@
+{
+	"groups": [
+		{
+			"keys": "love_panel_png,love_png,start_png,success_0_png,success_1_png,success_2_png,fail_0_png,fail_1_png,fail_2_png,stars_png,gstars_png,bgmusic_mp3,dingdong_mp3,chacha_mp3,bg_png,qwd3_png,qwd1_png,qwd2_png,backboard_png,ball_png,basketballStands1_png,basketballStands0_png",
+			"name": "preload"
+		},
+		{
+			"keys": "HC6-Sentences Game-T4U2-6_shoes_2_png,HC6-Sentences Game-T4U2-6_shoes_2_mp3,HC6-Sentences Game-T4U2-6_shoes_1_png,HC6-Sentences Game-T4U2-6_shoes_1_mp3,HC6-Sentences Game-T4U2-5_pants_2_png,HC6-Sentences Game-T4U2-5_pants_2_mp3,HC6-Sentences Game-T4U2-5_pants_1_png,HC6-Sentences Game-T4U2-5_pants_1_mp3,HC6-Sentences Game-T4U2-4_shorts_2_png,HC6-Sentences Game-T4U2-4_shorts_2_mp3,HC6-Sentences Game-T4U2-4_shorts_1_png,HC6-Sentences Game-T4U2-4_shorts_1_mp3,HC6-Sentences Game-T4U2-3_skirt_2_png,HC6-Sentences Game-T4U2-3_skirt_2_mp3,HC6-Sentences Game-T4U2-3_skirt_1_png,HC6-Sentences Game-T4U2-3_skirt_1_mp3,HC6-Sentences Game-T4U2-2_coat_2_png,HC6-Sentences Game-T4U2-2_coat_2_mp3,HC6-Sentences Game-T4U2-2_coat_1_png,HC6-Sentences Game-T4U2-2_coat_1_mp3,HC6-Sentences Game-T4U2-1_shirt_2_png,HC6-Sentences Game-T4U2-1_shirt_2_mp3,HC6-Sentences Game-T4U2-1_shirt_1_png,HC6-Sentences Game-T4U2-1_shirt_1_mp3,HC6_T4U2_json",
+			"name": "HC6_T4U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "skin/love_panel.png",
+			"type": "image",
+			"name": "love_panel_png"
+		},
+		{
+			"url": "skin/love.png",
+			"type": "image",
+			"name": "love_png"
+		},
+		{
+			"url": "skin/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "skin/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "skin/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "skin/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "skin/fail_0.png",
+			"type": "image",
+			"name": "fail_0_png"
+		},
+		{
+			"url": "skin/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "skin/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "skin/stars.png",
+			"type": "image",
+			"name": "stars_png"
+		},
+		{
+			"url": "skin/gstars.png",
+			"type": "image",
+			"name": "gstars_png"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/Thumbs.db",
+			"type": "bin",
+			"name": "Thumbs_db"
+		},
+		{
+			"url": "data/HC3_T1U1/Thumbs.db",
+			"type": "bin",
+			"name": "Thumbs_db"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "skin/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "skin/qwd3.png",
+			"type": "image",
+			"name": "qwd3_png"
+		},
+		{
+			"url": "skin/qwd1.png",
+			"type": "image",
+			"name": "qwd1_png"
+		},
+		{
+			"url": "skin/qwd2.png",
+			"type": "image",
+			"name": "qwd2_png"
+		},
+		{
+			"url": "skin/backboard.png",
+			"type": "image",
+			"name": "backboard_png"
+		},
+		{
+			"url": "skin/ball.png",
+			"type": "image",
+			"name": "ball_png"
+		},
+		{
+			"url": "skin/basketballStands1.png",
+			"type": "image",
+			"name": "basketballStands1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-1_shirt_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-1_shirt_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-1_shirt_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-1_shirt_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-1_shirt_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-1_shirt_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-1_shirt_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-1_shirt_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-2_coat_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-2_coat_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-2_coat_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-2_coat_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-2_coat_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-2_coat_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-2_coat_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-2_coat_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-3_skirt_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-3_skirt_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-3_skirt_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-3_skirt_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-3_skirt_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-3_skirt_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-3_skirt_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-3_skirt_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-4_shorts_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-4_shorts_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-4_shorts_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-4_shorts_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-4_shorts_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-4_shorts_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-4_shorts_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-4_shorts_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-5_pants_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-5_pants_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-5_pants_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-5_pants_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-5_pants_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-5_pants_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-5_pants_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-5_pants_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-6_shoes_1.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-6_shoes_1_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-6_shoes_1.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-6_shoes_1_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-6_shoes_2.mp3",
+			"type": "sound",
+			"name": "HC6-Sentences Game-T4U2-6_shoes_2_mp3"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6-Sentences Game-T4U2-6_shoes_2.png",
+			"type": "image",
+			"name": "HC6-Sentences Game-T4U2-6_shoes_2_png"
+		},
+		{
+			"url": "data/HC6_T4U2/HC6_T4U2.json",
+			"type": "json",
+			"name": "HC6_T4U2_json"
+		},
+		{
+			"name": "basketballStands0_png",
+			"type": "image",
+			"url": "skin/basketballStands0.png"
+		}
+	]
+}

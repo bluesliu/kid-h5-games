@@ -48,6 +48,7 @@ class DropCards extends egret.Sprite {
 		for(let i:number=0;i<bmpArr.length;i++)
 		{
 			let card:DropCard=this.getChildAt(i)as DropCard;
+            
              card.add(bmpArr[i]);
             card.name=bmpArr[i].name;
             card.x=200+308*i;

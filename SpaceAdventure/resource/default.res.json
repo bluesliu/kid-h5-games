@@ -1,12 +1,16 @@
 {
 	"groups": [
 		{
-			"keys": "btn_down_png,btn_up_png,fail_0_png,fail_1_png,fail_2_png,gstars_png,love_png,love_panel_png,spaceadventure_1_png,spaceadventure_2_png,spaceadventure_3_png,spaceadventure_4_png,spaceadventure_5_png,stars_png,start_png,success_0_png,success_1_png,success_2_png,bgmusic_mp3",
+			"keys": "btn_down_png,btn_up_png,fail_0_png,fail_1_png,fail_2_png,gstars_png,love_png,love_panel_png,spaceadventure_1_png,spaceadventure_2_png,spaceadventure_3_png,spaceadventure_4_png,spaceadventure_5_png,stars_png,start_png,success_0_png,success_1_png,success_2_png,bgmusic_mp3,dingdong_mp3,chacha_mp3",
 			"name": "preload"
 		},
 		{
 			"keys": "HC1-Sentences Game-T3U1-1_big_png,HC1-Sentences Game-T3U1-2_small_png,HC1-Sentences Game-T3U1-3_long_png,HC1-Sentences Game-T3U1-4_short_png,HC1-Sentences Game-T3U1_1_mp3,HC1-Sentences Game-T3U1_2_mp3,HC1-Sentences Game-T3U1_3_mp3,HC1-Sentences Game-T3U1_4_mp3,HC1_T3U1_json",
 			"name": "HC1_T3U1"
+		},
+		{
+			"keys": "HC3-Sentences Game-T3U2-1_watch_no_mp3,HC3-Sentences Game-T3U2-1_watch_no_png,HC3-Sentences Game-T3U2-1_watch_yes_mp3,HC3-Sentences Game-T3U2-1_watch_yes_png,HC3-Sentences Game-T3U2-2_water bottle_no_mp3,HC3-Sentences Game-T3U2-2_water bottle_no_png,HC3-Sentences Game-T3U2-2_water bottle_yes_mp3,HC3-Sentences Game-T3U2-2_water bottle_yes_png,HC3-Sentences Game-T3U2-3_puzzle_no_mp3,HC3-Sentences Game-T3U2-3_puzzle_no_png,HC3-Sentences Game-T3U2-3_puzzle_yes_mp3,HC3-Sentences Game-T3U2-3_puzzle_yes_png,HC3-Sentences Game-T3U2-4_notebook_no_mp3,HC3-Sentences Game-T3U2-4_notebook_no_png,HC3-Sentences Game-T3U2-4_notebook_yes_mp3,HC3-Sentences Game-T3U2-4_notebook_yes_png,HC3-Sentences Game-T3U2-5_pencil case_no_mp3,HC3-Sentences Game-T3U2-5_pencil case_no_png,HC3-Sentences Game-T3U2-5_pencil case_yes_mp3,HC3-Sentences Game-T3U2-5_pencil case_yes_png,HC3-Sentences Game-T3U2-6_cap_no_mp3,HC3-Sentences Game-T3U2-6_cap_no_png,HC3-Sentences Game-T3U2-6_cap_yes_mp3,HC3-Sentences Game-T3U2-6_cap_yes_png,HC3_T3U2_json",
+			"name": "HC3_T3U2"
 		}
 	],
 	"resources": [
@@ -149,6 +153,141 @@
 			"url": "data/HC1_T3U1/HC1_T3U1.json",
 			"type": "json",
 			"name": "HC1_T3U1_json"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-1_watch_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-1_watch_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-1_watch_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-1_watch_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-1_watch_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-1_watch_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-1_watch_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-1_watch_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-2_water bottle_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-2_water bottle_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-2_water bottle_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-2_water bottle_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-2_water bottle_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-2_water bottle_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-2_water bottle_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-2_water bottle_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-3_puzzle_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-3_puzzle_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-3_puzzle_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-3_puzzle_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-3_puzzle_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-3_puzzle_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-3_puzzle_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-3_puzzle_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-4_notebook_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-4_notebook_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-4_notebook_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-4_notebook_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-4_notebook_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-4_notebook_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-4_notebook_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-4_notebook_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-5_pencil case_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-5_pencil case_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-5_pencil case_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-5_pencil case_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-5_pencil case_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-5_pencil case_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-5_pencil case_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-5_pencil case_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-6_cap_no.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-6_cap_no_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-6_cap_no.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-6_cap_no_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-6_cap_yes.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T3U2-6_cap_yes_mp3"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3-Sentences Game-T3U2-6_cap_yes.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T3U2-6_cap_yes_png"
+		},
+		{
+			"url": "data/HC3_T3U2/HC3_T3U2.json",
+			"type": "json",
+			"name": "HC3_T3U2_json"
 		}
 	]
 }

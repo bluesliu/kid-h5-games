@@ -1,5 +1,8 @@
 {
-
+"rightAudio":"yes_mp3",
+"wrongAudio":"no_mp3",
+"rightLabel":"yes_png",
+"wrongLabel":"no_png",
 "list":[
 	{
 	"name":"HC3_T3U1_1_ball",

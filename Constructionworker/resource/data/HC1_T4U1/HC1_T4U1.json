@@ -1,0 +1,28 @@
+{
+	"items": [
+		{
+			"name": "boy",
+			"image": "HC1-Sentences Game-T4U1-1_png",
+			"audio": "HC1-Sentences Game-T4U1-1_mp3"
+			
+		},
+		{
+			"name": "girl",
+			"image": "HC1-Sentences Game-T4U1-2_png",
+			"audio": "HC1-Sentences Game-T4U1-2_mp3"
+			
+		},
+		{
+			"name": "house",
+			"image": "HC1-Sentences Game-T4U1-4_png",
+			"audio": "HC1-Sentences Game-T4U1-3_mp3"
+			
+		},
+		{
+			"name": "drawing",
+			"image": "HC1-Sentences Game-T4U1-3_png",
+			"audio": "HC1-Sentences Game-T4U1-4_mp3"
+			
+		}
+	]
+}

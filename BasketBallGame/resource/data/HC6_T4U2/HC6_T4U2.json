@@ -1,0 +1,67 @@
+{
+	"items": [
+	{
+		"name":"shirt_1",
+		"image": "HC6-Sentences Game-T4U2-1_shirt_1_png",
+		"audio": "HC6-Sentences Game-T4U2-1_shirt_1_mp3"
+		
+	},
+	{
+		"name":"shirt_2",
+		"image": "HC6-Sentences Game-T4U2-1_shirt_2_png",
+		"audio": "HC6-Sentences Game-T4U2-1_shirt_2_mp3"
+	},
+	{
+		"name":"coat_1",
+		"image": "HC6-Sentences Game-T4U2-2_coat_1_png",
+		"audio": "HC6-Sentences Game-T4U2-2_coat_1_mp3"
+	},
+	{
+		"name":"coat_2",
+		"image": "HC6-Sentences Game-T4U2-2_coat_2_png",
+		"audio": "HC6-Sentences Game-T4U2-2_coat_2_mp3"
+	},
+	{
+		"name":"skirt_1",
+		"image": "HC6-Sentences Game-T4U2-3_skirt_1_png",
+		"audio": "HC6-Sentences Game-T4U2-3_skirt_1_mp3"
+		
+	},
+	{
+		"name":"skirt_2",
+		"image": "HC6-Sentences Game-T4U2-3_skirt_2_png",
+		"audio": "HC6-Sentences Game-T4U2-3_skirt_2_mp3"
+	},
+	{
+		"name":"pants_1",
+		"image": "HC6-Sentences Game-T4U2-5_pants_1_png",
+		"audio": "HC6-Sentences Game-T4U2-5_pants_1_mp3"
+	},
+	{
+		"name":"pants_2",
+		"image": "HC6-Sentences Game-T4U2-5_pants_2_png",
+		"audio": "HC6-Sentences Game-T4U2-5_pants_2_mp3"
+	},
+	{
+		"name":"shoes_1",
+		"image": "HC6-Sentences Game-T4U2-6_shoes_1_png",
+		"audio": "HC6-Sentences Game-T4U2-6_shoes_1_mp3"
+		
+	},
+	{
+		"name":"shoes_2",
+		"image": "HC6-Sentences Game-T4U2-6_shoes_2_png",
+		"audio": "HC6-Sentences Game-T4U2-6_shoes_2_mp3"
+	},
+	{
+		"name":"shorts_1",
+		"image": "HC6-Sentences Game-T4U2-4_shorts_1_png",
+		"audio": "HC6-Sentences Game-T4U2-4_shorts_1_mp3"
+	},
+	{
+		"name":"shorts_2",
+		"image": "HC6-Sentences Game-T4U2-4_shorts_2_png",
+		"audio": "HC6-Sentences Game-T4U2-4_shorts_2_mp3"
+	}
+	]
+}

@@ -2,8 +2,6 @@ class ConstructionWorker extends egret.Sprite {
    
    	private _bg:Bg;
 	private _blocks:Blocks;
-   	// private _bgSound:SoundPlayer;
-    // private _bgChannel: egret.SoundChannel;
     private _loves:CountLoves;
     private _stars:CountStars;
     private  _optionSp:egret.Sprite;
@@ -11,17 +9,15 @@ class ConstructionWorker extends egret.Sprite {
     private  _index:number=0;
 
     private _tipsSound:SoundPlayer;
-    // private _tipsChannel: egret.SoundChannel;
     private _overPage:OverPage;
     private _quit:egret.Bitmap;
     private _qwd:egret.Bitmap;
+    private _rightSound:SoundPlayer;
+	 private _wrongSound:SoundPlayer;
     public constructor() {
         super();
 
-        // Source.init();
-        //  Source.init(()=>{
-        //     this.createView();
-        //  });
+     
          this.createView();
     }
 
@@ -70,25 +66,12 @@ class ConstructionWorker extends egret.Sprite {
 
        this._overPage=new OverPage();
         this.addChild(this._overPage);
-       //this._overPage.visible=false;
-       // this._overPage.showWin(true);
+     
 
 
 
          this._tipsSound= new SoundPlayer();
-		//  this._bgSound= new SoundPlayer();
-		// RES.getResAsync('bgmusic_mp3',(data)=>{
-        // this._bgSound=data;
-        // this._bgChannel = this._bgSound.play(0, 0);
-        // this._bgChannel.volume=0.1;
-        //   //this._topSp.visible=true; 
-        // },this);
-
-        //  this._tipsSound = new egret.Sound();;
-        // //sound 加载完成监听
-        // this._tipsSound.addEventListener(egret.Event.COMPLETE, function (e: egret.Event) {
-        //     this._tipsChannel = this._tipsSound.play(0, 1);
-        // }, this);
+	
 
           for(let i:number=0;i<Source.images.length;i++)
 		{
@@ -99,7 +82,8 @@ class ConstructionWorker extends egret.Sprite {
 
         //  this.setQuestion(this._index);
 
-
+        this._rightSound= new SoundPlayer();
+	    this._wrongSound= new SoundPlayer();
 
          this.initListener();
 	}
@@ -144,15 +128,19 @@ class ConstructionWorker extends egret.Sprite {
         //egret.log(e.target.name,this._index);
         if(e.target.name.split("_")[0]=="box")
         {
+            var card=e.target;
             var id:number=e.target.name.split("_")[1];
-             egret.log("this._index:",this._index,"id:",id);
+            //  egret.log("this._index:",this._index,"id:",id);
             if(id==(this._index%Source.images.length))
             {
-                this._blocks.showBlock(this._index+1);
-                this._stars.add();
+                
+                
                 this._index++;
-                  
-                if( this._stars.count>=10)
+                this._rightSound.clear();
+                this._rightSound.playRes("dingdong_mp3").exec(()=>{
+                    this._blocks.showBlock(this._index);
+                    this._stars.add();
+                      if( this._stars.count>=10)
                 { 
                     this._blocks.hideBg();
                     this.addChild( this._blocks);
@@ -160,44 +148,21 @@ class ConstructionWorker extends egret.Sprite {
                     this._blocks.x=523+410;
 		            this._blocks.y=254.5+484;
                     this._qwd.visible=false;
-                    this.addChild(this._quit);
+                    //this.addChild(this._quit);
                     this.addChild(this._loves);
                     this.addChild(this._stars);
                     this._optionSp.visible=false;
                     this._overPage.visible=true;
                     this._overPage.showWin(true);
                     return;
-                }
-                
-            }else
-            {
-                
-                // egret.log(this._loves.count);
-                Source.changeQusetion(this._index);
-                this._loves.cut();
-                if(this._loves.count<=0)
-                {
-                    this._blocks.hideBg();
-                    this.addChild( this._blocks);
-                    this._blocks.scaleX= this._blocks.scaleY=0.5;
-                    this._blocks.x=523+410;
-		            this._blocks.y=254.5+484;
-                    this._qwd.visible=false;
-                    this.addChild(this._quit);
-                    this.addChild(this._loves);
-                    this.addChild(this._stars);
-                    this._optionSp.visible=false;
-                    this._overPage.visible=true;
-                    this._overPage.showWin(false);
-                    return;
-                }
+                } 
 
-            }
-
-            let count:number=0;
+                //this.next(this._index);  
+                   setTimeout(()=>{
+                    let count:number=0;
              for(let i:number=1;i<4;i++)
 		    {
-			//  egret.log(Source.questionList[id][i]);
+			  egret.log("this._optionSp.getChildAt(i)as Box:",this._optionSp.getChildAt(i)as Box);
                 let box:Box=this._optionSp.getChildAt(i)as Box;
                 egret.Tween.get(box).wait(100*i).to( {scaleX:0.2,scaleY:0.2,alpha:0}, 500, egret.Ease.cubicIn).call(()=>{
                   //  egret.log("aa");
@@ -209,14 +174,70 @@ class ConstructionWorker extends egret.Sprite {
                     }
                 });
             }
+                },500); 
+
+                },this);
+                  
+               
+                
+            }else
+            {
+                
+                // egret.log(this._loves.count);
+                Source.changeQusetion(this._index);
+               
+
+                EffectUtils.shakeObj(card,null);
+                this._wrongSound.clear();
+                this._wrongSound.playRes("chacha_mp3").exec(()=>{
+                     this._loves.cut();
+                    if(this._loves.count<=0)
+                {
+                    this._blocks.hideBg();
+                    this.addChild( this._blocks);
+                    this._blocks.scaleX= this._blocks.scaleY=0.5;
+                    this._blocks.x=523+410;
+		            this._blocks.y=254.5+484;
+                    this._qwd.visible=false;
+                    // this.addChild(this._quit);
+                    this.addChild(this._loves);
+                    this.addChild(this._stars);
+                    this._optionSp.visible=false;
+                    this._overPage.visible=true;
+                    this._overPage.showWin(false);
+                    return;
+                }
+                         setTimeout(()=>{
+                    let count:number=0;
+             for(let i:number=1;i<4;i++)
+		    {
+			  egret.log("this._optionSp.getChildAt(i)as Box:",this._optionSp.getChildAt(i)as Box);
+                let box:Box=this._optionSp.getChildAt(i)as Box;
+                egret.Tween.get(box).wait(100*i).to( {scaleX:0.2,scaleY:0.2,alpha:0}, 500, egret.Ease.cubicIn).call(()=>{
+                  //  egret.log("aa");
+                    count++;
+                    if(count>=3)
+                    {
+                   
+                        this.setQuestion(this._index);
+                    }
+                });
+            }
+                },500); 
+                },this);
+               // egret.log(this._optionSp);
+           
+            }
+
+           
         }
     }
 
+
+
     private setQuestion(id:number)
     {
-        egret.log("id:::::::",id)
-       // let url:string="resource/"+Source.audios[id];
-       //this._tipsSound.load(url);
+  
        this._tipsSound.clear();
        this._tipsSound.playRes(Source.list[id%Source.images.length].audio);
 

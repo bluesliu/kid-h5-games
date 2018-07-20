@@ -22,7 +22,7 @@ class Source {
 		
 		for(let k=0; k < obj.items.length; k++)
 		{
-			let imageName = obj.items[k].img;
+			let imageName = obj.items[k].image;
 			let bitmap = new egret.Bitmap(RES.getRes(imageName));
 			let name = obj.items[k].name;
 			bitmap.name=name;

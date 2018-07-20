@@ -1,0 +1,77 @@
+{
+	
+	"items": [
+		{
+			"name": "watch_no",
+			"image": "HC3-Sentences Game-T3U2-1_watch_no_png",
+			"audio": "HC3-Sentences Game-T3U2-1_watch_no_mp3"
+			
+		},
+		{
+			"name": "watch_yes",
+			"image": "HC3-Sentences Game-T3U2-1_watch_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-1_watch_yes_mp3"
+			
+		},
+		{
+			"name": "water bottle_no",
+			"image": "HC3-Sentences Game-T3U2-2_water bottle_no_png",
+			"audio": "HC3-Sentences Game-T3U2-2_water bottle_no_mp3"
+			
+		},
+		{
+			"name": "water bottle_yes",
+			"image": "HC3-Sentences Game-T3U2-2_water bottle_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-2_water bottle_yes_mp3"
+			
+		},
+		{
+			"name": "puzzle_no",
+			"image": "HC3-Sentences Game-T3U2-3_puzzle_no_png",
+			"audio": "HC3-Sentences Game-T3U2-3_puzzle_no_mp3"
+			
+		},
+		{
+			"name": "puzzle_yes",
+			"image": "HC3-Sentences Game-T3U2-3_puzzle_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-3_puzzle_yes_mp3"
+			
+		},
+		{
+			"name": "notebook_no",
+			"image": "HC3-Sentences Game-T3U2-4_notebook_no_png",
+			"audio": "HC3-Sentences Game-T3U2-4_notebook_no_mp3"
+			
+		},
+		{
+			"name": "notebook_yes",
+			"image": "HC3-Sentences Game-T3U2-4_notebook_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-4_notebook_yes_mp3"
+			
+		},
+		{
+			"name": "pencil case_no",
+			"image": "HC3-Sentences Game-T3U2-5_pencil case_no_png",
+			"audio": "HC3-Sentences Game-T3U2-5_pencil case_no_mp3"
+			
+		},
+		{
+			"name": "pencil case_yes",
+			"image": "HC3-Sentences Game-T3U2-5_pencil case_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-5_pencil case_yes_mp3"
+			
+		},
+		{
+			"name": "cap_no",
+			"image": "HC3-Sentences Game-T3U2-6_cap_no_png",
+			"audio": "HC3-Sentences Game-T3U2-6_cap_no_mp3"
+			
+		},
+		{
+			"name": "cap_yes",
+			"image": "HC3-Sentences Game-T3U2-6_cap_yes_png",
+			"audio": "HC3-Sentences Game-T3U2-6_cap_yes_mp3"
+			
+		}
+	]
+}

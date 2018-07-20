@@ -1,0 +1,140 @@
+{
+	"items": [
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-1_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-1grapes_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-1_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-2_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-2_lollipops_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-2_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-3_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-3_ladybugs_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-3_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-4_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-4_caps_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-4_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-5_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-5_trees_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-5_mp3"
+		
+	},
+	{
+		"name":"0",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-6_flowers_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-6_eighteen-1_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-6_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-7_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-7_cups_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-7_mp3"
+		
+	},
+	{
+		"name":"1",
+		"images":[
+			{
+				"name":"0",
+				"image":"HC4-Sentences Game-T3U2-8_png"
+			},
+			{
+				"name":"1",
+				"image":"HC4-Sentences Game-T3U2-8_books_png"
+			}
+			
+		] ,
+		
+		"audio": "HC4-Sentences Game-T3U2-8_mp3"
+		
+	}
+	]
+}

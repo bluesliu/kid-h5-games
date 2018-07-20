@@ -1,0 +1,68 @@
+{
+	"items": [
+	{
+		"name":"drum_yes",
+		"image": "HC5-Sentences Game-T3U2-6_drum_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-6_drum_yes_mp3"
+		
+	},
+	{
+		"name":"drum_no",
+		"image": "HC5-Sentences Game-T3U2-6_drum_no_png",
+		"audio": "HC5-Sentences Game-T3U2-6_drum_no_mp3"
+	},
+	{
+		"name":"guitar_yes",
+		"image": "HC5-Sentences Game-T3U2-5_guitar_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-5_guitar_yes_mp3"
+	},
+	{
+		"name":"guitar_no",
+		"image": "HC5-Sentences Game-T3U2-5_guitar_no_png",
+		"audio": "HC5-Sentences Game-T3U2-5_guitar_no_mp3"
+	},
+	{
+		"name":"trumpet_yes",
+		"image": "HC5-Sentences Game-T3U2-4_trumpet_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-4_trumpet_yes_mp3"
+		
+	},
+	{
+		"name":"trumpet_no",
+		"image": "HC5-Sentences Game-T3U2-4_trumpet_no_png",
+		"audio": "HC5-Sentences Game-T3U2-4_trumpet_no_mp3"
+	},
+	{
+		"name":"tambourine_yes",
+		"image": "HC5-Sentences Game-T3U2-3_tambourine_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-3_tambourine_yes_mp3"
+	},
+	{
+		"name":"tambourine_no",
+		"image": "HC5-Sentences Game-T3U2-3_tambourine_no_png",
+		"audio": "HC5-Sentences Game-T3U2-3_tambourine_no_mp3"
+	},
+	{
+		"name":"violin_yes",
+		"image": "HC5-Sentences Game-T3U2-2_violin_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-2_violin_yes_mp3"
+		
+	},
+	{
+		"name":"violin_no",
+		"image": "HC5-Sentences Game-T3U2-2_violin_no_png",
+		"audio": "HC5-Sentences Game-T3U2-2_violin_no_mp3"
+	},
+	{
+		"name":"piano_yes",
+		"image": "HC5-Sentences Game-T3U2-1_piano_yes_png",
+		"audio": "HC5-Sentences Game-T3U2-1_piano_yes_mp3"
+	},
+	{
+		"name":"piano_no",
+		"image": "HC5-Sentences Game-T3U2-1_piano_no_png",
+		"audio": "HC5-Sentences Game-T3U2-1_piano_no_mp3"
+	}
+	
+	]
+}

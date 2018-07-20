@@ -9,8 +9,8 @@
 	],
 	"game": [
 		"bin-debug/Game.js",
-		"bin-debug/utils/Step.js",
 		"bin-debug/ui/BaseBox.js",
+		"bin-debug/utils/Step.js",
 		"bin-debug/view/Scene.js",
 		"bin-debug/ui/EButton.js",
 		"bin-debug/ui/FailPanel.js",
@@ -18,7 +18,7 @@
 		"bin-debug/ui/LifeBoard.js",
 		"bin-debug/ui/LoadingUI.js",
 		"bin-debug/ui/ScoreBoard.js",
-		"bin-debug/ui/SuccessPanel.js",
+		"bin-debug/Main.js",
 		"bin-debug/utils/ArrayUtil.js",
 		"bin-debug/utils/DisplayUtil.js",
 		"bin-debug/utils/EffectUtils.js",
@@ -27,6 +27,6 @@
 		"bin-debug/utils/SoundPlayer.js",
 		"bin-debug/MyGame.js",
 		"bin-debug/view/DragItem.js",
-		"bin-debug/Main.js"
+		"bin-debug/ui/SuccessPanel.js"
 	]
 }

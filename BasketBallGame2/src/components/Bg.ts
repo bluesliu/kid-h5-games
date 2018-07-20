@@ -1,0 +1,75 @@
+class Bg extends egret.Sprite {
+    private _qwd:egret.Bitmap;
+	private _cloud1:egret.Bitmap;
+    private _cloud2:egret.Bitmap;
+    private _cloud3:egret.Bitmap;
+    private _time:number=80;
+    public constructor() {
+        super();
+        this.createView();
+    }
+
+    private textField:egret.TextField;
+
+    private createView():void {
+
+	
+        let bg = Source.createBitmapByName("bg_png");
+        this.addChild(bg);
+
+	
+		
+
+        // this._cloud1 = Source.createBitmapByName("cloud_1_png");
+        // this.addChild(this._cloud1);
+		// this._cloud1.x=203.4;
+		// this._cloud1.y=64;
+
+		// this._cloud2 = Source.createBitmapByName("cloud_2_png");
+        // this.addChild(this._cloud2);
+		// this._cloud2.x=682.7;
+		// this._cloud2.y=90.4;
+
+		// this._cloud3 = Source.createBitmapByName("cloud_3_png");
+        // this.addChild(this._cloud3);
+		// this._cloud3.x=1066.5;
+		// this._cloud3.y=110.4;
+
+		let basketballStands = Source.createBitmapByName("basketballStands0_png");
+        this.addChild(basketballStands);
+        basketballStands.x=245;
+		basketballStands.y=472;
+
+			let midBackboard=PublicTool.createBitmapByName("backboard_png");
+		this.addChild(midBackboard);
+		midBackboard.x=120.0+399;
+			 midBackboard.y=247.4;
+			 
+		this.start();
+	}
+
+	public start()
+	{
+		// egret.Tween.get( this._cloud1, { loop:true} )
+		// .to( {x:-this._cloud1.width},(203.4+this._cloud1.width)*this._time*1000/1366)
+		// .to( {x:1366},0)
+		// .to( {x:203.4},(1366-203.4)*this._time*1000/1366);
+
+		// egret.Tween.get( this._cloud2, { loop:true} )
+		// .to( {x:-this._cloud2.width},(682.7+this._cloud2.width)*this._time*1000/1366)
+		// .to( {x:1366},0)
+		// .to( {x:682.7},(1366-682.7)*this._time*1000/1366);
+
+		// egret.Tween.get( this._cloud3, { loop:true} )
+		// .to( {x:-this._cloud3.width},(1066.5+this._cloud3.width)*this._time*1000/1366)
+		// .to( {x:1366},0)
+		// .to( {x:1066.5},(1366-1066.5)*this._time*1000/1366);
+
+	
+	}
+
+	public reset()
+	{
+		
+	}
+}

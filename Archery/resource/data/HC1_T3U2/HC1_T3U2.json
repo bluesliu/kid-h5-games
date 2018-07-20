@@ -1,0 +1,25 @@
+{
+	"items": [
+	{
+		"name":"car",
+		"image": "HC1-Sentences Game-T3U2-1_car_png",
+		"audio": "HC1-Sentences Game-T3U2-1_car_mp3"
+		
+	},
+	{
+		"name":"plane",
+		"image": "HC1-Sentences Game-T3U2-2_plane_png",
+		"audio": "HC1-Sentences Game-T3U2-2_plane_mp3"
+	},
+	{
+		"name":"train",
+		"image": "HC1-Sentences Game-T3U2-3_train_png",
+		"audio": "HC1-Sentences Game-T3U2-3_train_mp3"
+	},
+	{
+		"name":"boat",
+		"image": "HC1-Sentences Game-T3U2-4_boat_png",
+		"audio": "HC1-Sentences Game-T3U2-4_boat_mp3"
+	}
+	]
+}

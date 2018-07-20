@@ -61,7 +61,7 @@ var Main = (function (_super) {
         else {
             assetsName = requestObj.assetsName;
         }
-        // let assetsName="HC1_T3U1";
+        // let assetsName="HC3_T3U2";
         Main.sourceName = assetsName;
         RES.loadGroup(assetsName);
     };

@@ -21,11 +21,11 @@ var MyGame = (function (_super) {
     MyGame.prototype.run = function () {
         this.m_scene = new Scene();
         this.m_sceneLayer.addChild(this.m_scene);
-        this.m_yesItem = new DragItem("yes_png");
+        this.m_yesItem = new DragItem(this.question.rightLabel);
         this.m_sceneLayer.addChild(this.m_yesItem);
         this.m_yesItem.setPosition(756, 264);
         this.m_yesItem.addEventListener("DRAG_END", this.onDragEnd, this);
-        this.m_noItem = new DragItem("no_png");
+        this.m_noItem = new DragItem(this.question.wrongLabel);
         this.m_sceneLayer.addChild(this.m_noItem);
         this.m_noItem.setPosition(756, 490);
         this.m_noItem.addEventListener("DRAG_END", this.onDragEnd, this);
@@ -73,7 +73,7 @@ var MyGame = (function (_super) {
                 if (this.m_soundQuestion.name == this.question.curQuestion.name) {
                     //正确
                     this.m_effSound.clear();
-                    this.m_effSound.playRes("yes_mp3").exec(function () {
+                    this.m_effSound.playRes(this.question.rightAudio).exec(function () {
                         item.x = item.position.x;
                         item.y = item.position.y;
                         _this.right();
@@ -91,7 +91,7 @@ var MyGame = (function (_super) {
                 if (this.m_soundQuestion.name != this.question.curQuestion.name) {
                     //正确
                     this.m_effSound.clear();
-                    this.m_effSound.playRes("no_mp3").exec(function () {
+                    this.m_effSound.playRes(this.question.wrongAudio).exec(function () {
                         item.x = item.position.x;
                         item.y = item.position.y;
                         _this.right();

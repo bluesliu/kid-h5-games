@@ -23,6 +23,11 @@ class QuestionUtil {
 	private m_curIndex = -1;
 	private m_size = 0;			
 
+	public rightAudio:string;
+	public rightLabel:string;
+	public wrongAudio:string;
+	public wrongLabel:string;
+
 	public constructor() {
 	}
 
@@ -31,6 +36,12 @@ class QuestionUtil {
 		this.m_size = size;
 
 		this.m_json = RES.getRes(assetsName+"_json");
+
+		this.rightAudio = this.m_json.rightAudio;
+		this.wrongAudio = this.m_json.wrongAudio;
+		this.rightLabel = this.m_json.rightLabel;
+		this.wrongLabel = this.m_json.wrongLabel;
+
 		this.m_qList = new Array<Question>();
 		for(let i=0; i<this.m_json.list.length; i++){
 			let q = new Question();

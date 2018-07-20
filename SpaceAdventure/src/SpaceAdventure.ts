@@ -23,6 +23,8 @@ class SpaceAdventure extends egret.Sprite {
 	private _answer:string;
 	private _point:egret.Point;
 	private _testDis:number=200;
+	 private _rightSound:SoundPlayer;
+	 private _wrongSound:SoundPlayer;
 	public constructor() {
 		 super();
 	 		this.createView();
@@ -79,6 +81,9 @@ class SpaceAdventure extends egret.Sprite {
 
         this._overPage=new OverPage();
         this.addChild(this._overPage);
+
+		 this._rightSound= new SoundPlayer();
+	    this._wrongSound= new SoundPlayer();
       
        // this._queation.hitTestFun=this.hitTest;
 
@@ -103,7 +108,7 @@ class SpaceAdventure extends egret.Sprite {
 				let index=Source.questionList[id][j-1];
 				
 				card.addImg(Source.images[index]);
-				card.name=Source.list[index].title;
+				card.name=Source.list[index].name;
 				//egret.log(j,index,card.name);
 			}else
 			{
@@ -119,7 +124,7 @@ class SpaceAdventure extends egret.Sprite {
 
 	public read(id:number)
 	{
-		this._answer=Source.list[id%Source.images.length].title;
+		this._answer=Source.list[id%Source.images.length].name;
 		//egret.log("this.answer:",this._answer);
 		this._questionSound.clear();
         this._questionSound.playRes(Source.list[id%Source.images.length].audio);
@@ -142,14 +147,17 @@ class SpaceAdventure extends egret.Sprite {
 		if(distance<this._testDis){
 			this.stopMove();
 			
-			egret.log("card.name:",card.name);
-			egret.log("this._answer",this._answer);
+			//egret.log("card.name:",card.name);
+			//egret.log("this._answer",this._answer);
 			if(card.name==this._answer)
 			{
-				this._stars.add();
+				this._rightSound.clear();
+				this._rightSound.playRes("dingdong_mp3").exec(()=>{
+
+					this._stars.add();
 				if(this._stars.count>=SpaceAdventure.WINNUM)
 				{
-					egret.log("win");
+					//egret.log("win");
 					 this._qwd.visible=false;
                     this.addChild(this._loves);
                     this.addChild(this._stars);
@@ -158,12 +166,23 @@ class SpaceAdventure extends egret.Sprite {
                     this._overPage.showWin(true);
 					return;
 				}
+				 setTimeout(()=>{
+					this._questionIndex++;
+					this.startQuestion(this._questionIndex);
+
+				},500);
+				},this);
+				
 			}else
 			{
-				this._loves.cut();
+					this._wrongSound.clear();
+				EffectUtils.shakeObj(card);
+				this._wrongSound.playRes("chacha_mp3").exec(()=>{
+
+					this._loves.cut();
 				if(this._loves.count<=0)
 				{
-					egret.log("fail");
+					//egret.log("fail");
 					this._qwd.visible=false;
                     this.addChild(this._loves);
                     this.addChild(this._stars);
@@ -172,12 +191,19 @@ class SpaceAdventure extends egret.Sprite {
                     this._overPage.showWin(false);
 					return;
 				}
+				 setTimeout(()=>{
+					this._questionIndex++;
+					this.startQuestion(this._questionIndex);
+
+				},500);
+				},this);
+
+				
 			}
 			
            // egret.log(this._stars.count);
-
-			this._questionIndex++;
-			this.startQuestion(this._questionIndex);
+		  
+			
 		}
 	}
 

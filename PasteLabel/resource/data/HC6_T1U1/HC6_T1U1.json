@@ -1,0 +1,46 @@
+{
+"rightAudio":"Yes I am_mp3",
+"wrongAudio":"No I am not_mp3",
+"rightLabel":"Yes I am_png",
+"wrongLabel":"No I am not_png",
+"list":[
+	{
+	"name":"bathroom",
+	"image":"bathroom_png",
+	"audio":"bathroom_mp3"
+
+	},
+		{
+	"name":"bedroom",
+	"image":"bedroom_png",
+	"audio":"bedroom_mp3"
+
+	},
+		{
+	"name":"dining room",
+	"image":"dining room_png",
+	"audio":"dining room_mp3"
+
+	},
+		{
+	"name":"garage",
+	"image":"garage_png",
+	"audio":"garage_mp3"
+
+	},
+		{
+	"name":"kitchen",
+	"image":"kitchen_png",
+	"audio":"kitchen_mp3"
+
+	},
+		{
+	"name":"living room",
+	"image":"living room_png",
+	"audio":"living room_mp3"
+
+	}
+	]
+
+
+}

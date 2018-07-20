@@ -145,7 +145,7 @@ var Game = (function (_super) {
         enumerable: true,
         configurable: true
     });
-    Game.isDebug = false;
+    Game.isDebug = true;
     Game.WIN_NUM = 10;
     Game.LIFE_NUM = 3;
     return Game;

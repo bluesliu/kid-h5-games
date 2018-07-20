@@ -1,0 +1,37 @@
+{
+
+"list":[
+	{
+	"name":"cough",
+	"image":"cough_png",
+	"sound":"cough_mp3"
+	},
+	{
+	"name":"fever",
+	"image":"fever_png",
+	"sound":"fever_mp3"
+	},
+	{
+	"name":"headache",
+	"image":"headache_png",
+	"sound":"headache_mp3"
+	},
+	{
+	"name":"runny nose",
+	"image":"runny nose_png",
+	"sound":"runny nose_mp3"
+	},
+	{
+	"name":"toothache",
+	"image":"toothache_png",
+	"sound":"toothache_mp3"
+	},
+	{
+	"name":"tummy ache",
+	"image":"tummy ache_png",
+	"sound":"tummy ache_mp3"
+	}
+	]
+
+
+}

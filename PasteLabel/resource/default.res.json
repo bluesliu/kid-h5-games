@@ -1,12 +1,16 @@
 {
 	"groups": [
 		{
-			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,item_png,yes_png,no_png,no_mp3,yes_mp3,chacha_mp3",
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,item_png,chacha_mp3",
 			"name": "preload"
 		},
 		{
-			"keys": "HC3_T3U1_json,HC3_T3U1_6_kite_png,HC3_T3U1_6_kite_mp3,HC3_T3U1_5_bus_png,HC3_T3U1_5_bus_mp3,HC3_T3U1_4_robot_png,HC3_T3U1_4_robot_mp3,HC3_T3U1_3_teddy bear_png,HC3_T3U1_3_teddy bear_mp3,HC3_T3U1_2_doll_png,HC3_T3U1_2_doll_mp3,HC3_T3U1_1_ball_png,HC3_T3U1_1_ball_mp3",
+			"keys": "HC3_T3U1_json,HC3_T3U1_6_kite_png,HC3_T3U1_6_kite_mp3,HC3_T3U1_5_bus_png,HC3_T3U1_5_bus_mp3,HC3_T3U1_4_robot_png,HC3_T3U1_4_robot_mp3,HC3_T3U1_3_teddy bear_png,HC3_T3U1_3_teddy bear_mp3,HC3_T3U1_2_doll_png,HC3_T3U1_2_doll_mp3,HC3_T3U1_1_ball_png,HC3_T3U1_1_ball_mp3,yes_png,yes_mp3,no_png,no_mp3",
 			"name": "HC3_T3U1"
+		},
+		{
+			"keys": "Yes I am_mp3,No I am not_mp3,living room_png,living room_mp3,kitchen_png,kitchen_mp3,HC6_T1U1_json,garage_png,garage_mp3,dining room_png,dining room_mp3,bedroom_png,bedroom_mp3,bathroom_png,bathroom_mp3,Yes I am_png,No I am not_png",
+			"name": "HC6_T1U1"
 		}
 	],
 	"resources": [
@@ -131,16 +135,6 @@
 			"name": "HC3_T3U1_6_kite_png"
 		},
 		{
-			"url": "scene1/yes.png",
-			"type": "image",
-			"name": "yes_png"
-		},
-		{
-			"url": "scene1/no.png",
-			"type": "image",
-			"name": "no_png"
-		},
-		{
 			"url": "data/HC3_T3U1/HC3_T3U1_2_doll.mp3",
 			"type": "sound",
 			"name": "HC3_T3U1_2_doll_mp3"
@@ -176,19 +170,114 @@
 			"name": "HC3_T3U1_3_teddy bear_mp3"
 		},
 		{
-			"url": "audio/no.mp3",
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/HC6_T1U1.json",
+			"type": "json",
+			"name": "HC6_T1U1_json"
+		},
+		{
+			"url": "data/HC6_T1U1/bathroom.mp3",
+			"type": "sound",
+			"name": "bathroom_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/bedroom.mp3",
+			"type": "sound",
+			"name": "bedroom_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/dining room.mp3",
+			"type": "sound",
+			"name": "dining room_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/garage.mp3",
+			"type": "sound",
+			"name": "garage_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/kitchen.mp3",
+			"type": "sound",
+			"name": "kitchen_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/living room.mp3",
+			"type": "sound",
+			"name": "living room_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/No I am not.mp3",
+			"type": "sound",
+			"name": "No I am not_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/Yes I am.mp3",
+			"type": "sound",
+			"name": "Yes I am_mp3"
+		},
+		{
+			"url": "data/HC6_T1U1/bathroom.png",
+			"type": "image",
+			"name": "bathroom_png"
+		},
+		{
+			"url": "data/HC6_T1U1/bedroom.png",
+			"type": "image",
+			"name": "bedroom_png"
+		},
+		{
+			"url": "data/HC6_T1U1/dining room.png",
+			"type": "image",
+			"name": "dining room_png"
+		},
+		{
+			"url": "data/HC6_T1U1/garage.png",
+			"type": "image",
+			"name": "garage_png"
+		},
+		{
+			"url": "data/HC6_T1U1/kitchen.png",
+			"type": "image",
+			"name": "kitchen_png"
+		},
+		{
+			"url": "data/HC6_T1U1/living room.png",
+			"type": "image",
+			"name": "living room_png"
+		},
+		{
+			"url": "data/HC3_T3U1/no.mp3",
 			"type": "sound",
 			"name": "no_mp3"
 		},
 		{
-			"url": "audio/yes.mp3",
+			"url": "data/HC3_T3U1/yes.mp3",
 			"type": "sound",
 			"name": "yes_mp3"
 		},
 		{
-			"name": "chacha_mp3",
-			"type": "sound",
-			"url": "audio/chacha.mp3"
+			"url": "data/HC3_T3U1/no.png",
+			"type": "image",
+			"name": "no_png"
+		},
+		{
+			"url": "data/HC3_T3U1/yes.png",
+			"type": "image",
+			"name": "yes_png"
+		},
+		{
+			"url": "data/HC6_T1U1/Yes I am.png",
+			"type": "image",
+			"name": "Yes I am_png"
+		},
+		{
+			"url": "data/HC6_T1U1/No I am not.png",
+			"type": "image",
+			"name": "No I am not_png"
 		}
 	]
 }

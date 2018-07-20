@@ -1,0 +1,347 @@
+{
+	"groups": [
+		{
+			"keys": "archery_0_png,archery_1_png,archery_10_png,archery_2_png,archery_4_png,archery_8_png,archery_9_png,arrow_png,cloud_1_png,cloud_2_png,cloud_3_png,bg_0_png,love_panel_png,love_png,start_png,success_0_png,success_1_png,success_2_png,fail_0_png,fail_1_png,fail_2_png,stars_png,gstars_png,bgmusic_mp3,dingdong_mp3,chacha_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "HC2-Sentences Game-T3U1-4_turtle_png,HC2-Sentences Game-T3U1-3_frog_png,HC2-Sentences Game-T3U1-2_duck_png,HC2-Sentences Game-T3U1-1_bird_png,HC2-Sentences Game-T3U1_4_mp3,HC2-Sentences Game-T3U1_3_mp3,HC2-Sentences Game-T3U1_2_mp3,HC2-Sentences Game-T3U1_1_mp3,HC2_T3U1_json",
+			"name": "HC2_T3U1"
+		},
+		{
+			"keys": "HC3-Sentences Game-T1U1-5_post office_png,HC3-Sentences Game-T1U1-4_library_png,HC3-Sentences Game-T1U1-3_bank_png,HC3-Sentences Game-T1U1-2_bakery_png,HC3-Sentences Game-T1U1-1_park_png,HC3-Sentences Game-T1U1-1_hospital_png,HC3-Sentences Game-T1U1_6_mp3,HC3-Sentences Game-T1U1_5_mp3,HC3-Sentences Game-T1U1_4_mp3,HC3-Sentences Game-T1U1_3_mp3,HC3-Sentences Game-T1U1_2_mp3,HC3-Sentences Game-T1U1_1_mp3,HC3_T1U1_json,HC3-Sentences Game-T1U1_10_mp3,HC3-Sentences Game-T1U1_11_mp3,HC3-Sentences Game-T1U1_12_mp3,HC3-Sentences Game-T1U1_7_mp3,HC3-Sentences Game-T1U1_8_mp3,HC3-Sentences Game-T1U1_9_mp3",
+			"name": "HC3_T1U1"
+		},
+		{
+			"keys": "HC1-Sentences Game-T3U2-1_car_mp3,HC1-Sentences Game-T3U2-1_car_png,HC1-Sentences Game-T3U2-2_plane_mp3,HC1-Sentences Game-T3U2-2_plane_png,HC1-Sentences Game-T3U2-3_train_mp3,HC1-Sentences Game-T3U2-3_train_png,HC1-Sentences Game-T3U2-4_boat_mp3,HC1-Sentences Game-T3U2-4_boat_png,HC1_T3U2_json",
+			"name": "HC1_T3U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "skin/archery_0.png",
+			"type": "image",
+			"name": "archery_0_png"
+		},
+		{
+			"url": "skin/archery_1.png",
+			"type": "image",
+			"name": "archery_1_png"
+		},
+		{
+			"url": "skin/archery_10.png",
+			"type": "image",
+			"name": "archery_10_png"
+		},
+		{
+			"url": "skin/archery_2.png",
+			"type": "image",
+			"name": "archery_2_png"
+		},
+		{
+			"url": "skin/archery_4.png",
+			"type": "image",
+			"name": "archery_4_png"
+		},
+		{
+			"url": "skin/archery_8.png",
+			"type": "image",
+			"name": "archery_8_png"
+		},
+		{
+			"url": "skin/archery_9.png",
+			"type": "image",
+			"name": "archery_9_png"
+		},
+		{
+			"url": "skin/arrow.png",
+			"type": "image",
+			"name": "arrow_png"
+		},
+		{
+			"url": "skin/cloud_1.png",
+			"type": "image",
+			"name": "cloud_1_png"
+		},
+		{
+			"url": "skin/cloud_2.png",
+			"type": "image",
+			"name": "cloud_2_png"
+		},
+		{
+			"url": "skin/cloud_3.png",
+			"type": "image",
+			"name": "cloud_3_png"
+		},
+		{
+			"url": "skin/bg_0.png",
+			"type": "image",
+			"name": "bg_0_png"
+		},
+		{
+			"url": "skin/love_panel.png",
+			"type": "image",
+			"name": "love_panel_png"
+		},
+		{
+			"url": "skin/love.png",
+			"type": "image",
+			"name": "love_png"
+		},
+		{
+			"url": "skin/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "skin/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "skin/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "skin/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "skin/fail_0.png",
+			"type": "image",
+			"name": "fail_0_png"
+		},
+		{
+			"url": "skin/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "skin/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "skin/stars.png",
+			"type": "image",
+			"name": "stars_png"
+		},
+		{
+			"url": "skin/gstars.png",
+			"type": "image",
+			"name": "gstars_png"
+		},
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1-1_bird.png",
+			"type": "image",
+			"name": "HC2-Sentences Game-T3U1-1_bird_png"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1-2_duck.png",
+			"type": "image",
+			"name": "HC2-Sentences Game-T3U1-2_duck_png"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1-3_frog.png",
+			"type": "image",
+			"name": "HC2-Sentences Game-T3U1-3_frog_png"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1-4_turtle.png",
+			"type": "image",
+			"name": "HC2-Sentences Game-T3U1-4_turtle_png"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1_1.mp3",
+			"type": "sound",
+			"name": "HC2-Sentences Game-T3U1_1_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1_2.mp3",
+			"type": "sound",
+			"name": "HC2-Sentences Game-T3U1_2_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1_3.mp3",
+			"type": "sound",
+			"name": "HC2-Sentences Game-T3U1_3_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2-Sentences Game-T3U1_4.mp3",
+			"type": "sound",
+			"name": "HC2-Sentences Game-T3U1_4_mp3"
+		},
+		{
+			"url": "data/HC2_T3U1/Thumbs.db",
+			"type": "bin",
+			"name": "Thumbs_db"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-1_hospital.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-1_hospital_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-1_park.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-1_park_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-2_bakery.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-2_bakery_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-3_bank.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-3_bank_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-4_library.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-4_library_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1-5_post office.png",
+			"type": "image",
+			"name": "HC3-Sentences Game-T1U1-5_post office_png"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_1.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_1_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_2.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_2_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_3.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_3_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_4.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_4_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_5.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_5_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_6.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_6_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/Thumbs.db",
+			"type": "bin",
+			"name": "Thumbs_db"
+		},
+		{
+			"url": "data/HC2_T3U1/HC2_T3U1.json",
+			"type": "json",
+			"name": "HC2_T3U1_json"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3_T1U1.json",
+			"type": "json",
+			"name": "HC3_T1U1_json"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-1_car.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U2-1_car_mp3"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-1_car.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U2-1_car_png"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-2_plane.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U2-2_plane_mp3"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-2_plane.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U2-2_plane_png"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-3_train.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U2-3_train_mp3"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-3_train.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U2-3_train_png"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-4_boat.mp3",
+			"type": "sound",
+			"name": "HC1-Sentences Game-T3U2-4_boat_mp3"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1-Sentences Game-T3U2-4_boat.png",
+			"type": "image",
+			"name": "HC1-Sentences Game-T3U2-4_boat_png"
+		},
+		{
+			"url": "data/HC1_T3U2/HC1_T3U2.json",
+			"type": "json",
+			"name": "HC1_T3U2_json"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_10.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_10_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_11.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_11_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_12.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_12_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_7.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_7_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_8.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_8_mp3"
+		},
+		{
+			"url": "data/HC3_T1U1/HC3-Sentences Game-T1U1_9.mp3",
+			"type": "sound",
+			"name": "HC3-Sentences Game-T1U1_9_mp3"
+		}
+	]
+}

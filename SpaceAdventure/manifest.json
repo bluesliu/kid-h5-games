@@ -9,7 +9,7 @@
 	],
 	"game": [
 		"bin-debug/Step.js",
-		"bin-debug/DropCard.js",
+		"bin-debug/components/CountLoves.js",
 		"bin-debug/LoadingUI.js",
 		"bin-debug/Main.js",
 		"bin-debug/Platform.js",
@@ -18,7 +18,7 @@
 		"bin-debug/SpaceAdventure.js",
 		"bin-debug/CardComponent.js",
 		"bin-debug/components/Bg.js",
-		"bin-debug/UtilsClass/TipsUtils.js",
+		"bin-debug/DropCard.js",
 		"bin-debug/components/CountStars.js",
 		"bin-debug/components/EButton.js",
 		"bin-debug/components/EffectUtils.js",
@@ -28,6 +28,6 @@
 		"bin-debug/components/Qieadi.js",
 		"bin-debug/components/Source.js",
 		"bin-debug/UtilsClass/BitmapBlink.js",
-		"bin-debug/components/CountLoves.js"
+		"bin-debug/UtilsClass/TipsUtils.js"
 	]
 }

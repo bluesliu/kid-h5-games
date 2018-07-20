@@ -200,14 +200,14 @@ var Main = (function (_super) {
         this._start.x = (stageW - this._start.width) * 0.5;
         this._start.y = (stageH - this._start.height) * 0.5;
         this.m_tipsSound = new SoundPlayer();
-        this._timer = new egret.Timer(10000, 0);
+        // this._timer=new egret.Timer(10000,0);
         this.initListener();
         this.m_bgSound = new SoundPlayer();
         this.m_gunSound = new SoundPlayer();
         this._topSp.visible = true;
     };
     Main.prototype.initListener = function () {
-        this._timer.addEventListener(egret.TimerEvent.TIMER, this.timerFunc, this);
+        // this._timer.addEventListener(egret.TimerEvent.TIMER, this.timerFunc, this);
         this._cards.addEventListener(egret.Event.COMPLETE, this.boxShow, this);
         this._tryAgain.addEventListener(egret.TouchEvent.TOUCH_TAP, this.replay, this);
         // this._quit.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onQuit, this);
@@ -259,22 +259,23 @@ var Main = (function (_super) {
         this.m_tipsSound.clear();
         this.m_tipsSound.playRes(Source.list[this._count % Source.images.length].audio);
         var arr = [];
-        for (var i = 0; i < Source.images.length; i++) {
+        for (var i = 0; i < Source.showNum; i++) {
             arr.push(Source.images[Source.questionList[this._count][i]]);
         }
         this._cards.init(arr);
-        this._timer.start();
+        // this._timer.start();
         this.m_bgSound.playRes("bgmusic_mp3", 0, 0.1);
     };
-    Main.prototype.timerFunc = function (event) {
-        this.repeat(null);
-    };
+    // private timerFunc(event:egret.TimerEvent)
+    // {
+    //     this.repeat(null);
+    // }
     Main.prototype.repeat = function (e) {
         if (e === void 0) { e = null; }
         if (e != null) {
             e.stopImmediatePropagation();
         }
-        this._timer.reset();
+        // this._timer.reset();
         this.m_tipsSound.clear();
         this.m_tipsSound.playRes(Source.list[this._count % Source.images.length].audio);
     };
@@ -298,7 +299,7 @@ var Main = (function (_super) {
                     _this._qwd.gotoAndStop(2);
                     _this.m_bgSound.clear();
                 }, 200);
-                this._timer.stop();
+                // this._timer.stop();
                 return;
             }
         }
@@ -311,7 +312,7 @@ var Main = (function (_super) {
             });
             this._next.visible = GetRequestObject().taskId == 0;
             this.m_repeatBtn.visible = false;
-            this._timer.stop();
+            // this._timer.stop();
             setTimeout(function () {
                 _this.addChild(_this._loves);
                 _this.addChild(_this._stars);
@@ -328,7 +329,7 @@ var Main = (function (_super) {
             return;
         }
         var arr = [];
-        for (var i = 0; i < Source.images.length; i++) {
+        for (var i = 0; i < Source.showNum; i++) {
             arr.push(Source.images[Source.questionList[this._count][i]]);
         }
         var time = this.rightIndex == -1 ? 1500 : 4000;
@@ -418,14 +419,14 @@ var Main = (function (_super) {
                                 _this._qwd.gotoAndStop(2);
                                 _this.m_bgSound.clear();
                             }, 200);
-                            this._timer.stop();
+                            // this._timer.stop();
                             this.stage.removeEventListener(egret.TouchEvent.TOUCH_BEGIN, this.onStageTouchBegin, this);
                             return;
                         }
                     }
                     setTimeout(function () {
-                        _this._timer.reset();
-                        _this._timer.start();
+                        //  this._timer.reset();
+                        // this._timer.start();
                         _this.next();
                     }, 500);
                     this._bullet.visible = true;

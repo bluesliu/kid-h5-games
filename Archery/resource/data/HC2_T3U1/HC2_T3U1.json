@@ -1,0 +1,29 @@
+{
+	
+	"items": [
+		{
+			"name": "bird",
+			"image": "HC2-Sentences Game-T3U1-1_bird_png",
+			"audio": "HC2-Sentences Game-T3U1_1_mp3"
+			
+		},
+		{
+			"name": "duck",
+			"image": "HC2-Sentences Game-T3U1-2_duck_png",
+			"audio": "HC2-Sentences Game-T3U1_4_mp3"
+			
+		},
+		{
+			"name": "frog",
+			"image": "HC2-Sentences Game-T3U1-3_frog_png",
+			"audio": "HC2-Sentences Game-T3U1_2_mp3"
+			
+		},
+		{
+			"name": "turtle",
+			"image": "HC2-Sentences Game-T3U1-4_turtle_png",
+			"audio": "HC2-Sentences Game-T3U1_3_mp3"
+			
+		}
+	]
+}

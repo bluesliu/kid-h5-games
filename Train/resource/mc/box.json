@@ -1,0 +1,31 @@
+{"mc":{
+	"box":{
+		"frameRate":24,
+		"labels":[
+			{"name":"close","frame":1,"end":14}
+			,{"name":"open","frame":15,"end":26}
+			
+			],
+		"events":[
+			
+			],
+		"frames":[
+			
+			{
+			"res":"1B1E01FF",
+			"x":19,
+			"y":34,
+			"duration":14
+			},
+			{
+			"res":"101B3915",
+			"x":0,
+			"y":0,
+			"duration":12
+			}
+			]
+}},
+	"res":{
+		"1B1E01FF":{"x":291,"y":1,"w":207,"h":191},
+		"101B3915":{"x":1,"y":1,"w":288,"h":230}
+	}}

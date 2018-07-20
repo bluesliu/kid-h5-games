@@ -16,10 +16,6 @@ var ConstructionWorker = (function (_super) {
     function ConstructionWorker() {
         var _this = _super.call(this) || this;
         _this._index = 0;
-        // Source.init();
-        //  Source.init(()=>{
-        //     this.createView();
-        //  });
         _this.createView();
         return _this;
     }
@@ -55,27 +51,15 @@ var ConstructionWorker = (function (_super) {
         this._optionSp.addChild(bg);
         this._overPage = new OverPage();
         this.addChild(this._overPage);
-        //this._overPage.visible=false;
-        // this._overPage.showWin(true);
         this._tipsSound = new SoundPlayer();
-        //  this._bgSound= new SoundPlayer();
-        // RES.getResAsync('bgmusic_mp3',(data)=>{
-        // this._bgSound=data;
-        // this._bgChannel = this._bgSound.play(0, 0);
-        // this._bgChannel.volume=0.1;
-        //   //this._topSp.visible=true; 
-        // },this);
-        //  this._tipsSound = new egret.Sound();;
-        // //sound 加载完成监听
-        // this._tipsSound.addEventListener(egret.Event.COMPLETE, function (e: egret.Event) {
-        //     this._tipsChannel = this._tipsSound.play(0, 1);
-        // }, this);
         for (var i = 0; i < Source.images.length; i++) {
             var box = Source.images[i];
             box.touchEnabled = true;
             box.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onClick, this);
         }
         //  this.setQuestion(this._index);
+        this._rightSound = new SoundPlayer();
+        this._wrongSound = new SoundPlayer();
         this.initListener();
     };
     ConstructionWorker.prototype.initListener = function () {
@@ -109,66 +93,89 @@ var ConstructionWorker = (function (_super) {
         var _this = this;
         //egret.log(e.target.name,this._index);
         if (e.target.name.split("_")[0] == "box") {
+            var card = e.target;
             var id = e.target.name.split("_")[1];
-            egret.log("this._index:", this._index, "id:", id);
+            //  egret.log("this._index:",this._index,"id:",id);
             if (id == (this._index % Source.images.length)) {
-                this._blocks.showBlock(this._index + 1);
-                this._stars.add();
                 this._index++;
-                if (this._stars.count >= 10) {
-                    this._blocks.hideBg();
-                    this.addChild(this._blocks);
-                    this._blocks.scaleX = this._blocks.scaleY = 0.5;
-                    this._blocks.x = 523 + 410;
-                    this._blocks.y = 254.5 + 484;
-                    this._qwd.visible = false;
-                    this.addChild(this._quit);
-                    this.addChild(this._loves);
-                    this.addChild(this._stars);
-                    this._optionSp.visible = false;
-                    this._overPage.visible = true;
-                    this._overPage.showWin(true);
-                    return;
-                }
+                this._rightSound.clear();
+                this._rightSound.playRes("dingdong_mp3").exec(function () {
+                    _this._blocks.showBlock(_this._index);
+                    _this._stars.add();
+                    if (_this._stars.count >= 10) {
+                        _this._blocks.hideBg();
+                        _this.addChild(_this._blocks);
+                        _this._blocks.scaleX = _this._blocks.scaleY = 0.5;
+                        _this._blocks.x = 523 + 410;
+                        _this._blocks.y = 254.5 + 484;
+                        _this._qwd.visible = false;
+                        //this.addChild(this._quit);
+                        _this.addChild(_this._loves);
+                        _this.addChild(_this._stars);
+                        _this._optionSp.visible = false;
+                        _this._overPage.visible = true;
+                        _this._overPage.showWin(true);
+                        return;
+                    }
+                    //this.next(this._index);  
+                    setTimeout(function () {
+                        var count = 0;
+                        for (var i = 1; i < 4; i++) {
+                            egret.log("this._optionSp.getChildAt(i)as Box:", _this._optionSp.getChildAt(i));
+                            var box = _this._optionSp.getChildAt(i);
+                            egret.Tween.get(box).wait(100 * i).to({ scaleX: 0.2, scaleY: 0.2, alpha: 0 }, 500, egret.Ease.cubicIn).call(function () {
+                                //  egret.log("aa");
+                                count++;
+                                if (count >= 3) {
+                                    _this.setQuestion(_this._index);
+                                }
+                            });
+                        }
+                    }, 500);
+                }, this);
             }
             else {
                 // egret.log(this._loves.count);
                 Source.changeQusetion(this._index);
-                this._loves.cut();
-                if (this._loves.count <= 0) {
-                    this._blocks.hideBg();
-                    this.addChild(this._blocks);
-                    this._blocks.scaleX = this._blocks.scaleY = 0.5;
-                    this._blocks.x = 523 + 410;
-                    this._blocks.y = 254.5 + 484;
-                    this._qwd.visible = false;
-                    this.addChild(this._quit);
-                    this.addChild(this._loves);
-                    this.addChild(this._stars);
-                    this._optionSp.visible = false;
-                    this._overPage.visible = true;
-                    this._overPage.showWin(false);
-                    return;
-                }
-            }
-            var count_1 = 0;
-            for (var i = 1; i < 4; i++) {
-                //  egret.log(Source.questionList[id][i]);
-                var box = this._optionSp.getChildAt(i);
-                egret.Tween.get(box).wait(100 * i).to({ scaleX: 0.2, scaleY: 0.2, alpha: 0 }, 500, egret.Ease.cubicIn).call(function () {
-                    //  egret.log("aa");
-                    count_1++;
-                    if (count_1 >= 3) {
-                        _this.setQuestion(_this._index);
+                EffectUtils.shakeObj(card, null);
+                this._wrongSound.clear();
+                this._wrongSound.playRes("chacha_mp3").exec(function () {
+                    _this._loves.cut();
+                    if (_this._loves.count <= 0) {
+                        _this._blocks.hideBg();
+                        _this.addChild(_this._blocks);
+                        _this._blocks.scaleX = _this._blocks.scaleY = 0.5;
+                        _this._blocks.x = 523 + 410;
+                        _this._blocks.y = 254.5 + 484;
+                        _this._qwd.visible = false;
+                        // this.addChild(this._quit);
+                        _this.addChild(_this._loves);
+                        _this.addChild(_this._stars);
+                        _this._optionSp.visible = false;
+                        _this._overPage.visible = true;
+                        _this._overPage.showWin(false);
+                        return;
                     }
-                });
+                    setTimeout(function () {
+                        var count = 0;
+                        for (var i = 1; i < 4; i++) {
+                            egret.log("this._optionSp.getChildAt(i)as Box:", _this._optionSp.getChildAt(i));
+                            var box = _this._optionSp.getChildAt(i);
+                            egret.Tween.get(box).wait(100 * i).to({ scaleX: 0.2, scaleY: 0.2, alpha: 0 }, 500, egret.Ease.cubicIn).call(function () {
+                                //  egret.log("aa");
+                                count++;
+                                if (count >= 3) {
+                                    _this.setQuestion(_this._index);
+                                }
+                            });
+                        }
+                    }, 500);
+                }, this);
+                // egret.log(this._optionSp);
             }
         }
     };
     ConstructionWorker.prototype.setQuestion = function (id) {
-        egret.log("id:::::::", id);
-        // let url:string="resource/"+Source.audios[id];
-        //this._tipsSound.load(url);
         this._tipsSound.clear();
         this._tipsSound.playRes(Source.list[id % Source.images.length].audio);
         while (this._optionSp.numChildren > 1) {

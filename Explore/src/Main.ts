@@ -48,21 +48,21 @@ class Main extends egret.DisplayObjectContainer {
 
     private onAddToStage(event: egret.Event) {
 
-        // egret.lifecycle.addLifecycleListener((context) => {
-        //     // custom lifecycle plugin
+        egret.lifecycle.addLifecycleListener((context) => {
+            // custom lifecycle plugin
 
-        //     context.onUpdate = () => {
+            context.onUpdate = () => {
                 
-        //     }
-        // })
+            }
+        })
 
-        // egret.lifecycle.onPause = () => {
-        //     egret.ticker.pause();
-        // }
+        egret.lifecycle.onPause = () => {
+            egret.ticker.pause();
+        }
 
-        // egret.lifecycle.onResume = () => {
-        //     egret.ticker.resume();
-        // }
+        egret.lifecycle.onResume = () => {
+            egret.ticker.resume();
+        }
 
 
         //设置加载进度界面

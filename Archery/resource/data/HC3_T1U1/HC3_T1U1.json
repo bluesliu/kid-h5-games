@@ -1,0 +1,77 @@
+{
+	
+	"items": [
+		{
+			"name": "hospital",
+			"image": "HC3-Sentences Game-T1U1-1_hospital_png",
+			"audio": "HC3-Sentences Game-T1U1_6_mp3"
+			
+		},
+		{
+			"name": "park",
+			"image": "HC3-Sentences Game-T1U1-1_park_png",
+			"audio": "HC3-Sentences Game-T1U1_1_mp3"
+			
+		},
+		{
+			"name": "bakery",
+			"image": "HC3-Sentences Game-T1U1-2_bakery_png",
+			"audio": "HC3-Sentences Game-T1U1_5_mp3"
+			
+		},
+		{
+			"name": "bank",
+			"image": "HC3-Sentences Game-T1U1-3_bank_png",
+			"audio": "HC3-Sentences Game-T1U1_2_mp3"
+			
+		},
+		{
+			"name": "library",
+			"image": "HC3-Sentences Game-T1U1-4_library_png",
+			"audio": "HC3-Sentences Game-T1U1_3_mp3"
+			
+		},
+		{
+			"name": "post office",
+			"image": "HC3-Sentences Game-T1U1-5_post office_png",
+			"audio": "HC3-Sentences Game-T1U1_4_mp3"
+			
+		},
+		{
+			"name": "hospital",
+			"image": "HC3-Sentences Game-T1U1-1_hospital_png",
+			"audio": "HC3-Sentences Game-T1U1_12_mp3"
+			
+		},
+		{
+			"name": "park",
+			"image": "HC3-Sentences Game-T1U1-1_park_png",
+			"audio": "HC3-Sentences Game-T1U1_7_mp3"
+			
+		},
+		{
+			"name": "bakery",
+			"image": "HC3-Sentences Game-T1U1-2_bakery_png",
+			"audio": "HC3-Sentences Game-T1U1_11_mp3"
+			
+		},
+		{
+			"name": "bank",
+			"image": "HC3-Sentences Game-T1U1-3_bank_png",
+			"audio": "HC3-Sentences Game-T1U1_8_mp3"
+			
+		},
+		{
+			"name": "library",
+			"image": "HC3-Sentences Game-T1U1-4_library_png",
+			"audio": "HC3-Sentences Game-T1U1_9_mp3"
+			
+		},
+		{
+			"name": "post office",
+			"image": "HC3-Sentences Game-T1U1-5_post office_png",
+			"audio": "HC3-Sentences Game-T1U1_10_mp3"
+			
+		}
+	]
+}

@@ -262,7 +262,7 @@ public static sourceName:String="";
 
         this.m_tipsSound = new SoundPlayer();
 
-        this._timer=new egret.Timer(10000,0);
+        // this._timer=new egret.Timer(10000,0);
 
         
         this.initListener();
@@ -276,7 +276,7 @@ public static sourceName:String="";
     private initListener()
     {
          
-        this._timer.addEventListener(egret.TimerEvent.TIMER, this.timerFunc, this);
+        // this._timer.addEventListener(egret.TimerEvent.TIMER, this.timerFunc, this);
         this._cards.addEventListener(egret.Event.COMPLETE, this.boxShow, this);
         this._tryAgain.addEventListener(egret.TouchEvent.TOUCH_TAP, this.replay, this);
         // this._quit.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onQuit, this);
@@ -346,28 +346,28 @@ public static sourceName:String="";
         this.m_tipsSound.playRes(Source.list[this._count%Source.images.length].audio);
 
         let arr=[];
-        for(let i:number=0;i<Source.images.length;i++)
+        for(let i:number=0;i<Source.showNum;i++)
         {
             arr.push(Source.images[Source.questionList[this._count][i]]);
         }
         this._cards.init(arr);
-        this._timer.start();
+        // this._timer.start();
 
         this.m_bgSound.playRes("bgmusic_mp3",0,0.1);
       
     }
 
-    private timerFunc(event:egret.TimerEvent)
-    {
-        this.repeat(null);
-    }
+    // private timerFunc(event:egret.TimerEvent)
+    // {
+    //     this.repeat(null);
+    // }
 
     private repeat(e:egret.TouchEvent=null){
         if(e!=null){
             e.stopImmediatePropagation();
         }
         
-        this._timer.reset();
+        // this._timer.reset();
         this.m_tipsSound.clear();
         this.m_tipsSound.playRes(Source.list[this._count%Source.images.length].audio);
     }
@@ -401,7 +401,7 @@ public static sourceName:String="";
         
                     },200);
                     
-                    this._timer.stop();
+                    // this._timer.stop();
                     return;
                 }
                
@@ -418,7 +418,7 @@ public static sourceName:String="";
                 this._next.visible =  GetRequestObject().taskId == 0;
                 this.m_repeatBtn.visible = false;
 
-                this._timer.stop();
+                // this._timer.stop();
                 setTimeout(()=>{ 
                      this.addChild(this._loves);
                        this.addChild(this._stars);
@@ -437,7 +437,7 @@ public static sourceName:String="";
                 return;
             }
         let arr=[];
-        for(let i:number=0;i<Source.images.length;i++)
+        for(let i:number=0;i<Source.showNum;i++)
         {
             arr.push(Source.images[Source.questionList[this._count][i]]);
         }
@@ -549,15 +549,16 @@ public static sourceName:String="";
 
                             this.m_bgSound.clear();
                         },200);
-                            this._timer.stop();
+                            // this._timer.stop();
                             this.stage.removeEventListener( egret.TouchEvent.TOUCH_BEGIN,this.onStageTouchBegin, this );
                             return;
                         }
                     }
                     
                         
-                    setTimeout(()=>{  this._timer.reset();
-                        this._timer.start();
+                    setTimeout(()=>{ 
+                        //  this._timer.reset();
+                        // this._timer.start();
                         this.next();},500);
 
                         this._bullet.visible=true;
