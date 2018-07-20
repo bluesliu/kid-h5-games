@@ -51,7 +51,7 @@ var Main = (function (_super) {
         RES.addEventListener(RES.ResourceEvent.GROUP_COMPLETE, this.onUnitLoadComplete, this);
         var requestObj = GetRequestObject();
         if (Game.isDebug) {
-            this.assetsName = "HC5_T2U2"; //test code
+            this.assetsName = "HC4_T2U1"; //test code
         }
         else {
             if (requestObj == null) {

@@ -5,7 +5,7 @@
 			"name": "preload"
 		},
 		{
-			"keys": "HC4_T2U1_json",
+			"keys": "HC4_T2U1_json,cereal_yes_png,cereal_yes_mp3,cereal_no_png,cereal_no_mp3,bread_yes_png,bread_yes_mp3,bread_no_png,bread_no_mp3,soup_yes_png,soup_yes_mp3,soup_no_png,soup_no_mp3,salad_yes_png,salad_yes_mp3,salad_no_png,salad_no_mp3,rice_yes_png,rice_yes_mp3,rice_no_png,rice_no_mp3,noodles_yes_png,noodles_yes_mp3,noodles_no_png,noodles_no_mp3",
 			"name": "HC4_T2U1"
 		}
 	],
@@ -174,6 +174,126 @@
 			"url": "data/HC4_T2U1/HC4_T2U1.json",
 			"type": "json",
 			"name": "HC4_T2U1_json"
+		},
+		{
+			"url": "data/HC4_T2U1/bread_no.png",
+			"type": "image",
+			"name": "bread_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/bread_yes.png",
+			"type": "image",
+			"name": "bread_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/cereal_no.png",
+			"type": "image",
+			"name": "cereal_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/cereal_yes.png",
+			"type": "image",
+			"name": "cereal_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/noodles_no.png",
+			"type": "image",
+			"name": "noodles_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/noodles_yes.png",
+			"type": "image",
+			"name": "noodles_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/rice_no.png",
+			"type": "image",
+			"name": "rice_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/rice_yes.png",
+			"type": "image",
+			"name": "rice_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/salad_no.png",
+			"type": "image",
+			"name": "salad_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/salad_yes.png",
+			"type": "image",
+			"name": "salad_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/soup_no.png",
+			"type": "image",
+			"name": "soup_no_png"
+		},
+		{
+			"url": "data/HC4_T2U1/soup_yes.png",
+			"type": "image",
+			"name": "soup_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U1/bread_no.mp3",
+			"type": "sound",
+			"name": "bread_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/bread_yes.mp3",
+			"type": "sound",
+			"name": "bread_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/cereal_no.mp3",
+			"type": "sound",
+			"name": "cereal_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/cereal_yes.mp3",
+			"type": "sound",
+			"name": "cereal_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/noodles_no.mp3",
+			"type": "sound",
+			"name": "noodles_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/noodles_yes.mp3",
+			"type": "sound",
+			"name": "noodles_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/rice_no.mp3",
+			"type": "sound",
+			"name": "rice_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/rice_yes.mp3",
+			"type": "sound",
+			"name": "rice_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/salad_no.mp3",
+			"type": "sound",
+			"name": "salad_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/salad_yes.mp3",
+			"type": "sound",
+			"name": "salad_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/soup_no.mp3",
+			"type": "sound",
+			"name": "soup_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U1/soup_yes.mp3",
+			"type": "sound",
+			"name": "soup_yes_mp3"
 		}
 	]
 }

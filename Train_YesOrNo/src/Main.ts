@@ -49,7 +49,7 @@ class Main extends egret.DisplayObjectContainer {
         let requestObj = GetRequestObject();
         
         if(Game.isDebug){
-            this.assetsName = "HC5_T2U2";     //test code
+            this.assetsName = "HC4_T2U1";     //test code
         }
         else{
             if(requestObj==null){

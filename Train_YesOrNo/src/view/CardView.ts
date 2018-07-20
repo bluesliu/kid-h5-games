@@ -6,11 +6,13 @@ class CardView extends egret.Sprite{
 	private m_bg:egret.Bitmap;
 	private m_content:egret.Bitmap;
 	
-	public question:Question;
+	private m_image:string;
+	private m_audio:string;
 
-	public constructor(index:number, q:Question) {
+	public constructor(index:number, image:string, audio:string) {
 		super();
-		this.question = q;
+		this.m_image = image;
+		this.m_audio = audio;
 
 		this.m_bg = DisplayUtil.createBitmapByName("card"+(index+1)+"_png");
 		this.addChild(this.m_bg);
@@ -18,21 +20,11 @@ class CardView extends egret.Sprite{
 		this.m_bg.y = -this.m_bg.height/2;
 
 		//图片
-		this.m_content = DisplayUtil.createBitmapByName(q.image);
+		this.m_content = DisplayUtil.createBitmapByName(image);
 		DisplayUtil.setSize(this.m_content, 170, 170);
 		this.m_content.x = -this.m_content.width/2;
 		this.m_content.y = -this.m_content.height/2;
 		this.addChild(this.m_content);
-
-		// //遮罩
-		// let maskShape = new egret.Shape();
-		// maskShape.graphics.beginFill(0xffffff, 1);
-		// maskShape.graphics.drawCircle(0,0,110);
-		// maskShape.graphics.endFill();
-		// maskShape.x = this.m_content.x + this.m_content.width/2;
-		// maskShape.y = this.m_content.y + this.m_content.height/2;
-		// this.addChild(maskShape);
-		// this.m_content.mask = maskShape;
 
 		this.touchEnabled = true;
 
@@ -58,9 +50,9 @@ class CardView extends egret.Sprite{
 
 	public dispose(){
 		egret.Tween.removeTweens(this);
-		this.question = null;
 		this.m_content = null;
 	}
 
-	public get cardName(){return this.question.name;}
+	public get imageName(){return this.m_image;}
+	public get audioName(){return this.m_audio;}
 }

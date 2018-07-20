@@ -2,34 +2,46 @@
 
 "list":[
 	{
-	"name":"cough",
-	"image":"cough_png",
-	"sound":"cough_mp3"
+	"name":"bread",
+	"image1":"bread_yes_png",
+	"audio1":"bread_yes_mp3",
+	"image2":"bread_no_png",
+	"audio2":"bread_no_mp3"
 	},
 	{
-	"name":"fever",
-	"image":"fever_png",
-	"sound":"fever_mp3"
+	"name":"cereal",
+	"image1":"cereal_yes_png",
+	"audio1":"cereal_yes_mp3",
+	"image2":"cereal_no_png",
+	"audio2":"cereal_no_mp3"
 	},
 	{
-	"name":"headache",
-	"image":"headache_png",
-	"sound":"headache_mp3"
+	"name":"noodles",
+	"image1":"noodles_yes_png",
+	"audio1":"noodles_yes_mp3",
+	"image2":"noodles_no_png",
+	"audio2":"noodles_no_mp3"
 	},
 	{
-	"name":"runny nose",
-	"image":"runny nose_png",
-	"sound":"runny nose_mp3"
+	"name":"rice",
+	"image1":"rice_yes_png",
+	"audio1":"rice_yes_mp3",
+	"image2":"rice_no_png",
+	"audio2":"rice_no_mp3"
 	},
 	{
-	"name":"toothache",
-	"image":"toothache_png",
-	"sound":"toothache_mp3"
+	"name":"salad",
+	"image1":"salad_yes_png",
+	"audio1":"salad_yes_mp3",
+	"image2":"salad_no_png",
+	"audio2":"salad_no_mp3"
 	},
 	{
-	"name":"tummy ache",
-	"image":"tummy ache_png",
-	"sound":"tummy ache_mp3"
+	"name":"soup",
+	"image1":"soup_yes_png",
+	"audio1":"soup_yes_mp3",
+	"image2":"soup_no_png",
+	"audio2":"soup_no_mp3"
 	}
 	]
 

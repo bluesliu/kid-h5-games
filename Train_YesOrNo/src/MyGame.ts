@@ -8,6 +8,8 @@ class MyGame extends Game{
 	private m_train:TrainView;
 	private m_box:egret.MovieClip;
 
+	private m_curAudioName:string;
+
 	public constructor(assetsName:string, stageW:number, stageH:number) {
 		super(assetsName, stageW, stageH);
 	}
@@ -42,7 +44,7 @@ class MyGame extends Game{
 
 	private onTouchCard(e:egret.Event){
 		let card = e.data as CardView;
-		if(card.cardName == this.question.curQuestion.name){
+		if(card.audioName == this.m_curAudioName){
 			//正确
 			card.right();
 			this.m_effSound.clear();
@@ -107,6 +109,9 @@ class MyGame extends Game{
 		this.m_checking = false;
 		let q = this.m_question.newQuestion;
 
+		//随机朗读yes或no语音
+		this.m_curAudioName = Math.random()>0.5 ? q.audio1 : q.audio2;
+
 		this.m_cardManager.reset();
 		this.m_cardManager.addCard(q);
 
@@ -114,6 +119,7 @@ class MyGame extends Game{
 	}
 
 	protected onGameOver(isWin:boolean){
+		this.m_curAudioName = "";
 		this.m_cardManager.reset();
 		this.stopBGMusic();
 		this.m_box.gotoAndStop("close");
@@ -122,8 +128,10 @@ class MyGame extends Game{
 
 
 	private onRepeat(){
+		if(this.m_curAudioName==null || this.m_curAudioName.length==0){
+			return;
+		}
 		this.m_qSound.clear();
-		let audio = this.question.curQuestion.sound;
-		this.m_qSound.playRes(audio);
+		this.m_qSound.playRes(this.m_curAudioName);
 	}
 }

@@ -13,30 +13,22 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var CardView = (function (_super) {
     __extends(CardView, _super);
-    function CardView(index, q) {
+    function CardView(index, image, audio) {
         var _this = _super.call(this) || this;
         _this.speedY = 0;
         _this.speedX = 0;
-        _this.question = q;
+        _this.m_image = image;
+        _this.m_audio = audio;
         _this.m_bg = DisplayUtil.createBitmapByName("card" + (index + 1) + "_png");
         _this.addChild(_this.m_bg);
         _this.m_bg.x = -_this.m_bg.width / 2;
         _this.m_bg.y = -_this.m_bg.height / 2;
         //图片
-        _this.m_content = DisplayUtil.createBitmapByName(q.image);
+        _this.m_content = DisplayUtil.createBitmapByName(image);
         DisplayUtil.setSize(_this.m_content, 170, 170);
         _this.m_content.x = -_this.m_content.width / 2;
         _this.m_content.y = -_this.m_content.height / 2;
         _this.addChild(_this.m_content);
-        // //遮罩
-        // let maskShape = new egret.Shape();
-        // maskShape.graphics.beginFill(0xffffff, 1);
-        // maskShape.graphics.drawCircle(0,0,110);
-        // maskShape.graphics.endFill();
-        // maskShape.x = this.m_content.x + this.m_content.width/2;
-        // maskShape.y = this.m_content.y + this.m_content.height/2;
-        // this.addChild(maskShape);
-        // this.m_content.mask = maskShape;
         _this.touchEnabled = true;
         return _this;
     }
@@ -57,11 +49,15 @@ var CardView = (function (_super) {
     };
     CardView.prototype.dispose = function () {
         egret.Tween.removeTweens(this);
-        this.question = null;
         this.m_content = null;
     };
-    Object.defineProperty(CardView.prototype, "cardName", {
-        get: function () { return this.question.name; },
+    Object.defineProperty(CardView.prototype, "imageName", {
+        get: function () { return this.m_image; },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(CardView.prototype, "audioName", {
+        get: function () { return this.m_audio; },
         enumerable: true,
         configurable: true
     });

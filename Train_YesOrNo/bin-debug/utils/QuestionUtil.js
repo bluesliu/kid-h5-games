@@ -7,8 +7,10 @@ var Question = (function () {
     Question.prototype.clone = function () {
         var q = new Question();
         q.name = this.name;
-        q.image = this.image;
-        q.sound = this.sound;
+        q.image1 = this.image1;
+        q.audio1 = this.audio1;
+        q.image2 = this.image2;
+        q.audio2 = this.audio2;
         return q;
     };
     return Question;
@@ -29,8 +31,10 @@ var QuestionUtil = (function () {
         for (var i = 0; i < this.m_json.list.length; i++) {
             var q = new Question();
             q.name = this.m_json.list[i].name;
-            q.image = this.m_json.list[i].image;
-            q.sound = this.m_json.list[i].sound;
+            q.image1 = this.m_json.list[i].image1;
+            q.audio1 = this.m_json.list[i].audio1;
+            q.image2 = this.m_json.list[i].image2;
+            q.audio2 = this.m_json.list[i].audio2;
             this.m_qList.push(q);
         }
         this.newGroup();

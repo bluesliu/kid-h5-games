@@ -40,7 +40,7 @@ var MyGame = (function (_super) {
     MyGame.prototype.onTouchCard = function (e) {
         var _this = this;
         var card = e.data;
-        if (card.cardName == this.question.curQuestion.name) {
+        if (card.audioName == this.m_curAudioName) {
             //正确
             card.right();
             this.m_effSound.clear();
@@ -98,20 +98,25 @@ var MyGame = (function (_super) {
     MyGame.prototype.nextQuestion = function () {
         this.m_checking = false;
         var q = this.m_question.newQuestion;
+        //随机朗读yes或no语音
+        this.m_curAudioName = Math.random() > 0.5 ? q.audio1 : q.audio2;
         this.m_cardManager.reset();
         this.m_cardManager.addCard(q);
         this.onRepeat();
     };
     MyGame.prototype.onGameOver = function (isWin) {
+        this.m_curAudioName = "";
         this.m_cardManager.reset();
         this.stopBGMusic();
         this.m_box.gotoAndStop("close");
         this.submit(isWin);
     };
     MyGame.prototype.onRepeat = function () {
+        if (this.m_curAudioName == null || this.m_curAudioName.length == 0) {
+            return;
+        }
         this.m_qSound.clear();
-        var audio = this.question.curQuestion.sound;
-        this.m_qSound.playRes(audio);
+        this.m_qSound.playRes(this.m_curAudioName);
     };
     return MyGame;
 }(Game));

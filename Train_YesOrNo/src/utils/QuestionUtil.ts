@@ -1,14 +1,18 @@
 class Question {
 	public index:number;
 	public name:string;
-	public image:string;
-	public sound:string;
+	public image1:string;
+	public audio1:string;
+	public image2:string;
+	public audio2:string;
 
 	public clone():Question{
 		let q = new Question();
 		q.name = this.name;
-		q.image = this.image;
-		q.sound = this.sound;
+		q.image1 = this.image1;
+		q.audio1 = this.audio1;
+		q.image2 = this.image2;
+		q.audio2 = this.audio2;
 		return q;
 	}
 }
@@ -35,8 +39,10 @@ class QuestionUtil {
 		for(let i=0; i<this.m_json.list.length; i++){
 			let q = new Question();
 			q.name = this.m_json.list[i].name;
-			q.image = this.m_json.list[i].image;
-			q.sound = this.m_json.list[i].sound;
+			q.image1 = this.m_json.list[i].image1;
+			q.audio1 = this.m_json.list[i].audio1;
+			q.image2 = this.m_json.list[i].image2;
+			q.audio2 = this.m_json.list[i].audio2;
 			this.m_qList.push(q);
 		}
 		this.newGroup();

@@ -17,53 +17,24 @@ var CardManager = (function (_super) {
     function CardManager() {
         var _this = _super.call(this) || this;
         _this.m_startPoint0 = new egret.Point(384, 581);
-        _this.m_startPoint1 = new egret.Point(683, 483);
+        //private m_startPoint1 = new egret.Point(683,483);
         _this.m_startPoint2 = new egret.Point(981, 577);
         _this.m_cardArr = Array();
         return _this;
     }
     CardManager.prototype.addCard = function (q) {
-        var qArr = new Array();
-        var q1;
-        var q2;
-        //left 卡片
-        while (true) {
-            var idx = MathUtil.random(0, Game.instance.question.$qList.length - 1, 1);
-            q1 = Game.instance.question.$qList[idx];
-            if (q1.name != q.name) {
-                break;
-            }
-        }
-        while (true) {
-            var idx = MathUtil.random(0, Game.instance.question.$qList.length - 1, 1);
-            q2 = Game.instance.question.$qList[idx];
-            if (q2.name != q.name && q2.name != q1.name) {
-                break;
-            }
-        }
-        qArr.push(q);
-        qArr.push(q1);
-        qArr.push(q2);
-        ArrayUtil.randomSort(qArr);
-        var card = new CardView(0, qArr[0]);
+        var card = new CardView(0, q.image1, q.audio1);
         card.x = this.m_startPoint0.x;
         card.y = this.m_startPoint0.y;
         Game.instance.sceneLayer.addChild(card);
         this.m_cardArr.push(card);
         card.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTapCard, this);
-        var card1 = new CardView(1, qArr[1]);
-        card1.x = this.m_startPoint1.x;
-        card1.y = this.m_startPoint1.y;
+        var card1 = new CardView(1, q.image2, q.audio2);
+        card1.x = this.m_startPoint2.x;
+        card1.y = this.m_startPoint2.y;
         Game.instance.sceneLayer.addChild(card1);
         this.m_cardArr.push(card1);
         card1.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTapCard, this);
-        //right 卡片
-        var card2 = new CardView(2, qArr[2]);
-        card2.x = this.m_startPoint2.x;
-        card2.y = this.m_startPoint2.y;
-        Game.instance.sceneLayer.addChild(card2);
-        this.m_cardArr.push(card2);
-        card2.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onTapCard, this);
     };
     CardManager.prototype.onTapCard = function (e) {
         var card = e.currentTarget;
