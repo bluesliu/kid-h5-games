@@ -163,7 +163,7 @@ class MyGame extends Game{
 
 	protected onGameOver(isWin:boolean){
 		this.m_balloonManager.reset();
-		this.m_tf.text = "";
+		//this.m_tf.text = "";
 		egret.Tween.removeTweens(this.m_balloonManager.balloon);
 		this.m_qSound.clear();
 		this.m_effSound.clear();

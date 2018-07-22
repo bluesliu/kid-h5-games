@@ -1,0 +1,249 @@
+{
+	"groups": [
+		{
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,bg_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,item_png,chacha_mp3,balloon_png,huanhu_mp3,dingdong_mp3",
+			"name": "preload"
+		},
+		{
+			"keys": "tomatoes_yes_png,tomatoes_yes_mp3,tomatoes_no_png,tomatoes_no_mp3,strawberries_yes_png,strawberries_yes_mp3,strawberries_no_png,strawberries_no_mp3,potatoes_yes_png,potatoes_yes_mp3,potatoes_no_png,potatoes_no_mp3,peaches_yes_png,peaches_yes_mp3,peaches_no_png,peaches_no_mp3,HC4_T2U2_json,cherries_yes_png,cherries_yes_mp3,cherries_no_png,cherries_no_mp3,carrots_yes_png,carrots_yes_mp3,carrots_no_png,carrots_no_mp3",
+			"name": "HC4_T2U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "scene1/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "scene1/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "scene1/lifeBoard.png",
+			"type": "image",
+			"name": "lifeBoard_png"
+		},
+		{
+			"url": "scene1/heartLight.png",
+			"type": "image",
+			"name": "heartLight_png"
+		},
+		{
+			"url": "scene1/heartDark.png",
+			"type": "image",
+			"name": "heartDark_png"
+		},
+		{
+			"url": "scene1/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "scene1/nextBtn.png",
+			"type": "image",
+			"name": "nextBtn_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "scene1/item.png",
+			"type": "image",
+			"name": "item_png"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "scene1/balloon.png",
+			"type": "image",
+			"name": "balloon_png"
+		},
+		{
+			"url": "audio/huanhu.mp3",
+			"type": "sound",
+			"name": "huanhu_mp3"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/HC4_T2U2.json",
+			"type": "json",
+			"name": "HC4_T2U2_json"
+		},
+		{
+			"url": "data/HC4_T2U2/carrots_no.png",
+			"type": "image",
+			"name": "carrots_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/carrots_yes.png",
+			"type": "image",
+			"name": "carrots_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/cherries_no.png",
+			"type": "image",
+			"name": "cherries_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/cherries_yes.png",
+			"type": "image",
+			"name": "cherries_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/peaches_no.png",
+			"type": "image",
+			"name": "peaches_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/peaches_yes.png",
+			"type": "image",
+			"name": "peaches_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/potatoes_no.png",
+			"type": "image",
+			"name": "potatoes_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/potatoes_yes.png",
+			"type": "image",
+			"name": "potatoes_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/strawberries_no.png",
+			"type": "image",
+			"name": "strawberries_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/strawberries_yes.png",
+			"type": "image",
+			"name": "strawberries_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/tomatoes_no.png",
+			"type": "image",
+			"name": "tomatoes_no_png"
+		},
+		{
+			"url": "data/HC4_T2U2/tomatoes_yes.png",
+			"type": "image",
+			"name": "tomatoes_yes_png"
+		},
+		{
+			"url": "data/HC4_T2U2/carrots_no.mp3",
+			"type": "sound",
+			"name": "carrots_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/carrots_yes.mp3",
+			"type": "sound",
+			"name": "carrots_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/cherries_no.mp3",
+			"type": "sound",
+			"name": "cherries_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/cherries_yes.mp3",
+			"type": "sound",
+			"name": "cherries_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/peaches_no.mp3",
+			"type": "sound",
+			"name": "peaches_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/peaches_yes.mp3",
+			"type": "sound",
+			"name": "peaches_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/potatoes_no.mp3",
+			"type": "sound",
+			"name": "potatoes_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/potatoes_yes.mp3",
+			"type": "sound",
+			"name": "potatoes_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/strawberries_no.mp3",
+			"type": "sound",
+			"name": "strawberries_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/strawberries_yes.mp3",
+			"type": "sound",
+			"name": "strawberries_yes_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/tomatoes_no.mp3",
+			"type": "sound",
+			"name": "tomatoes_no_mp3"
+		},
+		{
+			"url": "data/HC4_T2U2/tomatoes_yes.mp3",
+			"type": "sound",
+			"name": "tomatoes_yes_mp3"
+		}
+	]
+}

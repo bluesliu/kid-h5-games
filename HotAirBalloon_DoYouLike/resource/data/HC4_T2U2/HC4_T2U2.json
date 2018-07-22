@@ -1,0 +1,54 @@
+{
+"list":[
+	{
+	"name":"carrots",
+	"image1":"carrots_yes_png",
+	"audio1":"carrots_yes_mp3",
+	"image2":"carrots_no_png",
+	"audio2":"carrots_no_mp3",
+	"text":"Do you like carrots?"
+	},
+	{
+	"name":"cherries",
+	"image1":"cherries_yes_png",
+	"audio1":"cherries_yes_mp3",
+	"image2":"cherries_no_png",
+	"audio2":"cherries_no_mp3",
+	"text":"Do you like cherries?"
+	},
+	{
+	"name":"peaches",
+	"image1":"peaches_yes_png",
+	"audio1":"peaches_yes_mp3",
+	"image2":"peaches_no_png",
+	"audio2":"peaches_no_mp3",
+	"text":"Do you like peaches?"
+	},
+	{
+	"name":"potatoes",
+	"image1":"potatoes_yes_png",
+	"audio1":"potatoes_yes_mp3",
+	"image2":"potatoes_no_png",
+	"audio2":"potatoes_no_mp3",
+	"text":"Do you like potatoes?"
+	},
+	{
+	"name":"strawberries",
+	"image1":"strawberries_yes_png",
+	"audio1":"strawberries_yes_mp3",
+	"image2":"strawberries_no_png",
+	"audio2":"strawberries_no_mp3",
+	"text":"Do you like strawberries?"
+	},
+	{
+	"name":"tomatoes",
+	"image1":"tomatoes_yes_png",
+	"audio1":"tomatoes_yes_mp3",
+	"image2":"tomatoes_no_png",
+	"audio2":"tomatoes_no_mp3",
+	"text":"Do you like tomatoes?"
+	}
+	]
+
+
+}
