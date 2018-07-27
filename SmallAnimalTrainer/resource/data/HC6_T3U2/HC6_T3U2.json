@@ -1,0 +1,46 @@
+{
+"yesAudio":"Yes I do_mp3",
+"noAudio":"No I dont_mp3",
+"yesImage":"Yes I do_png",
+"noImage":"No I dont_png",
+"list":[
+	{
+	"name":"crab",
+	"image":"crab_png",
+	"sound":"crab_mp3",
+	"text":"Do you see the crab?"
+	},
+	{
+	"name":"dolphin",
+	"image":"dolphin_png",
+	"sound":"dolphin_mp3",
+	"text":"Do you see the dolphin?"
+	},
+	{
+	"name":"jellyfish",
+	"image":"jellyfish_png",
+	"sound":"jellyfish_mp3",
+	"text":"Do you see the jellyfish?"
+	},
+	{
+	"name":"penguin",
+	"image":"penguin_png",
+	"sound":"penguin_mp3",
+	"text":"Do you see the penguin?"
+	},
+	{
+	"name":"shark",
+	"image":"shark_png",
+	"sound":"shark_mp3",
+	"text":"Do you see the shark?"
+	},
+	{
+	"name":"whale",
+	"image":"whale_png",
+	"sound":"whale_mp3",
+	"text":"Do you see the whale?"
+	}
+	]
+
+
+}

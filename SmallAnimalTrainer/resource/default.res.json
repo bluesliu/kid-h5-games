@@ -1,0 +1,209 @@
+{
+	"groups": [
+		{
+			"keys": "bgmusic_mp3,quit_png,start_png,success_0_png,success_1_png,success_2_png,repeat_png,starDark_png,starLight_png,lifeBoard_png,heartLight_png,heartDark_png,tryAgainBtn_png,nextBtn_png,fail_1_png,fail_2_png,chacha_mp3,dingdong_mp3,bg_png,role_png,role_json",
+			"name": "preload"
+		},
+		{
+			"keys": "crab_mp3,crab_png,jellyfish_png,jellyfish_mp3,HC6_T3U2_json,dolphin_png,dolphin_mp3,No I dont_png,No I dont_mp3,penguin_mp3,penguin_png,shark_mp3,shark_png,whale_mp3,whale_png,Yes I do_mp3,Yes I do_png",
+			"name": "HC6_T3U2"
+		}
+	],
+	"resources": [
+		{
+			"url": "audio/bgmusic.mp3",
+			"type": "sound",
+			"name": "bgmusic_mp3"
+		},
+		{
+			"url": "scene1/quit.png",
+			"type": "image",
+			"name": "quit_png"
+		},
+		{
+			"url": "scene1/start.png",
+			"type": "image",
+			"name": "start_png"
+		},
+		{
+			"url": "scene1/success_0.png",
+			"type": "image",
+			"name": "success_0_png"
+		},
+		{
+			"url": "scene1/success_1.png",
+			"type": "image",
+			"name": "success_1_png"
+		},
+		{
+			"url": "scene1/success_2.png",
+			"type": "image",
+			"name": "success_2_png"
+		},
+		{
+			"url": "scene1/repeat.png",
+			"type": "image",
+			"name": "repeat_png"
+		},
+		{
+			"url": "scene1/starDark.png",
+			"type": "image",
+			"name": "starDark_png"
+		},
+		{
+			"url": "scene1/starLight.png",
+			"type": "image",
+			"name": "starLight_png"
+		},
+		{
+			"url": "scene1/lifeBoard.png",
+			"type": "image",
+			"name": "lifeBoard_png"
+		},
+		{
+			"url": "scene1/heartLight.png",
+			"type": "image",
+			"name": "heartLight_png"
+		},
+		{
+			"url": "scene1/heartDark.png",
+			"type": "image",
+			"name": "heartDark_png"
+		},
+		{
+			"url": "scene1/tryAgainBtn.png",
+			"type": "image",
+			"name": "tryAgainBtn_png"
+		},
+		{
+			"url": "scene1/nextBtn.png",
+			"type": "image",
+			"name": "nextBtn_png"
+		},
+		{
+			"url": "scene1/fail_1.png",
+			"type": "image",
+			"name": "fail_1_png"
+		},
+		{
+			"url": "scene1/fail_2.png",
+			"type": "image",
+			"name": "fail_2_png"
+		},
+		{
+			"url": "audio/chacha.mp3",
+			"type": "sound",
+			"name": "chacha_mp3"
+		},
+		{
+			"url": "default.res.json",
+			"type": "json",
+			"name": "default.res_json"
+		},
+		{
+			"url": "audio/dingdong.mp3",
+			"type": "sound",
+			"name": "dingdong_mp3"
+		},
+		{
+			"url": "scene1/bg.png",
+			"type": "image",
+			"name": "bg_png"
+		},
+		{
+			"url": "data/HC6_T3U2/crab.mp3",
+			"type": "sound",
+			"name": "crab_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/dolphin.mp3",
+			"type": "sound",
+			"name": "dolphin_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/jellyfish.mp3",
+			"type": "sound",
+			"name": "jellyfish_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/No I dont.mp3",
+			"type": "sound",
+			"name": "No I dont_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/penguin.mp3",
+			"type": "sound",
+			"name": "penguin_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/shark.mp3",
+			"type": "sound",
+			"name": "shark_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/whale.mp3",
+			"type": "sound",
+			"name": "whale_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/Yes I do.mp3",
+			"type": "sound",
+			"name": "Yes I do_mp3"
+		},
+		{
+			"url": "data/HC6_T3U2/crab.png",
+			"type": "image",
+			"name": "crab_png"
+		},
+		{
+			"url": "data/HC6_T3U2/dolphin.png",
+			"type": "image",
+			"name": "dolphin_png"
+		},
+		{
+			"url": "data/HC6_T3U2/jellyfish.png",
+			"type": "image",
+			"name": "jellyfish_png"
+		},
+		{
+			"url": "data/HC6_T3U2/No I dont.png",
+			"type": "image",
+			"name": "No I dont_png"
+		},
+		{
+			"url": "data/HC6_T3U2/penguin.png",
+			"type": "image",
+			"name": "penguin_png"
+		},
+		{
+			"url": "data/HC6_T3U2/shark.png",
+			"type": "image",
+			"name": "shark_png"
+		},
+		{
+			"url": "data/HC6_T3U2/whale.png",
+			"type": "image",
+			"name": "whale_png"
+		},
+		{
+			"url": "data/HC6_T3U2/Yes I do.png",
+			"type": "image",
+			"name": "Yes I do_png"
+		},
+		{
+			"url": "data/HC6_T3U2/HC6_T3U2.json",
+			"type": "json",
+			"name": "HC6_T3U2_json"
+		},
+		{
+			"url": "mc/role.png",
+			"type": "image",
+			"name": "role_png"
+		},
+		{
+			"url": "mc/role.json",
+			"type": "json",
+			"name": "role_json"
+		}
+	]
+}
