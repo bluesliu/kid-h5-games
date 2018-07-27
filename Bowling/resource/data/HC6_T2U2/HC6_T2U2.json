@@ -1,0 +1,43 @@
+{
+
+"list":[
+	{
+	"name":"a hamburger",
+	"image":"a hamburger_png",
+	"sound":"a hamburger_mp3",
+	"text":"What would you like? I like a hamburger."
+	},
+	{
+	"name":"a hot dog",
+	"image":"a hot dog_png",
+	"sound":"a hot dog_mp3",
+	"text":"What would you like? I like a hot dog."
+	},
+	{
+	"name":"a sandwich",
+	"image":"a sandwich_png",
+	"sound":"a sandwich_mp3",
+	"text":"What would you like? I like a sandwich."
+	},
+	{
+	"name":"fried chicken",
+	"image":"fried chicken_png",
+	"sound":"fried chicken_mp3",
+	"text":"What would you like? I like fried chicken."
+	},
+	{
+	"name":"fries",
+	"image":"fries_png",
+	"sound":"fries_mp3",
+	"text":"What would you like? I like fries."
+	},
+	{
+	"name":"pizza",
+	"image":"pizza_png",
+	"sound":"pizza_mp3",
+	"text":"What would you like? I like pizza."
+	}
+	]
+
+
+}

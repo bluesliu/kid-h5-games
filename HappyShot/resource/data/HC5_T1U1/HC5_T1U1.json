@@ -1,0 +1,37 @@
+{
+
+"list":[
+	{
+	"name":"bookstore",
+	"image":"bookstore_png",
+	"sound":"bookstore_mp3"
+	},
+	{
+	"name":"flower shop",
+	"image":"flower shop_png",
+	"sound":"flower shop_mp3"
+	},
+	{
+	"name":"restaurant",
+	"image":"restaurant_png",
+	"sound":"restaurant_mp3"
+	},
+	{
+	"name":"shopping  mall",
+	"image":"shopping  mall_png",
+	"sound":"shopping  mall_mp3"
+	},
+	{
+	"name":"supermarket",
+	"image":"supermarket_png",
+	"sound":"supermarket_mp3"
+	},
+	{
+	"name":"toy store",
+	"image":"toy store_png",
+	"sound":"toy store_mp3"
+	}
+	]
+
+
+}

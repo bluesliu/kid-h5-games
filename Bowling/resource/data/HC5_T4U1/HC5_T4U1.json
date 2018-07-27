@@ -1,0 +1,49 @@
+{
+
+"list":[
+	{
+	"name":"Friday",
+	"image":"Friday_png",
+	"sound":"Friday_mp3",
+	"text":"What's day is today? Is Friday."
+	},
+	{
+	"name":"Monday",
+	"image":"Monday_png",
+	"sound":"Monday_mp3",
+	"text":"What's day is today? Is Monday."
+	},
+	{
+	"name":"Saturday",
+	"image":"Saturday_png",
+	"sound":"Saturday_mp3",
+	"text":"What's day is today? Is Saturday."
+	},
+	{
+	"name":"Sunday",
+	"image":"Sunday_png",
+	"sound":"Sunday_mp3",
+	"text":"What's day is today? Is Sunday."
+	},
+	{
+	"name":"Thursday",
+	"image":"Thursday_png",
+	"sound":"Thursday_mp3",
+	"text":"What's day is today? Is Thursday."
+	},
+	{
+	"name":"Tuesday",
+	"image":"Tuesday_png",
+	"sound":"Tuesday_mp3",
+	"text":"What's day is today? Is Tuesday."
+	},
+	{
+	"name":"Wednesday",
+	"image":"Wednesday_png",
+	"sound":"Wednesday_mp3",
+	"text":"What's day is today? Is Wednesday."
+	}
+	]
+
+
+}
